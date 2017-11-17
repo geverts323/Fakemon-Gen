@@ -1,0 +1,77 @@
+body {
+    font-family: sans-serif;
+    margin-left: 10px;
+    background-image:url(https://avante.biz/wp-content/uploads/Pokemon-Backgrounds-Pictures/Pokemon-Backgrounds-Pictures-010.jpg);
+}
+
+h1 {
+    border: 5px ridge grey;
+    border-radius: 30px;
+    display: flex;
+    flex-basis: content;
+    background-color: aliceblue;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 37%;
+    margin-right: 37%;
+    color: firebrick;
+}
+
+.pokeGen h3 {
+    margin-bottom: -10px;
+    padding-bottom: -10px;
+}
+
+.pokeGen h4 {
+    margin-top: -10px;
+    padding-top: -10px;
+}
+
+.inputSection {
+    display: flex block;
+    flex-flow: column wrap;
+}
+
+.pokeGen {
+    display: inline-flex;
+    flex-flow: row wrap;
+    flex-basis: content;
+    flex-direction: row wrap;
+}
+.pokeTable {
+    display: inline-flex;
+    flex-flow: row wrap;
+    flex: 1;
+    border: 3px ridge cornflowerblue;
+    background-color: aliceblue;
+    border-radius: 20px;
+    flex-direction: column;
+    flex-basis: content;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+}
+
+.nameLvlInp {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #e6e6e5;
+}
+
+.statInput {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+button {
+    margin-top: 10px;
+    width: 20%;
+    background-color: #e6e6e6
+    border: 2px solid black;
+}

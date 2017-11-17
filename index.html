@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fakemon Generator</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+        <h1>Create a Pokemon</h1>
+        <h3>Name &amp; Level</h3>
+    <div class="inputSection">
+        <div class="nameLvlInp">
+            <input id="pokemonName" placeholder="Name of Pokemon">
+            <input id="pokemonLevel" placeholder="Level of Pokemon">
+        </div>
+        <h3>Base Stats</h3>
+
+        <div class="statInp">
+            <input id="baseHP" placeholder="Base HP">
+            <input id="baseAtk" placeholder="Base Attack">
+            <input id="baseDef" placeholder="Base Defense">
+            <input id="baseSpAtk" placeholder="Base Sp. Attack">
+            <input id="baseSpDef" placeholder="Base Sp. Defense">
+            <input id="baseSpeed" placeholder="Base Speed">
+        </div>
+
+        <button class="button" onclick="createPokemon()">Create Fakemon!</button>
+    </div>
+    <hr>
+    <div id="pokeGen">
+<!--Table data from JS will be produced here-->
+    </div>
+
+
+    <script type="text/javascript" src="jd/script.js"></script>
+  </body>
+
+</html>
