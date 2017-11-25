@@ -53,7 +53,9 @@ h1 {
     padding-right: 10px;
     margin: 5px;
 }
-
+#pokemonName {
+    margin-right: 3px;
+}
 .nameLvlInp {
     display: flex;
     flex-flow: row wrap;
