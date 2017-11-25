@@ -16,6 +16,7 @@ h1 {
     margin-left: 37%;
     margin-right: 37%;
     color: firebrick;
+    flex: 1;
 }
 
 .pokeGen h3 {
@@ -67,6 +68,11 @@ input {
 .statInput {
     display: flex;
     flex-flow: row wrap;
+}
+
+.ivInp {
+    flex:1;
+    width: 8%;
 }
 
 button {

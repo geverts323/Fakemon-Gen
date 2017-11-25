@@ -13,7 +13,7 @@ function getLevel() {
         return {
             "level": pokemonLevel,
             "success": true
-        }
+        };
     }
 }
 
@@ -31,49 +31,61 @@ function getName() {
 
 function hpStat(pokemonLevel) {
     "use strict";
-    var baseHP = document.getElementById("baseHP").value;
+    var baseHP = Number(document.getElementById("baseHP").value);
+    var hpIV = Number(document.getElementById("hpIV").value);
 
-    var hp = Math.floor(((baseHP * 2) * (pokemonLevel / 100)) + 10 + pokemonLevel);
+    var hp = Math.floor((((hpIV + baseHP) * 2) * (pokemonLevel / 100)) + 10 + pokemonLevel);
     return hp;
 }
 
+// Math.floor((((base[stat]+iv)*2)*lvl)/100)+ lvl + 10;
+// Math.floor((((base[stat]+iv)*2+(Math.sqrt(ev)/4))*lvl)/100)+ 5;
+
+//stat = Math.floor(((iv + 2 * baseHP) * Math.floor(pokemonLevel/100)) + 10 + pokemonLevel);
+
+
 function atkStat(pokemonLevel, atkNat) {
     "use strict";
-    var baseAtk = document.getElementById("baseAtk").value;
+    var baseAtk = Number(document.getElementById("baseAtk").value);
+    var atkIV = Number(document.getElementById("atkIV").value);
 
-    var atk = Math.floor(((baseAtk * 2) * (pokemonLevel / 100) + 5) * atkNat);
+    var atk = Math.floor(((((baseAtk + atkIV) * 2) * (pokemonLevel / 100)) + 5) * atkNat);
     return atk;
 }
 
 function defStat(pokemonLevel, defNat) {
     "use strict";
-    var baseDef = document.getElementById("baseDef").value;
+    var baseDef = Number(document.getElementById("baseDef").value);
+    var defIV = Number(document.getElementById("defIV").value);
 
-    var def = Math.floor(((baseDef * 2) * (pokemonLevel / 100) + 5) * defNat);
+    var def = Math.floor(((((baseDef * 2) + defIV) * (pokemonLevel / 100)) + 5) * defNat);
     return def;
 }
 
 function spDefStat(pokemonLevel, spDefNat) {
     "use strict";
-    var baseSpDef = document.getElementById("baseSpDef").value;
+    var baseSpDef = Number(document.getElementById("baseSpDef").value);
+    var spDefIV = Number(document.getElementById("spDefIV").value);
 
-    var spDef = Math.floor(((baseSpDef * 2) * (pokemonLevel / 100) + 5) * spDefNat);
+    var spDef = Math.floor(((((baseSpDef * 2) + spDefIV) * (pokemonLevel / 100)) + 5) * spDefNat);
     return spDef;
 }
 
 function spAtkStat(pokemonLevel, spAtkNat) {
     "use strict";
-    var baseSpAtk = document.getElementById("baseSpAtk").value;
+    var baseSpAtk = Number(document.getElementById("baseSpAtk").value);
+    var spAtkIV = Number(document.getElementById("spAtkIV").value);
 
-    var spAtk = Math.floor(((baseSpAtk * 2) * (pokemonLevel / 100) + 5) * spAtkNat);
+    var spAtk = Math.floor(((((baseSpAtk * 2) + spAtkIV) * (pokemonLevel / 100)) + 5) * spAtkNat);
     return spAtk;
 }
 
 function speedStat(pokemonLevel, speedNat) {
     "use strict";
-    var baseSpeed = document.getElementById("baseSpeed").value;
+    var baseSpeed = Number(document.getElementById("baseSpeed").value);
+    var speedIV = Number(document.getElementById("speedIV").value);
 
-    var speed = Math.floor(((baseSpeed * 2) * (pokemonLevel / 100) + 5) * speedNat);
+    var speed = Math.floor(((((baseSpeed * 2) + speedIV) * (pokemonLevel / 100)) + 5) * speedNat);
     return speed;
 }
 
@@ -273,8 +285,7 @@ var natures = {
 function createPokemon() {
     var result = getLevel();
     var level = result.level;
-    var nature = getNature();
-    console.log(nature);
+    getNature();
 
     var createNewPoke = "<div class= 'pokeTable'>" +
         "<h3>" + getName() + "</h3>" +
