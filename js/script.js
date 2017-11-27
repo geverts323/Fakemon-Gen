@@ -299,27 +299,27 @@ function createPokemon() {
         "<th>Value</th>" +
         "<tbody>" +
         "<tr>" +
-        "<td>HP</td>" +
+        "<td><b>HP<b></td>" +
         "<td>" + hpStat(level) + "</td>" +
         "</tr>" +
         "<tr>" +
-        "<td>Atk</td>" +
+        "<td><b>Atk<b></td>" +
         "<td>" + atkStat(level, atkNat) + "</td>" +
         "</tr>" +
         "<tr>" +
-        "<td>Def</td>" +
+        "<td><b>Def<b></td>" +
         "<td>" + defStat(level, defNat) + "</td>" +
         "</tr>" +
         "<tr>" +
-        "<td>Sp.Atk</td>" +
+        "<td><b>Sp.Atk<b></td>" +
         "<td>" + spAtkStat(level, spAtkNat) + "</td>" +
         "</tr>" +
         "<tr>" +
-        "<td>Sp.Def</td>" +
+        "<td><b>Sp.Def<b></td>" +
         "<td>" + spDefStat(level, spDefNat) + "</td>" +
         "</tr>" +
         "<tr>" +
-        "<td>Speed</td>" +
+        "<td><b>Speed<b></td>" +
         "<td>" + speedStat(level, speedNat) + "</td>" +
         "</tr>" +
         "</tbody>" +

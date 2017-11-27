@@ -60,6 +60,11 @@ footer {
     padding-left: 10px;
     padding-right: 10px;
     margin: 5px;
+    width: 150px;
+}
+
+.pokeTable td {
+    text-align: center;
 }
 #pokemonName {
     margin-right: 3px;
