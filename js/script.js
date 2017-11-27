@@ -285,11 +285,13 @@ var natures = {
 function createPokemon() {
     var result = getLevel();
     var level = result.level;
+    var nat = document.getElementById("pokemonNature").value;
     getNature();
 
     var createNewPoke = "<div class= 'pokeTable'>" +
-        "<h3>" + getName() + "</h3>" +
-        "<h4>Level: " + level + "</h4>" +
+        "<h3 class='newHead'>" + getName() + "</h3>" +
+        "<h4 class='newHead'>Level: " + level + "</h4>" +
+        "<h4 class='newHead' id='naturePrint'>Nature: " + nat + "</h4>" +
         "<table>" +
         "<thead>" +
         "<tr>" +

@@ -28,14 +28,13 @@ footer {
     bottom: 5px;
 }
 
-.pokeGen h3 {
-    margin-bottom: -10px;
-    padding-bottom: -10px;
+.newHead {
+    margin: 13px;
+    margin-left: inherit;
 }
 
-.pokeGen h4 {
-    margin-top: -10px;
-    padding-top: -10px;
+#naturePrint {
+    margin-bottom: 18px;
 }
 
 .inputSection {
