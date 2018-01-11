@@ -156,15 +156,60 @@ function createPokemon() {
 
 }
 
-//shows Physical stat header and input **Not functional**
+var dmgType;
+
+//shows Physical stat header and input
 function showPhys() {
     document.getElementById('physAtkDef').style.display = 'block';
     document.getElementById('spAtkDef').style.display = 'none';
     console.log("Physical Damage");
+    dmgType = "phys";
+
 }
-//shows Special stat header and input **Not Functional**
+//shows Special stat header and input
 function showSpec() {
     document.getElementById('spAtkDef').style.display = 'block';
     document.getElementById('physAtkDef').style.display = 'none';
     console.log("Special Damage");
+    dmgType = "spec";
+}
+
+function dMax() {
+    var power = Number(document.getElementById("movePow").value);
+    return Math.floor(power) / 10;
+}
+
+function getDiceRoll() {
+    var n = dMax();
+    var roll = Math.floor(Math.random() * n) + 1;
+    console.log(roll);
+    return roll;
+}
+
+function stab() {
+    var _moveType = getElementById("moveType");
+    var atkType1 = getElementById("atkTypeOne");
+    var atkType2 = getElementById("atkTypeTwo");
+    var stabDmg;
+    if (atkType1 == _moveType || atkType2 == _moveType) {
+        stabDmg == 1.5;
+    } else {
+        stabDmg == 1;
+    }
+    return stabDmg;
+}
+
+function moveEff() {
+
+}
+
+function dmgType() {
+
+}
+
+function dmgCalc() {
+    var diceRoll = getDiceRoll();
+    atkStat = document.GetElementById("")
+    var dmgDone = (diceRoll + (((atkStat) - 10) / 5) - (((defStat) - 10) / 5) * stab() * moveEff());
+    return dmgDone;
 }
