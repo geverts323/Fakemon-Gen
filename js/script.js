@@ -1,3 +1,4 @@
+// returns error if lvl>100 and returns level as variable
 function getLevel() {
     "use strict";
     var pokemonLevel = document.getElementById("pokemonLevel").value;
@@ -17,9 +18,7 @@ function getLevel() {
     }
 }
 
-
-
-
+// returns name as variable for printing in table
 function getName() {
     "use strict";
     var pokemonName = document.getElementById("pokemonName").value;
@@ -28,7 +27,7 @@ function getName() {
     return pokemonName;
 }
 
-
+// each function calculates the individual stats
 function hpStat(pokemonLevel) {
     "use strict";
     var baseHP = Number(document.getElementById("baseHP").value);
@@ -37,12 +36,6 @@ function hpStat(pokemonLevel) {
     var hp = Math.floor((((hpIV + baseHP) * 2) * (pokemonLevel / 100)) + 10 + pokemonLevel);
     return hp;
 }
-
-// Math.floor((((base[stat]+iv)*2)*lvl)/100)+ lvl + 10;
-// Math.floor((((base[stat]+iv)*2+(Math.sqrt(ev)/4))*lvl)/100)+ 5;
-
-//stat = Math.floor(((iv + 2 * baseHP) * Math.floor(pokemonLevel/100)) + 10 + pokemonLevel);
-
 
 function atkStat(pokemonLevel, atkNat) {
     "use strict";
@@ -89,12 +82,14 @@ function speedStat(pokemonLevel, speedNat) {
     return speed;
 }
 
+// global variables to use in ^above stat functions and createPokemon
 var atkNat;
 var defNat;
 var spDefNat;
 var spAtkNat;
 var speedNat;
 
+//set mon's nat modifiers
 function getNature() {
     var nat = document.getElementById("pokemonNature").value;
     atkNat = natures[nat]["atkNat"];
@@ -109,179 +104,8 @@ function getNature() {
     console.log(speedNat);
 }
 
-var natures = {
-    "Adamant": {
-        "atkNat": 1.1,
-        "defNat": 1,
-        "spDefNat": 1,
-        "spAtkNat": 0.9,
-        "speedNat": 1
-    },
-    "Bashful": {
-        "atkNat": 1,
-        "defNat": 1,
-        "spDefNat": 1,
-        "spAtkNat": 1,
-        "speedNat": 1
-
-    },
-    "Bold": {
-        "atkNat": 0.9,
-        "defNat": 1.1,
-        "spDefNat": 1,
-        "spAtkNat": 1,
-        "speedNat": 1
-    },
-    "Brave": {
-        "atkNat": 1.1,
-        "defNat": 1,
-        "spDefNat": 1,
-        "spAtkNat": 1,
-        "speedNat": 0.9
-    },
-    "Calm": {
-        "atkNat": 0.9,
-        "defNat": 1,
-        "spDefNat": 1.1,
-        "spAtkNat": 1,
-        "speedNat": 1
-    },
-    "Careful": {
-        "atkNat": 1,
-        "defNat": 1,
-        "spDefNat": 1.1,
-        "spAtkNat": 0.9,
-        "speedNat": 1
-    },
-    "Docile": {
-        "atkNat": 1,
-        "defNat": 1,
-        "spDefNat": 1,
-        "spAtkNat": 1,
-        "speedNat": 1
-    },
-    "Gentle": {
-        "atkNat": 1,
-        "defNat": 0.9,
-        "spDefNat": 1.1,
-        "spAtkNat": 1,
-        "speedNat": 1
-    },
-    "Hardy": {
-        "atkNat": 1,
-        "defNat": 1,
-        "spDefNat": 1,
-        "spAtkNat": 1,
-        "speedNat": 1
-    },
-    "Hasty": {
-        "atkNat": 1,
-        "defNat": 0.9,
-        "spDefNat": 1,
-        "spAtkNat": 1,
-        "speedNat": 1.1
-    },
-    "Impish": {
-        "atkNat": 1,
-        "defNat": 1.1,
-        "spDefNat": 1,
-        "spAtkNat": 0.9,
-        "speedNat": 1
-    },
-    "Lax": {
-        "atkNat": 1,
-        "defNat": 1.1,
-        "spDefNat": 0.9,
-        "spAtkNat": 1,
-        "speedNat": 1
-    },
-    "Lonely": {
-        "atkNat": 1.1,
-        "defNat": 0.9,
-        "spDefNat": 1,
-        "spAtkNat": 1,
-        "speedNat": 1
-    },
-    "Mild": {
-        "atkNat": 1,
-        "defNat": 0.9,
-        "spDefNat": 1,
-        "spAtkNat": 1.1,
-        "speedNat": 1
-    },
-    "Modest": {
-        "atkNat": 0.9,
-        "defNat": 1,
-        "spDefNat": 1,
-        "spAtkNat": 1.1,
-        "speedNat": 1
-    },
-    "Naive": {
-        "atkNat": 1,
-        "defNat": 1,
-        "spDefNat": 0.9,
-        "spAtkNat": 1,
-        "speedNat": 1.1
-    },
-    "Naughty": {
-        "atkNat": 1.1,
-        "defNat": 1,
-        "spDefNat": 0.9,
-        "spAtkNat": 1,
-        "speedNat": 1
-    },
-    "Quiet": {
-        "atkNat": 1,
-        "defNat": 1,
-        "spDefNat": 1,
-        "spAtkNat": 1.1,
-        "speedNat": 0.9
-    },
-    "Quirky": {
-        "atkNat": 1,
-        "defNat": 1,
-        "spDefNat": 1,
-        "spAtkNat": 1,
-        "speedNat": 1
-    },
-    "Rash": {
-        "atkNat": 1,
-        "defNat": 1,
-        "spDefNat": 0.9,
-        "spAtkNat": 1.1,
-        "speedNat": 1
-    },
-    "Relaxed": {
-        "atkNat": 1,
-        "defNat": 1.1,
-        "spDefNat": 1,
-        "spAtkNat": 1,
-        "speedNat": 0.9
-    },
-    "Sassy": {
-        "atkNat": 1,
-        "defNat": 1,
-        "spDefNat": 1.1,
-        "spAtkNat": 1,
-        "speedNat": 0.9
-    },
-    "Serious": {
-        "atkNat": 1,
-        "defNat": 1,
-        "spDefNat": 1,
-        "spAtkNat": 1,
-        "speedNat": 1
-    },
-    "Timid": {
-        "atkNat": 0.9,
-        "defNat": 1,
-        "spDefNat": 1,
-        "spAtkNat": 1,
-        "speedNat": 1.1
-    }
-}
-
-
+//gather's final data and prints on webpage
+//this is the called function in index.html >> line 145(ish) <button>
 function createPokemon() {
     var result = getLevel();
     var level = result.level;
@@ -326,9 +150,21 @@ function createPokemon() {
         "</table>" +
         "</div> "
 
-
     var divStart = document.getElementById("pokeGen");
     divStart.insertAdjacentHTML("beforeend", createNewPoke);
 
 
+}
+
+//shows Physical stat header and input **Not functional**
+function showPhys() {
+    document.getElementById('physAtkDef').style.display = 'block';
+    document.getElementById('spAtkDef').style.display = 'none';
+    console.log("Physical Damage");
+}
+//shows Special stat header and input **Not Functional**
+function showSpec() {
+    document.getElementById('spAtkDef').style.display = 'block';
+    document.getElementById('physAtkDef').style.display = 'none';
+    console.log("Special Damage");
 }

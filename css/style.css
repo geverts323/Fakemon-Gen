@@ -17,6 +17,7 @@ h1 {
     margin-right: 37%;
     color: firebrick;
     flex: 1;
+    text-align: center;
 }
 
 footer {
@@ -34,7 +35,6 @@ footer {
     color:cornflowerblue;
 }
 
-
 #naturePrint {
     margin-bottom: 18px;
 }
@@ -50,6 +50,7 @@ footer {
     flex-basis: content;
     flex-direction: row wrap;
 }
+
 .pokeTable {
     display: inline-flex;
     flex-flow: row wrap;
@@ -68,9 +69,11 @@ footer {
 .pokeTable td {
     text-align: center;
 }
+
 #pokemonName {
     margin-right: 3px;
 }
+
 .nameLvlInp {
     display: flex;
     flex-flow: row wrap;
@@ -97,4 +100,47 @@ button {
     width: 20%;
     background-color: #e6e6e6
     border: 2px solid black;
+}
+
+.fakemTools {
+    display: flex;
+    flex:1;
+    flex-flow: row wrap;
+    width: 60%;
+    align-items: center;
+
+}
+
+.mainTools {
+    display: flex;
+    flex:1;
+    flex-flow: row wrap;
+    width: 90%;
+    align-items: center;
+}
+
+.fakemTools > * {
+    border: 1.5px solid black;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    width: 25%;
+    margin: 5px;
+    flex:1;
+    text-align: center;
+}
+
+.mainTools > * {
+    border: 1.5px solid black;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    width: 12%;
+    margin: 5px;
+    flex:1;
+    text-align: center;
+}
+
+.hide {
+  display: none;
 }

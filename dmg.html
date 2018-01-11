@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pokemon D&amp;D Resources - Damage Calculator</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Damage Calculator</h1>
+    <div class="mainTools">
+        <div class="toolItem">
+            <a href="index.html">Pokemon Generator</a>
+        </div>
+        <div class="toolItem">
+            <a href="https://www.google.com">Character Builder</a>
+        </div>
+        <div class="toolItem">
+            <a href="https://www.google.com">Encounter Generator</a>
+        </div>
+        <div class="toolItem">
+            <a href="https://www.google.com">Item Finder</a>
+        </div>
+        <div class="toolItem">
+            <a href="dmg.html">Damage Calculator</a>
+        </div>
+    </div>
+    <hr />
+    <div class="dmgInput">
+        <h3>Move Power</h3>
+        <input id="movePow" placeholder="Move Power"></input>
+
+        <h3>Damage Type</h3>
+        <div class="radBtns">
+                <input type="radio" name="dmgType" value="physDmg" onclick="showPhys()">Physical Damage</input>
+                <input type="radio" name="dmgType" value="specDmg" onclick="showSpec()">Special Damage</input>
+        </div>
+
+        <div class="hide" id="physAtkDef">
+            <h3>Attacker's Attack Stat</h3>
+            <input id="atkDmg" placeholder="Attack"></input>
+
+            <h3>Defender's Defense Stat</h3>
+            <input id="defDmg" placeholder="Defense"></input>
+        </div>
+
+        <div class="hide" id="spAtkDef">
+                <h3>Attacker's Special Attack</h3>
+                <input id="spAtkDmg" placeholder="Sp.Atk"></input>
+
+                <h3>Defender's Special Defense</h3>
+                <input id="spDefDmg" placeholder="Sp.Def"></input>
+        </div>
+
+        <h4>Move Type</h4>
+        <div class="typeInp">
+            <select id="moveType">
+                    <option value="null">
+                        -- Move Type --
+                    </option>
+                    <option value="Normal">
+                        Normal
+                    </option>
+                    <option value="Fighting">
+                        Fighting
+                    </option>
+                    <option value="Flying">
+                        Flying
+                    </option>
+                    <option value="Poison">
+                        Poison
+                    </option>
+                    <option value="Ground">
+                        Ground
+                    </option>
+                    <option value="Rock">
+                        Rock
+                    </option>
+                    <option value="Bug">
+                        Bug
+                    </option>
+                    <option value="Ghost">
+                        Ghost
+                    </option>
+                    <option value="Steel">
+                        Steel
+                    </option>
+                    <option value="Fire">
+                        Fire
+                    </option>
+                    <option value="Water">
+                        Water
+                    </option>
+                    <option value="Grass">
+                        Grass
+                    </option>
+                    <option value="Electric">
+                        Electric
+                    </option>
+                    <option value="Psychic">
+                        Psychic
+                    </option>
+                    <option value="Ice">
+                        Ice
+                    </option>
+                    <option value="Dragon">
+                        Dragon
+                    </option>
+                    <option value="Dark">
+                        Dark
+                    </option>
+                    <option value="Fairy">
+                        Fairy
+                    </option>
+                </select>
+        </div>
+
+        <h4>Attacker's Type(s)</h4>
+        <div class="typeInp">
+            <select id="atkTypeOne">
+                    <option value="null">
+                        -- Move Type --
+                    </option>
+                    <option value="Normal">
+                        Normal
+                    </option>
+                    <option value="Fighting">
+                        Fighting
+                    </option>
+                    <option value="Flying">
+                        Flying
+                    </option>
+                    <option value="Poison">
+                        Poison
+                    </option>
+                    <option value="Ground">
+                        Ground
+                    </option>
+                    <option value="Rock">
+                        Rock
+                    </option>
+                    <option value="Bug">
+                        Bug
+                    </option>
+                    <option value="Ghost">
+                        Ghost
+                    </option>
+                    <option value="Steel">
+                        Steel
+                    </option>
+                    <option value="Fire">
+                        Fire
+                    </option>
+                    <option value="Water">
+                        Water
+                    </option>
+                    <option value="Grass">
+                        Grass
+                    </option>
+                    <option value="Electric">
+                        Electric
+                    </option>
+                    <option value="Psychic">
+                        Psychic
+                    </option>
+                    <option value="Ice">
+                        Ice
+                    </option>
+                    <option value="Dragon">
+                        Dragon
+                    </option>
+                    <option value="Dark">
+                        Dark
+                    </option>
+                    <option value="Fairy">
+                        Fairy
+                    </option>
+                </select>
+            <select id="atkTypeTwo">
+                    <option value="null">
+                        -- Move Type --
+                    </option>
+                    <option value="Normal">
+                        Normal
+                    </option>
+                    <option value="Fighting">
+                        Fighting
+                    </option>
+                    <option value="Flying">
+                        Flying
+                    </option>
+                    <option value="Poison">
+                        Poison
+                    </option>
+                    <option value="Ground">
+                        Ground
+                    </option>
+                    <option value="Rock">
+                        Rock
+                    </option>
+                    <option value="Bug">
+                        Bug
+                    </option>
+                    <option value="Ghost">
+                        Ghost
+                    </option>
+                    <option value="Steel">
+                        Steel
+                    </option>
+                    <option value="Fire">
+                        Fire
+                    </option>
+                    <option value="Water">
+                        Water
+                    </option>
+                    <option value="Grass">
+                        Grass
+                    </option>
+                    <option value="Electric">
+                        Electric
+                    </option>
+                    <option value="Psychic">
+                        Psychic
+                    </option>
+                    <option value="Ice">
+                        Ice
+                    </option>
+                    <option value="Dragon">
+                        Dragon
+                    </option>
+                    <option value="Dark">
+                        Dark
+                    </option>
+                    <option value="Fairy">
+                        Fairy
+                    </option>
+                </select>
+        </div>
+
+        <h4>Defender's Type(s)</h4>
+        <div class="typeInp">
+            <select id="defTypeOne">
+                    <option value="null">
+                        -- Defender's Type --
+                    </option>
+                    <option value="Normal">
+                        Normal
+                    </option>
+                    <option value="Fighting">
+                        Fighting
+                    </option>
+                    <option value="Flying">
+                        Flying
+                    </option>
+                    <option value="Poison">
+                        Poison
+                    </option>
+                    <option value="Ground">
+                        Ground
+                    </option>
+                    <option value="Rock">
+                        Rock
+                    </option>
+                    <option value="Bug">
+                        Bug
+                    </option>
+                    <option value="Ghost">
+                        Ghost
+                    </option>
+                    <option value="Steel">
+                        Steel
+                    </option>
+                    <option value="Fire">
+                        Fire
+                    </option>
+                    <option value="Water">
+                        Water
+                    </option>
+                    <option value="Grass">
+                        Grass
+                    </option>
+                    <option value="Electric">
+                        Electric
+                    </option>
+                    <option value="Psychic">
+                        Psychic
+                    </option>
+                    <option value="Ice">
+                        Ice
+                    </option>
+                    <option value="Dragon">
+                        Dragon
+                    </option>
+                    <option value="Dark">
+                        Dark
+                    </option>
+                    <option value="Fairy">
+                        Fairy
+                    </option>
+                </select>
+            <select id="defTypeTwo">
+                    <option value="null">
+                        -- Defender's Type --
+                    </option>
+                    <option value="null">
+                        None
+                    </option>
+                    <option value="Normal">
+                        Normal
+                    </option>
+                    <option value="Fighting">
+                        Fighting
+                    </option>
+                    <option value="Flying">
+                        Flying
+                    </option>
+                    <option value="Poison">
+                        Poison
+                    </option>
+                    <option value="Ground">
+                        Ground
+                    </option>
+                    <option value="Rock">
+                        Rock
+                    </option>
+                    <option value="Bug">
+                        Bug
+                    </option>
+                    <option value="Ghost">
+                        Ghost
+                    </option>
+                    <option value="Steel">
+                        Steel
+                    </option>
+                    <option value="Fire">
+                        Fire
+                    </option>
+                    <option value="Water">
+                        Water
+                    </option>
+                    <option value="Grass">
+                        Grass
+                    </option>
+                    <option value="Electric">
+                        Electric
+                    </option>
+                    <option value="Psychic">
+                        Psychic
+                    </option>
+                    <option value="Ice">
+                        Ice
+                    </option>
+                    <option value="Dragon">
+                        Dragon
+                    </option>
+                    <option value="Dark">
+                        Dark
+                    </option>
+                    <option value="Fairy">
+                        Fairy
+                    </option>
+                </select>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="js/data.js"
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
