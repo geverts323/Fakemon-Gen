@@ -200,6 +200,7 @@ function stab() {
     } else {
         stabDmg == 1;
     }
+    console.log(stabDmg);
     return stabDmg;
 }
 
@@ -208,33 +209,38 @@ function stab() {
 //atkNat = natures[nat]["atkNat"];
 //console.log(atkNat);
 function moveEff() {
-    var moveType_ = types[document.getElementById("moveType").value];
-    var defType1 = moveType_[document.getElementById("defTypeOne").value];
-    var defType2 = moveType_[document.getElementById("defTypeTwo").value];
-    return Number(defType1 * defType2);
+    var effDmg;
+    var moveTyping = types[document.getElementById("moveType").value];
+    var defType1 = moveTyping[document.getElementById("defTypeOne").value];
+    var defType2 = moveTyping[document.getElementById("defTypeTwo").value];
+    effDmg = Number(defType1 * defType2);
+    console.log(effDmg);
+    return effDmg;
 }
 
 //calculates damage done - This is the function called on dmg.html line 370ish <button>
 function dmgCalc() {
     var diceRoll = getDiceRoll();
     var dmgDone;
-    var atkDmg = Number(document.getElementById("atkDmg").value);
-    console.log(atkDmg);
-    var defDmg = Number(document.getElementById("defDmg").value);
-    console.log(defDmg);
-    var spAtkDmg = Number(document.getElementById("spAtkDmg").value);
-    console.log(spAtkDmg);
-    var spDefDmg = Number(document.getElementById("spDefDmg").value);
-    console.log(spDefDmg);
+    var atkDmg = ((Number(document.getElementById("atkDmg").value)) - 10) / 5;
+    console.log("atkDmg: "+ atkDmg);
+    var defDmg = ((Number(document.getElementById("defDmg").value)) - 10) / 5;
+    console.log("defDmg: " + defDmg);
+    var spAtkDmg = ((Number(document.getElementById("spAtkDmg").value)) - 10) / 5;
+    console.log("spAtkDmg: " + spAtkDmg);
+    var spDefDmg = ((Number(document.getElementById("spDefDmg").value)) - 10) / 5;
+    console.log("spDefDmg: " + spDefDmg);
     console.log(diceRoll);
 
 
     if (dmgType == "phys") {
-        dmgDone = (diceRoll + (((atkDmg) - 10) / 5) - (((defDmg) - 10) / 5) * stab() * moveEff());
+        dmgDone = Number(diceRoll + ((atkDmg) - (defDmg)) * stab() * moveEff());
+        console.log(dmgDone);
         return dmgDone;
     }
     else if (dmgType == "spec") {
-        dmgDone = (diceRoll + (((spAtkDmg) - 10) / 5) - (((spDefDmg) - 10) / 5) * stab() * moveEff());
+        dmgDone = Number(diceRoll + ((spAtkDmg) - (spDefDmg)) * stab() * moveEff());
+        console.log(dmgDone);
         return dmgDone;
     }
     else {
