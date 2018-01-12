@@ -166,6 +166,7 @@ function showPhys() {
     dmgType = "phys";
 
 }
+
 //shows Special stat header and input
 function showSpec() {
     document.getElementById('spAtkDef').style.display = 'block';
@@ -174,11 +175,13 @@ function showSpec() {
     dmgType = "spec";
 }
 
+//used to get # of sides for Dice Roll
 function dMax() {
     var power = Number(document.getElementById("movePow").value);
     return Math.floor(power) / 10;
 }
 
+//dice roll function
 function getDiceRoll() {
     var n = dMax();
     var roll = Math.floor(Math.random() * n) + 1;
@@ -186,10 +189,11 @@ function getDiceRoll() {
     return roll;
 }
 
+//determines if STAB bonus is applied
 function stab() {
-    var _moveType = getElementById("moveType");
-    var atkType1 = getElementById("atkTypeOne");
-    var atkType2 = getElementById("atkTypeTwo");
+    var _moveType = document.getElementById("moveType").value;
+    var atkType1 = document.getElementById("atkTypeOne").value;
+    var atkType2 = document.getElementById("atkTypeTwo").value;
     var stabDmg;
     if (atkType1 == _moveType || atkType2 == _moveType) {
         stabDmg == 1.5;
@@ -199,17 +203,46 @@ function stab() {
     return stabDmg;
 }
 
+//determines how effective the move is on defending mon
+//var nat = document.getElementById("pokemonNature").value;
+//atkNat = natures[nat]["atkNat"];
+//console.log(atkNat);
 function moveEff() {
-
+    var moveType_ = types[document.getElementById("moveType").value];
+    var defType1 = moveType_[document.getElementById("defTypeOne").value];
+    var defType2 = moveType_[document.getElementById("defTypeTwo").value];
+    return Number(defType1 * defType2);
 }
 
-function dmgType() {
-
-}
-
+//calculates damage done - This is the function called on dmg.html line 370ish <button>
 function dmgCalc() {
     var diceRoll = getDiceRoll();
-    atkStat = document.GetElementById("")
-    var dmgDone = (diceRoll + (((atkStat) - 10) / 5) - (((defStat) - 10) / 5) * stab() * moveEff());
-    return dmgDone;
-}
+    var dmgDone;
+    var atkDmg = Number(document.getElementById("atkDmg").value);
+    console.log(atkDmg);
+    var defDmg = Number(document.getElementById("defDmg").value);
+    console.log(defDmg);
+    var spAtkDmg = Number(document.getElementById("spAtkDmg").value);
+    console.log(spAtkDmg);
+    var spDefDmg = Number(document.getElementById("spDefDmg").value);
+    console.log(spDefDmg);
+    console.log(diceRoll);
+
+
+    if (dmgType == "phys") {
+        dmgDone = (diceRoll + (((atkDmg) - 10) / 5) - (((defDmg) - 10) / 5) * stab() * moveEff());
+        return dmgDone;
+    }
+    else if (dmgType == "spec") {
+        dmgDone = (diceRoll + (((spAtkDmg) - 10) / 5) - (((spDefDmg) - 10) / 5) * stab() * moveEff());
+        return dmgDone;
+    }
+    else {
+        alert("Select Damage Type");
+    }
+
+    }
+
+    function prntDmg() {
+        console.log(dmgDone);
+    }
