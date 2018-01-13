@@ -177,15 +177,17 @@ function showSpec() {
 
 //used to get # of sides for Dice Roll
 function dMax() {
-    var power = Number(document.getElementById("movePow").value);
-    return Math.floor(power) / 10;
+    var power = (Number(document.getElementById("movePow").value)) / 10;
+    console.log("dMax: " + power);
+    return Math.floor(power);
 }
 
 //dice roll function
 function getDiceRoll() {
     var n = dMax();
     var roll = Math.floor(Math.random() * n) + 1;
-    console.log(roll);
+    console.log("roll: " + roll);
+    document.getElementById("diceResult").innerHTML = roll;
     return roll;
 }
 
@@ -196,25 +198,22 @@ function stab() {
     var atkType2 = document.getElementById("atkTypeTwo").value;
     var stabDmg;
     if (atkType1 == _moveType || atkType2 == _moveType) {
-        stabDmg == 1.5;
+        stabDmg = 1.5;
     } else {
-        stabDmg == 1;
+        stabDmg = 1;
     }
-    console.log(stabDmg);
+    console.log("stabDmg: " + stabDmg);
     return stabDmg;
 }
 
 //determines how effective the move is on defending mon
-//var nat = document.getElementById("pokemonNature").value;
-//atkNat = natures[nat]["atkNat"];
-//console.log(atkNat);
 function moveEff() {
     var effDmg;
     var moveTyping = types[document.getElementById("moveType").value];
     var defType1 = moveTyping[document.getElementById("defTypeOne").value];
     var defType2 = moveTyping[document.getElementById("defTypeTwo").value];
     effDmg = Number(defType1 * defType2);
-    console.log(effDmg);
+    console.log("effDmg: " + effDmg);
     return effDmg;
 }
 
@@ -230,25 +229,20 @@ function dmgCalc() {
     console.log("spAtkDmg: " + spAtkDmg);
     var spDefDmg = ((Number(document.getElementById("spDefDmg").value)) - 10) / 5;
     console.log("spDefDmg: " + spDefDmg);
-    console.log(diceRoll);
 
 
     if (dmgType == "phys") {
         dmgDone = Number(diceRoll + ((atkDmg) - (defDmg)) * stab() * moveEff());
-        console.log(dmgDone);
-        return dmgDone;
+
     }
     else if (dmgType == "spec") {
         dmgDone = Number(diceRoll + ((spAtkDmg) - (spDefDmg)) * stab() * moveEff());
-        console.log(dmgDone);
-        return dmgDone;
+
     }
     else {
         alert("Select Damage Type");
     }
-
-    }
-
-    function prntDmg() {
-        console.log(dmgDone);
-    }
+    console.log("dmgDone: " + dmgDone);
+    document.getElementById("dmgResult").innerHTML = dmgDone;
+    return dmgDone;
+}
