@@ -562,153 +562,208 @@ var types = {
 
 
 var moves = {
-    "fire": {
-        "fire-punch":{
-            "url": "https://pokeapi.co/api/v2/move/7/",
-            "name": "fire-punch"
-            "contest_type": "beauty"
-            "priority": 0,
-            "accuracy": 100,
-            "power": 75,
-            "target": "selected-pokemon"
+        "fire": {
+            "fire-punch": {
+                "url": "https://pokeapi.co/api/v2/move/7/",
+                "name": "fire-punch"
+                "contest_type": "beauty"
+                "priority": 0,
+                "accuracy": 100,
+                "power": 75,
+                "target": "selected-pokemon"
+            },
+            "ember": {
+                "url": "https://pokeapi.co/api/v2/move/52/",
+                "name": "ember"
+                "contest_type": "beauty"
+                "priority": 0,
+                "accuracy": 100,
+                "power": 40,
+                "target": "selected-pokemon"
+            },
+            "flamethrower": {
+                "url": "https://pokeapi.co/api/v2/move/53/",
+                "name": "flamethrower"
+                "contest_type": "beauty"
+                "priority": 0,
+                "accuracy": 100,
+                "power": 90,
+                "target": "selected-pokemon"
+            },
+            "fire-spin": {
+                "url": "https://pokeapi.co/api/v2/move/83/",
+                "name": "fire-spin"
+                "contest_type": "beauty"
+                "priority": 0,
+                "accuracy": 85,
+                "power": 35,
+                "target": "selected-pokemon"
+            },
+
+
+
+
+
+
+
+            "fire-blast": {
+                "url": "https://pokeapi.co/api/v2/move/126/",
+                "name": "fire-blast"
+                "pp": 5,
+                "effect": "Inflicts regular damage.  Has a $effect_chance% chance to burn the target.",
+                "contest_type": "beauty"
+                "priority": 0,
+                "accuracy": 85,
+                "power": 110,
+                "target": "selected-pokemon"
+            },
+            "flame-wheel": {
+                "url": "https://pokeapi.co/api/v2/move/172/",
+                "name": "flame-wheel"
+                "effect": "Inflicts regular damage.  Has a $effect_chance% chance to burn the target.  Frozen Pokémon may use this move, in which case they will thaw.",
+                "language": {
+                    "url": "https://pokeapi.co/api/v2/language/9/",
+                    "name": "en"
+                }
+            }
+        ],
+        "contest_type": {
+            "url": "https://pokeapi.co/api/v2/contest-type/2/",
+            "name": "beauty"
+        },
+        "priority": 0,
+        "contest_effect": {
+            "url": "https://pokeapi.co/api/v2/contest-effect/1/"
+        },
+        "type": {
+            "url": "https://pokeapi.co/api/v2/type/10/",
+            "name": "fire"
+        },
+        "accuracy": 100,
+        "power": 60,
+        "past_values": [],
+        "target": {
+            "url": "https://pokeapi.co/api/v2/move-target/10/",
+            "name": "selected-pokemon"
+        },
     },
-        "ember": {
-            "url": "https://pokeapi.co/api/v2/move/52/",
-            "name": "ember"
+    "sacred-fire": {
+        "url": "https://pokeapi.co/api/v2/move/221/",
+        "name": "sacred-fire"
     },
-        "flamethrower": {
-            "url": "https://pokeapi.co/api/v2/move/53/",
-            "name": "flamethrower"
+    "sunny-day": {
+        "url": "https://pokeapi.co/api/v2/move/241/",
+        "name": "sunny-day"
     },
-        "fire-spin": {
-            "url": "https://pokeapi.co/api/v2/move/83/",
-            "name": "fire-spin"
+    "heat-wave": {
+        "url": "https://pokeapi.co/api/v2/move/257/",
+        "name": "heat-wave"
     },
-        "fire-blast": {
-            "url": "https://pokeapi.co/api/v2/move/126/",
-            "name": "fire-blast"
+    "will-o-wisp": {
+        "url": "https://pokeapi.co/api/v2/move/261/",
+        "name": "will-o-wisp"
     },
-        "flame-wheel": {
-            "url": "https://pokeapi.co/api/v2/move/172/",
-            "name": "flame-wheel"
+    "eruption": {
+        "url": "https://pokeapi.co/api/v2/move/284/",
+        "name": "eruption"
     },
-        "sacred-fire": {
-            "url": "https://pokeapi.co/api/v2/move/221/",
-            "name": "sacred-fire"
+    "blaze-kick": {
+        "url": "https://pokeapi.co/api/v2/move/299/",
+        "name": "blaze-kick"
     },
-        "sunny-day": {
-            "url": "https://pokeapi.co/api/v2/move/241/",
-            "name": "sunny-day"
+    "blast-burn": {
+        "url": "https://pokeapi.co/api/v2/move/307/",
+        "name": "blast-burn"
     },
-        "heat-wave": {
-            "url": "https://pokeapi.co/api/v2/move/257/",
-            "name": "heat-wave"
+    "overheat": {
+        "url": "https://pokeapi.co/api/v2/move/315/",
+        "name": "overheat"
     },
-        "will-o-wisp": {
-            "url": "https://pokeapi.co/api/v2/move/261/",
-            "name": "will-o-wisp"
+    "flare-blitz": {
+        "url": "https://pokeapi.co/api/v2/move/394/",
+        "name": "flare-blitz"
     },
-        "eruption": {
-            "url": "https://pokeapi.co/api/v2/move/284/",
-            "name": "eruption"
+    "fire-fang": {
+        "url": "https://pokeapi.co/api/v2/move/424/",
+        "name": "fire-fang"
     },
-        "blaze-kick": {
-            "url": "https://pokeapi.co/api/v2/move/299/",
-            "name": "blaze-kick"
+    "lava-plume": {
+        "url": "https://pokeapi.co/api/v2/move/436/",
+        "name": "lava-plume"
     },
-        "blast-burn": {
-            "url": "https://pokeapi.co/api/v2/move/307/",
-            "name": "blast-burn"
+    "magma-storm": {
+        "url": "https://pokeapi.co/api/v2/move/463/",
+        "name": "magma-storm"
     },
-        "overheat": {
-            "url": "https://pokeapi.co/api/v2/move/315/",
-            "name": "overheat"
+    "flame- burst": {
+        "url": "https://pokeapi.co/api/v2/move/481/",
+        "name": "flame-burst"
     },
-        "flare-blitz": {
-            "url": "https://pokeapi.co/api/v2/move/394/",
-            "name": "flare-blitz"
+    "flame-charge": {
+        "url": "https://pokeapi.co/api/v2/move/488/",
+        "name": "flame-charge"
     },
-        "fire-fang": {
-            "url": "https://pokeapi.co/api/v2/move/424/",
-            "name": "fire-fang"
+    "incinerate": {
+        "url": "https://pokeapi.co/api/v2/move/510/",
+        "name": "incinerate"
     },
-        "lava-plume": {
-            "url": "https://pokeapi.co/api/v2/move/436/",
-            "name": "lava-plume"
+    "inferno": {
+        "url": "https://pokeapi.co/api/v2/move/517/",
+        "name": "inferno"
     },
-        "magma-storm": {
-            "url": "https://pokeapi.co/api/v2/move/463/",
-            "name": "magma-storm"
+    "fire-pledge": {
+        "url": "https://pokeapi.co/api/v2/move/519/",
+        "name": "fire-pledge"
     },
-        "flame- burst": {
-            "url": "https://pokeapi.co/api/v2/move/481/",
-            "name": "flame-burst"
+    "heat-crash": {
+        "url": "https://pokeapi.co/api/v2/move/535/",
+        "name": "heat-crash"
     },
-        "flame-charge": {
-            "url": "https://pokeapi.co/api/v2/move/488/",
-            "name": "flame-charge"
+    "searing-shot": {
+        "url": "https://pokeapi.co/api/v2/move/545/",
+        "name": "searing-shot"
     },
-        "incinerate": {
-            "url": "https://pokeapi.co/api/v2/move/510/",
-            "name": "incinerate"
+    "blue-flare": {
+        "url": "https://pokeapi.co/api/v2/move/551/",
+        "name": "blue-flare"
     },
-        "inferno": {
-            "url": "https://pokeapi.co/api/v2/move/517/",
-            "name": "inferno"
+    "fiery-dance": {
+        "url": "https://pokeapi.co/api/v2/move/552/",
+        "name": "fiery-dance"
     },
-        "fire-pledge": {
-            "url": "https://pokeapi.co/api/v2/move/519/",
-            "name": "fire-pledge"
+    "v-create": {
+        "url": "https://pokeapi.co/api/v2/move/557/",
+        "name": "v-create"
     },
-        "heat-crash": {
-            "url": "https://pokeapi.co/api/v2/move/535/",
-            "name": "heat-crash"
+    "fusion-flare": {
+        "url": "https://pokeapi.co/api/v2/move/558/",
+        "name": "fusion-flare"
     },
-        "searing-shot": {
-            "url": "https://pokeapi.co/api/v2/move/545/",
-            "name": "searing-shot"
+    "mystical-fire": {
+        "url": "https://pokeapi.co/api/v2/move/595/",
+        "name": "mystical-fire"
     },
-        "blue-flare": {
-            "url": "https://pokeapi.co/api/v2/move/551/",
-            "name": "blue-flare"
+    "fire-lash": {
+        "url": "https://pokeapi.co/api/v2/move/680/",
+        "name": "fire-lash"
     },
-        "fiery-dance": {
-            "url": "https://pokeapi.co/api/v2/move/552/",
-            "name": "fiery-dance"
+    "burn-up": {
+        "url": "https://pokeapi.co/api/v2/move/682/",
+        "name": "burn-up"
     },
-        "v-create": {
-            "url": "https://pokeapi.co/api/v2/move/557/",
-            "name": "v-create"
-    },
-        "fusion-flare": {
-            "url": "https://pokeapi.co/api/v2/move/558/",
-            "name": "fusion-flare"
-    },
-        "mystical-fire": {
-            "url": "https://pokeapi.co/api/v2/move/595/",
-            "name": "mystical-fire"
-    },
-        "fire-lash": {
-            "url": "https://pokeapi.co/api/v2/move/680/",
-            "name": "fire-lash"
-    },
-        "burn-up": {
-            "url": "https://pokeapi.co/api/v2/move/682/",
-            "name": "burn-up"
-    },
-        "shell-trap": {
-            "url": "https://pokeapi.co/api/v2/move/704/",
-            "name": "shell-trap"
+    "shell-trap": {
+        "url": "https://pokeapi.co/api/v2/move/704/",
+        "name": "shell-trap"
     }
+},
+"z-moves" {
+    "inferno-overdrive-p": {
+        "url": "https://pokeapi.co/api/v2/move/640/",
+        "name": "inferno-overdrive--physical"
     },
-    "z-moves" {
-        "inferno-overdrive-p": {
-            "url": "https://pokeapi.co/api/v2/move/640/",
-            "name": "inferno-overdrive--physical"
+    "inferno-overdrive-s": {
+        "url": "https://pokeapi.co/api/v2/move/641/",
+        "name": "inferno-overdrive--special"
     },
-        "inferno-overdrive-s": {
-            "url": "https://pokeapi.co/api/v2/move/641/",
-            "name": "inferno-overdrive--special"
-    },
-    }
+}
 }
