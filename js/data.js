@@ -1,6 +1,6 @@
 //all dictionaries stored here
 
-//stored data for nat modifiers
+//stored data for nature modifiers
 var natures = {
     "Adamant": {
         "atkNat": 1.1,
@@ -174,10 +174,6 @@ var natures = {
 }
 
 //stored data for type effectiveness
-// Structue:
-// "Attacking": {
-//      "Defending": EffValue,
-//      ...}
 var types = {
     "Normal": {
         "Normal": 1,
@@ -560,13 +556,13 @@ var types = {
     }
 }
 
-
+//stored data for moves sorted by type
 var moves = {
         "fire": {
             "fire-punch": {
                 "url": "https://pokeapi.co/api/v2/move/7/",
-                "name": "fire-punch"
-                "contest_type": "beauty"
+                "name": "fire-punch",
+                "contest_type": "beauty",
                 "priority": 0,
                 "accuracy": 100,
                 "power": 75,
@@ -574,8 +570,8 @@ var moves = {
             },
             "ember": {
                 "url": "https://pokeapi.co/api/v2/move/52/",
-                "name": "ember"
-                "contest_type": "beauty"
+                "name": "ember",
+                "contest_type": "beauty",
                 "priority": 0,
                 "accuracy": 100,
                 "power": 40,
@@ -583,8 +579,8 @@ var moves = {
             },
             "flamethrower": {
                 "url": "https://pokeapi.co/api/v2/move/53/",
-                "name": "flamethrower"
-                "contest_type": "beauty"
+                "name": "flamethrower",
+                "contest_type": "beauty",
                 "priority": 0,
                 "accuracy": 100,
                 "power": 90,
@@ -592,8 +588,8 @@ var moves = {
             },
             "fire-spin": {
                 "url": "https://pokeapi.co/api/v2/move/83/",
-                "name": "fire-spin"
-                "contest_type": "beauty"
+                "name": "fire-spin",
+                "contest_type": "beauty",
                 "priority": 0,
                 "accuracy": 85,
                 "power": 35,
@@ -608,10 +604,10 @@ var moves = {
 
             "fire-blast": {
                 "url": "https://pokeapi.co/api/v2/move/126/",
-                "name": "fire-blast"
+                "name": "fire-blast",
                 "pp": 5,
                 "effect": "Inflicts regular damage.  Has a $effect_chance% chance to burn the target.",
-                "contest_type": "beauty"
+                "contest_type": "beauty",
                 "priority": 0,
                 "accuracy": 85,
                 "power": 110,
@@ -619,37 +615,24 @@ var moves = {
             },
             "flame-wheel": {
                 "url": "https://pokeapi.co/api/v2/move/172/",
-                "name": "flame-wheel"
+                "name": "flame-wheel",
                 "effect": "Inflicts regular damage.  Has a $effect_chance% chance to burn the target.  Frozen Pokémon may use this move, in which case they will thaw.",
-                "language": {
-                    "url": "https://pokeapi.co/api/v2/language/9/",
-                    "name": "en"
-                }
-            }
-        ],
-        "contest_type": {
-            "url": "https://pokeapi.co/api/v2/contest-type/2/",
-            "name": "beauty"
-        },
-        "priority": 0,
-        "contest_effect": {
-            "url": "https://pokeapi.co/api/v2/contest-effect/1/"
-        },
-        "type": {
-            "url": "https://pokeapi.co/api/v2/type/10/",
-            "name": "fire"
-        },
-        "accuracy": 100,
-        "power": 60,
-        "past_values": [],
-        "target": {
-            "url": "https://pokeapi.co/api/v2/move-target/10/",
-            "name": "selected-pokemon"
+                "contest_type": "beauty",
+                "priority": 0,
+                "accuracy": 100,
+                "power": 60,
+                "target": "selected-pokemon"
         },
     },
     "sacred-fire": {
         "url": "https://pokeapi.co/api/v2/move/221/",
-        "name": "sacred-fire"
+        "name": "sacred-fire",
+        "effect": "Inflicts regular damage: has a 50% chance to burn the target. Frozen Pokemon may use this move, in which case they will thaw",
+        "contest_type": "beauty",
+        "priority": ?,
+        "accuracy": 95,
+        "power": 100,
+        "target": ?
     },
     "sunny-day": {
         "url": "https://pokeapi.co/api/v2/move/241/",
