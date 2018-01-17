@@ -246,3 +246,76 @@ function dmgCalc() {
     document.getElementById("dmgResult").innerHTML = dmgDone;
     return dmgDone;
 }
+
+$(document).ready(function(){
+    $.ajax({
+        url: "http://pokeapi.co/api/v2/type/1/",
+        type: "GET",
+        // contentType: "application/json",
+        success: function (data, error) {
+            gotTypeInfo(data);
+        },
+        error: function (data, error) {
+            console.log(data, error);
+        }
+    });
+});
+
+// var types = {};
+// function gotTypes(data) {
+//     console.log(data);
+//
+//     for (i in data.results) {
+//         $.ajax({
+//             url: data.results[i].url,
+//             type: "GET",
+//             // contentType: "application/json",
+//             success: function (data, error) {
+//                 gotTypeInfo(data);
+//             },
+//             error: function (data, error) {
+//                 console.log(data, error);
+//             }
+//         });
+//     }
+//
+//
+// }
+
+function gotTypeInfo(data) {
+    types[data.name] = {};
+
+    for (i in data.moves) {
+        $.ajax({
+            url: data.moves.url,
+            type: "GET",
+            // contentType: "application/json",
+            success: function (data, error) {
+                gotMoveInfo(data);
+            },
+            error: function (data, error) {
+                console.log(data, error);
+            }
+        });
+    }
+        setTimeout(function(){console.log(JSON.stringify(types))}, 60000);
+}
+
+function gotMoveInfo(data) {
+    types[data.type.name][data.name] = {
+        "effect_chance": data.effect_chance,
+        "id": data.id,
+        "pp": data.pp,
+        "effect_entries": data.effect_entries.effect,
+        "accuracy": data.accuracy,
+        "power": data.power,
+        "name": data.name,
+        "meta": data.meta,
+        "contest_type": data.contest_type.name,
+        "priority": data.priority,
+        "power": data.power,
+        "target": data.target.name,
+        "damage_class": data.damage_class.name,
+
+    };
+}
