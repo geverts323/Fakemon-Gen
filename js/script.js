@@ -302,7 +302,7 @@ function gotTypeInfo(data) {
 }
 
 function gotMoveInfo(data) {
-    type[data.type.name][data.name] = {
+    type[data.name][data.type.name] = {
         "effect_chance": data.effect_chance,
         "id": data.id,
         "pp": data.pp,
