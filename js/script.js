@@ -261,7 +261,7 @@ $(document).ready(function(){
     });
 });
 
-// var types = {};
+ var type = {};
 // function gotTypes(data) {
 //     console.log(data);
 //
