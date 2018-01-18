@@ -298,7 +298,7 @@ function gotTypeInfo(data) {
             }
         });
     }
-        setTimeout(function(){console.log(JSON.stringify(types));}, 60000);
+        setTimeout(function(){console.log(JSON.stringify(type));}, 30000);
 }
 
 function gotMoveInfo(data) {
