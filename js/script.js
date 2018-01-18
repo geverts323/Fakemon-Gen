@@ -249,7 +249,7 @@ function dmgCalc() {
 
 $(document).ready(function(){
     $.ajax({
-        url: "http://pokeapi.co/api/v2/type/1/",
+        url: "https://pokeapi.co/api/v2/type/1/",
         type: "GET",
         // contentType: "application/json",
         success: function (data, error) {
@@ -298,7 +298,7 @@ function gotTypeInfo(data) {
             }
         });
     }
-        setTimeout(function(){console.log(JSON.stringify(types))}, 60000);
+        setTimeout(function(){console.log(JSON.stringify(types));}, 60000);
 }
 
 function gotMoveInfo(data) {
