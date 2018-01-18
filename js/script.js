@@ -283,7 +283,7 @@ $(document).ready(function(){
 // }
 
 function gotTypeInfo(data) {
-    types[data.name] = {};
+    type[data.name] = {};
 
     for (i in data.moves) {
         $.ajax({
@@ -302,7 +302,7 @@ function gotTypeInfo(data) {
 }
 
 function gotMoveInfo(data) {
-    types[data.type.name][data.name] = {
+    type[data.type.name][data.name] = {
         "effect_chance": data.effect_chance,
         "id": data.id,
         "pp": data.pp,
