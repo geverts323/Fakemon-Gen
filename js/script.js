@@ -209,7 +209,7 @@ function stab() {
 //determines how effective the move is on defending mon
 function moveEff() {
     var effDmg;
-    var moveTyping = types[document.getElementById("moveType").value];
+    var moveTyping = atkTypes[document.getElementById("moveType").value];
     var defType1 = moveTyping[document.getElementById("defTypeOne").value];
     var defType2 = moveTyping[document.getElementById("defTypeTwo").value];
     effDmg = Number(defType1 * defType2);
@@ -232,11 +232,11 @@ function dmgCalc() {
 
 
     if (dmgType == "phys") {
-        dmgDone = Number(diceRoll + ((atkDmg) - (defDmg)) * stab() * moveEff());
+        dmgDone = Math.floor(Number((diceRoll + ((atkDmg) - (defDmg))) * stab() * moveEff()));
 
     }
     else if (dmgType == "spec") {
-        dmgDone = Number(diceRoll + ((spAtkDmg) - (spDefDmg)) * stab() * moveEff());
+        dmgDone = Math.floor(Number((diceRoll + ((spAtkDmg) - (spDefDmg))) * stab() * moveEff()));
 
     }
     else {
@@ -247,6 +247,7 @@ function dmgCalc() {
     return dmgDone;
 }
 
+<<<<<<< HEAD
 $(document).ready(function(){
     $.ajax({
         url: "https://pokeapi.co/api/v2/type/1/",
@@ -264,23 +265,103 @@ $(document).ready(function(){
  var type = {};
 // function gotTypes(data) {
 //     console.log(data);
+=======
+function typeDefEff() {
+    var defDmgOne = $("#defDmg1").val();
+    var defDmgTwo = $("#defDmg2").val();
+    var dualTypes = {};
+    console.log(defDmgOne);
+    console.log(defDmgTwo);
+    for (i in defTypes[defDmgOne]) {
+            dualTypes[i] = defTypes[defDmgOne][i] * defTypes[defDmgTwo][i];
+    }
+    console.log(dualTypes);
+    typeDefPrint(dualTypes, defDmgOne, defDmgTwo);
+}
+
+function typeDefPrint(dualTypes, typeOne, typeTwo) {
+    var totalDefDmg;
+    var createTypeChart =  "<div class='typesTable'>" + "<h3>" + typeOne + "/" +typeTwo + "</h3>" +
+        "<table class='defTypeTable'>" + "<tbody>" +
+            "<tr>" + "<th>" + "Normal:" + "</th>" + "<td>" + "x" + dualTypes['Normal'] + "</td>" + "</tr>" +
+            "<tr>" + "<th>" + "Fighting:" + "</th>" + "<td>" + "x" + dualTypes['Fighting'] + "</td>" + "</tr>" +
+            "<tr>" + "<th>" + "Flying:" + "</th>" + "<td>" + "x" + dualTypes['Flying'] + "</td>" + "</tr>" +
+            "<tr>" + "<th>" + "Poison:" + "</th>" + "<td>" + "x" + dualTypes['Poison'] + "</td>" + "</tr>" +
+            "<tr>" + "<th>" + "Ground:" + "</th>" + "<td>" + "x" + dualTypes['Ground'] + "</td>" + "</tr>" +
+            "<tr>" + "<th>" + "Rock:" + "</th>" + "<td>" + "x" + dualTypes['Rock'] + "</td>" + "</tr>" +
+            "<tr>" + "<th>" + "Bug:" + "</th>" + "<td>" + "x" + dualTypes['Bug'] + "</td>" + "</tr>" +
+            "<tr>" + "<th>" + "Ghost:" + "</th>" + "<td>" + "x" + dualTypes['Ghost'] + "</td>" + "</tr>" +
+            "<tr>" + "<th>" + "Steel:" + "</th>" + "<td>" + "x" + dualTypes['Steel'] + "</td>" + "</tr>" +
+            "<tr>" + "<th>" + "Fire:" + "</th>" + "<td>" + "x" + dualTypes['Fire'] + "</td>" + "</tr>" +
+            "<tr>" + "<th>" + "Water:" + "</th>" + "<td>" + "x" + dualTypes['Water'] + "</td>" + "</tr>" +
+            "<tr>" + "<th>" + "Grass:" + "</th>" + "<td>" + "x" + dualTypes['Grass'] + "</td>" + "</tr>" +
+            "<tr>" + "<th>" + "Electric:" + "</th>" + "<td>" + "x" + dualTypes['Electric'] + "</td>" + "</tr>" +
+            "<tr>" + "<th>" + "Psychic:" + "</th>" + "<td>" + "x" + dualTypes['Psychic'] + "</td>" + "</tr>" +
+            "<tr>" + "<th>" + "Ice:" + "</th>" + "<td>" + "x" + dualTypes['Ice'] + "</td>" + "</tr>" +
+            "<tr>" + "<th>" + "Dragon:" + "</th>" + "<td>" + "x" + dualTypes['Dragon'] + "</td>" + "</tr>" +
+            "<tr>" + "<th>" + "Dark:" + "</th>" + "<td>" + "x" + dualTypes['Dark'] + "</td>" + "</tr>" +
+            "<tr>" + "<th>" + "Fairy:" + "</th>" + "<td>" + "x" + dualTypes['Fairy'] + "</td>" + "</tr>" +
+        "</tbody>" +"<tfoot>" +
+            // "<th>" + "Total: " + "</th>" + "<td>" + "NotYet" + "</td>"
+        "</tfoot>" + "</table>" +"</div>"
+
+    var divStart = document.getElementById("defDmgSect");
+    divStart.insertAdjacentHTML("beforeend", createTypeChart);
+}
+// $(document).ready(function(){
+//     $.ajax({
+//         url: "https://pokeapi.co/api/v2/type/1/",
+//         type: "GET",
+//         // contentType: "application/json",
+//         success: function (data, error) {
+//             gotTypeInfo(data);
+//         },
+//         error: function (data, error) {
+//             console.log(data, error);
+//         }
+//     });
+// });
 //
-//     for (i in data.results) {
+//
+// function gotTypeInfo(data) {
+//     types[data.name] = {};
+>>>>>>> Surface-Book
+//
+//     for (i in data.moves) {
 //         $.ajax({
-//             url: data.results[i].url,
+//             url: data.moves.url,
 //             type: "GET",
 //             // contentType: "application/json",
 //             success: function (data, error) {
-//                 gotTypeInfo(data);
+//                 gotMoveInfo(data);
 //             },
 //             error: function (data, error) {
 //                 console.log(data, error);
 //             }
 //         });
 //     }
-//
-//
+//         setTimeout(function(){console.log(JSON.stringify(types));}, 60000);
 // }
+//
+// function gotMoveInfo(data) {
+//     types[data.type.name][data.name] = {
+//         "effect_chance": data.effect_chance,
+//         "id": data.id,
+//         "pp": data.pp,
+//         "effect_entries": data.effect_entries.effect,
+//         "accuracy": data.accuracy,
+//         "power": data.power,
+//         "name": data.name,
+//         "meta": data.meta,
+//         "contest_type": data.contest_type.name,
+//         "priority": data.priority,
+//         "power": data.power,
+//         "target": data.target.name,
+//         "damage_class": data.damage_class.name,
+//
+//     };
+// }
+<<<<<<< HEAD
 
 function gotTypeInfo(data) {
     type[data.name] = {};
@@ -319,3 +400,5 @@ function gotMoveInfo(data) {
 
     };
 }
+=======
+>>>>>>> Surface-Book
