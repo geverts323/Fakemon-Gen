@@ -67,6 +67,18 @@ footer {
     width: 150px;
 }
 
+.defTypeTable {
+    border: 3px ridge cornflowerblue;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+.returnDefDmg {
+    flex-flow: row wrap;
+    display: flex;
+    flex-direction: row;
+}
+
 .pokeTable td {
     text-align: center;
 }
@@ -169,4 +181,15 @@ button {
     width:50%;
     height:100%;
     flex:1
+}
+.leftSectionDmg2 {
+    width:20%;
+    height:100%;
+    flex:1;
+}
+
+.rightSectionDmg2 {
+    width:80%;
+    height:100%;
+    flex:1;
 }

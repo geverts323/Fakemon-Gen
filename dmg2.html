@@ -16,7 +16,7 @@
             <div class="toolItem">
                 <a href="index.html">Pokemon Generator</a>
             </div>
-<!--             <div class="toolItem">
+    <!--    <div class="toolItem">
                 <a href="https://www.google.com">Character Builder</a>
             </div>
             <div class="toolItem">
@@ -40,129 +40,142 @@
         </div>
     </div>
     <div class="mainSection">
-        <div class="inputDefDmg">
-        <h3>Type 1:</h3>
-        <div class="typeInp">
-            <select id="defDmg1">
-                    <option value="null">
-                        -- Move Type --
-                    </option>
-                    <option value="Normal">
-                        Normal
-                    </option>
-                    <option value="Fighting">
-                        Fighting
-                    </option>
-                    <option value="Flying">
-                        Flying
-                    </option>
-                    <option value="Poison">
-                        Poison
-                    </option>
-                    <option value="Ground">
-                        Ground
-                    </option>
-                    <option value="Rock">
-                        Rock
-                    </option>
-                    <option value="Bug">
-                        Bug
-                    </option>
-                    <option value="Ghost">
-                        Ghost
-                    </option>
-                    <option value="Steel">
-                        Steel
-                    </option>
-                    <option value="Fire">
-                        Fire
-                    </option>
-                    <option value="Water">
-                        Water
-                    </option>
-                    <option value="Grass">
-                        Grass
-                    </option>
-                    <option value="Electric">
-                        Electric
-                    </option>
-                    <option value="Psychic">
-                        Psychic
-                    </option>
-                    <option value="Ice">
-                        Ice
-                    </option>
-                    <option value="Dragon">
-                        Dragon
-                    </option>
-                    <option value="Dark">
-                        Dark
-                    </option>
-                    <option value="Fairy">
-                        Fairy
-                    </option>
-                </select>
+        <div class="leftSectionDmg2">
+            <div class="inputDefDmg">
+                <h3>Type(s):</h3>
+                <div class="typeInp">
+                    <select id="defDmg1">
+                            <option value="null">
+                                -- Move Type --
+                            </option>
+                            <option value="Normal">
+                                Normal
+                            </option>
+                            <option value="Fighting">
+                                Fighting
+                            </option>
+                            <option value="Flying">
+                                Flying
+                            </option>
+                            <option value="Poison">
+                                Poison
+                            </option>
+                            <option value="Ground">
+                                Ground
+                            </option>
+                            <option value="Rock">
+                                Rock
+                            </option>
+                            <option value="Bug">
+                                Bug
+                            </option>
+                            <option value="Ghost">
+                                Ghost
+                            </option>
+                            <option value="Steel">
+                                Steel
+                            </option>
+                            <option value="Fire">
+                                Fire
+                            </option>
+                            <option value="Water">
+                                Water
+                            </option>
+                            <option value="Grass">
+                                Grass
+                            </option>
+                            <option value="Electric">
+                                Electric
+                            </option>
+                            <option value="Psychic">
+                                Psychic
+                            </option>
+                            <option value="Ice">
+                                Ice
+                            </option>
+                            <option value="Dragon">
+                                Dragon
+                            </option>
+                            <option value="Dark">
+                                Dark
+                            </option>
+                            <option value="Fairy">
+                                Fairy
+                            </option>
+                        </select>
+                </div>
+                <div class="typeInp">
+                    <select id="defDmg2">
+                        <option value="null">
+                            -- Move Type --
+                        </option>
+                        <option value="Normal">
+                            Normal
+                        </option>
+                        <option value="Fighting">
+                            Fighting
+                        </option>
+                        <option value="Flying">
+                            Flying
+                        </option>
+                        <option value="Poison">
+                            Poison
+                        </option>
+                        <option value="Ground">
+                            Ground
+                        </option>
+                        <option value="Rock">
+                            Rock
+                        </option>
+                        <option value="Bug">
+                            Bug
+                        </option>
+                        <option value="Ghost">
+                            Ghost
+                        </option>
+                        <option value="Steel">
+                            Steel
+                        </option>
+                        <option value="Fire">
+                            Fire
+                        </option>
+                        <option value="Water">
+                            Water
+                        </option>
+                        <option value="Grass">
+                            Grass
+                        </option>
+                        <option value="Electric">
+                            Electric
+                        </option>
+                        <option value="Psychic">
+                            Psychic
+                        </option>
+                        <option value="Ice">
+                            Ice
+                        </option>
+                        <option value="Dragon">
+                            Dragon
+                        </option>
+                        <option value="Dark">
+                            Dark
+                        </option>
+                        <option value="Fairy">
+                            Fairy
+                        </option>
+                    </select>
+                </div>
+                <br />
+                <button class="button" onclick="typeDefEff()">Calculate!</button>
+            </div>
         </div>
-        <div class="typeInp">
-            <select id="defDmg2">
-                    <option value="null">
-                        -- Move Type --
-                    </option>
-                    <option value="Normal">
-                        Normal
-                    </option>
-                    <option value="Fighting">
-                        Fighting
-                    </option>
-                    <option value="Flying">
-                        Flying
-                    </option>
-                    <option value="Poison">
-                        Poison
-                    </option>
-                    <option value="Ground">
-                        Ground
-                    </option>
-                    <option value="Rock">
-                        Rock
-                    </option>
-                    <option value="Bug">
-                        Bug
-                    </option>
-                    <option value="Ghost">
-                        Ghost
-                    </option>
-                    <option value="Steel">
-                        Steel
-                    </option>
-                    <option value="Fire">
-                        Fire
-                    </option>
-                    <option value="Water">
-                        Water
-                    </option>
-                    <option value="Grass">
-                        Grass
-                    </option>
-                    <option value="Electric">
-                        Electric
-                    </option>
-                    <option value="Psychic">
-                        Psychic
-                    </option>
-                    <option value="Ice">
-                        Ice
-                    </option>
-                    <option value="Dragon">
-                        Dragon
-                    </option>
-                    <option value="Dark">
-                        Dark
-                    </option>
-                    <option value="Fairy">
-                        Fairy
-                    </option>
-                </select>
-    </div>
+        <div class="rightSectionDmg2">
+            <div class="returnDefDmg" id="defDmgSect">
+                <!-- here is where the typeDefTable will be produced  -->
+            </div>
+        </div>
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/data.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

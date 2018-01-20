@@ -851,7 +851,7 @@ var defTypes = {
         "Fairy": 1,
         "null": 1
     },
-    "Ice" {
+    "Ice": {
         "Normal": 1,
         "Fighting": 2,
         "Flying": 1,
