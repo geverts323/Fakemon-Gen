@@ -248,18 +248,18 @@ function dmgCalc() {
 }
 
 // $(document).ready(function() {
-    $.ajax({
-        url: "https://pokeapi.co/api/v2/type/1/",
-        type: "GET",
-        // contentType: "application/json",
-        success: function (data, error) {
-            gotTypeInfo(data);
-        },
-        error: function (data, error) {
-            console.log(data, error);
-        }
-    });
-});
+//     $.ajax({
+//         url: "https://pokeapi.co/api/v2/type/1/",
+//         type: "GET",
+//         // contentType: "application/json",
+//         success: function (data, error) {
+//             gotTypeInfo(data);
+//         },
+//         error: function (data, error) {
+//             console.log(data, error);
+//         }
+//     });
+// });
 
 var type = {};
 // function gotTypes(data) {
