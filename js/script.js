@@ -261,12 +261,10 @@ function dmgCalc() {
 //     });
 // });
 
-<<<<<<< HEAD
-=======
 var type = {};
 // function gotTypes(data) {
 // console.log(data);
->>>>>>> parent of 09277c0... tidied up printed table
+
 function typeDefEff() {
     var defDmgOne = $("#defDmg1").val();
     var defDmgTwo = $("#defDmg2").val();
@@ -310,7 +308,7 @@ function typeDefPrint(dualTypes, typeOne, typeTwo) {
     divStart.insertAdjacentHTML("beforeend", createTypeChart);
 }
 
-<<<<<<< HEAD
+
 //initially called function for encounter generation
 function encounterGenCall() {
     var land = $("#landscape").val();
@@ -449,7 +447,7 @@ function randomBerry() {
 //
 //     };
 // }
-=======
+
 function gotTypeInfo(data) {
     type[data.name] = {};
 
@@ -487,4 +485,3 @@ function gotMoveInfo(data) {
 
     };
 }
->>>>>>> parent of 09277c0... tidied up printed table
