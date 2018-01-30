@@ -2,7 +2,7 @@ body {
     font-family: sans-serif;
     margin-left: 10px;
     background-image:url(../media/pokeball_background.jpg);
-    background-size: cover;
+    background-size: cover repeat;
 }
 
 h1 {
@@ -204,4 +204,9 @@ button {
     width:80%;
     height:100%;
     flex:1;
+}
+
+
+.hauntInp {
+    display: inline-block;
 }

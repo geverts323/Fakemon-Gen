@@ -248,8 +248,6 @@ function dmgCalc() {
 }
 
 
-
-
 function typeDefEff() {
     var defDmgOne = $("#defDmg1").val();
     var defDmgTwo = $("#defDmg2").val();
@@ -293,7 +291,90 @@ function typeDefPrint(dualTypes, typeOne, typeTwo) {
     divStart.insertAdjacentHTML("beforeend", createTypeChart);
 }
 
+//initially called function for encounter generation
+function encounterGenCall() {
+    var land = $("#landscape").val();
+    var numPlayers = $("#numberPlayers").val();
+    var haunt = $("#haunted").val();
+    var lvlRange = $("#levelRange").val();
+    console.log(land);
+    console.log(numPlayers);
+    console.log(haunt);
+    console.log(lvlRange);
+    calcEncounterGen(land, numPlayers, haunt, lvlRange);
+}
 
+//need poke/move data before can complete this
+function calcEncounterGen(land, numMon, haunt, range) {
+
+}
+
+var itemType;
+
+function showMonDrop() {
+        document.getElementById('monDrop').style.display = 'block';
+        document.getElementById('ballFind').style.display = 'none';
+        document.getElementById('itemFind').style.display = 'none';
+        document.getElementById('randItem').style.display = 'none';
+        document.getElementById('randBerry').style.display = 'none';
+        console.log('Mon Drop');
+        itemType = "mon_drop";
+        console.log(itemType);
+
+}
+
+function showBallDrop() {
+        document.getElementById('monDrop').style.display = 'none';
+        document.getElementById('ballFind').style.display = 'block';
+        document.getElementById('itemFind').style.display = 'none';
+        document.getElementById('randItem').style.display = 'none';
+        document.getElementById('randBerry').style.display = 'none';
+        console.log('Ball Drop');
+        itemType = "ball_find";
+        console.log(itemType);
+
+}
+
+function showItemFind() {
+        document.getElementById('monDrop').style.display = 'none';
+        document.getElementById('ballFind').style.display = 'none';
+        document.getElementById('itemFind').style.display = 'block';
+        document.getElementById('randItem').style.display = 'none';
+        document.getElementById('randBerry').style.display = 'none';
+        console.log('Item Finder Drop');
+        itemType = "item_find";
+        console.log(itemType);
+}
+
+function showRandDrop() {
+        document.getElementById('monDrop').style.display = 'none';
+        document.getElementById('ballFind').style.display = 'none';
+        document.getElementById('itemFind').style.display = 'none';
+        document.getElementById('randItem').style.display = 'block';
+        document.getElementById('randBerry').style.display = 'none';
+        console.log('Rand Drop');
+        itemType = "random_item";
+        console.log(itemType);
+}
+
+function showBerryDrop() {
+        document.getElementById('monDrop').style.display = 'none';
+        document.getElementById('ballFind').style.display = 'none';
+        document.getElementById('itemFind').style.display = 'none';
+        document.getElementById('randItem').style.display = 'none';
+        document.getElementById('randBerry').style.display = 'block';
+        console.log('Berry Drop');
+        itemType = "berry_find";
+        console.log(itemType);
+}
+
+function randomItem() {
+    console.log('Random Item');
+}
+
+function randomBerry() {
+    console.log('Random Berry');
+}
 // var type = {};
 // function gotTypes(data) {
 // console.log(data);
