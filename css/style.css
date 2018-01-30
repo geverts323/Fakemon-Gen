@@ -71,17 +71,6 @@ footer {
     border: 3px ridge cornflowerblue;
     background-color: aliceblue;
     border-radius: 20px;
-    padding: 3px;
-    margin: 10px;
-    text-align: center;
-}
-
-.typesTable {
-    padding: 10px;
-}
-
-.typesTable > h3 {
-    text-align:center;
 }
 
 .returnDefDmg {
@@ -193,7 +182,6 @@ button {
     height:100%;
     flex:1
 }
-
 .leftSectionDmg2 {
     width:20%;
     height:100%;

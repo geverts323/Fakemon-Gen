@@ -247,7 +247,26 @@ function dmgCalc() {
     return dmgDone;
 }
 
+// $(document).ready(function() {
+//     $.ajax({
+//         url: "https://pokeapi.co/api/v2/type/1/",
+//         type: "GET",
+//         // contentType: "application/json",
+//         success: function (data, error) {
+//             gotTypeInfo(data);
+//         },
+//         error: function (data, error) {
+//             console.log(data, error);
+//         }
+//     });
+// });
 
+<<<<<<< HEAD
+=======
+var type = {};
+// function gotTypes(data) {
+// console.log(data);
+>>>>>>> parent of 09277c0... tidied up printed table
 function typeDefEff() {
     var defDmgOne = $("#defDmg1").val();
     var defDmgTwo = $("#defDmg2").val();
@@ -291,6 +310,7 @@ function typeDefPrint(dualTypes, typeOne, typeTwo) {
     divStart.insertAdjacentHTML("beforeend", createTypeChart);
 }
 
+<<<<<<< HEAD
 //initially called function for encounter generation
 function encounterGenCall() {
     var land = $("#landscape").val();
@@ -429,3 +449,42 @@ function randomBerry() {
 //
 //     };
 // }
+=======
+function gotTypeInfo(data) {
+    type[data.name] = {};
+
+    for (i in data.moves) {
+        $.ajax({
+            url: data.moves.url,
+            type: "GET",
+            // contentType: "application/json",
+            success: function (data, error) {
+                gotMoveInfo(data);
+            },
+            error: function (data, error) {
+                console.log(data, error);
+            }
+        });
+    }
+        setTimeout(function(){console.log(JSON.stringify(type));}, 30000);
+}
+
+function gotMoveInfo(data) {
+    type[data.name][data.type.name] = {
+        "effect_chance": data.effect_chance,
+        "id": data.id,
+        "pp": data.pp,
+        "effect_entries": data.effect_entries.effect,
+        "accuracy": data.accuracy,
+        "power": data.power,
+        "name": data.name,
+        "meta": data.meta,
+        "contest_type": data.contest_type.name,
+        "priority": data.priority,
+        "power": data.power,
+        "target": data.target.name,
+        "damage_class": data.damage_class.name,
+
+    };
+}
+>>>>>>> parent of 09277c0... tidied up printed table
