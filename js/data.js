@@ -937,7 +937,6 @@ var defTypes = {
     }
 }
 
-
 //stored data for berries
 var berries = {
     "Cheri Berry": {
@@ -998,2309 +997,3688 @@ var berries = {
         "growth_time": 3,
         "id": 1,
         "size": 20
+    }}
+
+    "Chesto Berry": {
+        "natural_gift_power": 60,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/11/",
+            "name": "water"
+        },
+        "name": "chesto",
+        "max_harvest": 5,
+        "soil_dryness": 15,
+        "smoothness": 25,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/127/",
+            "name": "chesto-berry"
+        },
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/5/",
+            "name": "super-hard"
+        },
+        "growth_time": 3,
+        "id": 2,
+        "size": 80
     }
-}
-"Chesto Berry": {
-    "natural_gift_power": 60,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 10
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/11/",
-        "name": "water"
-    },
-    "name": "chesto",
-    "max_harvest": 5,
-    "soil_dryness": 15,
-    "smoothness": 25,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/127/",
-        "name": "chesto-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/5/",
-        "name": "super-hard"
-    },
-    "growth_time": 3,
-    "id": 2,
-    "size": 80
-}
 
-"Pecha Berry": {
-    "natural_gift_power": 60,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Pecha Berry": {
+        "natural_gift_power": 60,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/13/",
+            "name": "electric"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "pecha",
+        "max_harvest": 5,
+        "soil_dryness": 15,
+        "smoothness": 25,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/128/",
+            "name": "pecha-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 10
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/1/",
+            "name": "very-soft"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/13/",
-        "name": "electric"
-    },
-    "name": "pecha",
-    "max_harvest": 5,
-    "soil_dryness": 15,
-    "smoothness": 25,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/128/",
-        "name": "pecha-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/1/",
-        "name": "very-soft"
-    },
-    "growth_time": 3,
-    "id": 3,
-    "size": 40
-}
+        "growth_time": 3,
+        "id": 3,
+        "size": 40
+    }
 
-"Rawst Berry": {
-    "natural_gift_power": 60,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Rawst Berry": {
+        "natural_gift_power": 60,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/12/",
+            "name": "grass"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "rawst",
+        "max_harvest": 5,
+        "soil_dryness": 15,
+        "smoothness": 25,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/129/",
+            "name": "rawst-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
+            "name": "hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 10
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/12/",
-        "name": "grass"
-    },
-    "name": "rawst",
-    "max_harvest": 5,
-    "soil_dryness": 15,
-    "smoothness": 25,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/129/",
-        "name": "rawst-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
-        "name": "hard"
-    },
-    "growth_time": 3,
-    "id": 4,
-    "size": 32
-}
+        "growth_time": 3,
+        "id": 4,
+        "size": 32
+    }
 
-"Aspear Berry": {
-    "natural_gift_power": 60,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Aspear Berry": {
+        "natural_gift_power": 60,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 10
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/15/",
+            "name": "ice"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "aspear",
+        "max_harvest": 5,
+        "soil_dryness": 15,
+        "smoothness": 25,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/130/",
+            "name": "aspear-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/5/",
+            "name": "super-hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 10
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/15/",
-        "name": "ice"
-    },
-    "name": "aspear",
-    "max_harvest": 5,
-    "soil_dryness": 15,
-    "smoothness": 25,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/130/",
-        "name": "aspear-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/5/",
-        "name": "super-hard"
-    },
-    "growth_time": 3,
-    "id": 5,
-    "size": 50
-}
+        "growth_time": 3,
+        "id": 5,
+        "size": 50
+    }
 
-"Leppa Berry": {
-    "natural_gift_power": 60,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Leppa Berry": {
+        "natural_gift_power": 60,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 10
             },
-            "potency": 10
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 10
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/2/",
+            "name": "fighting"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "leppa",
+        "max_harvest": 5,
+        "soil_dryness": 15,
+        "smoothness": 20,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/131/",
+            "name": "leppa-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 10
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/4/",
+            "name": "very-hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 10
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 10
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/2/",
-        "name": "fighting"
-    },
-    "name": "leppa",
-    "max_harvest": 5,
-    "soil_dryness": 15,
-    "smoothness": 20,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/131/",
-        "name": "leppa-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/4/",
-        "name": "very-hard"
-    },
-    "growth_time": 4,
-    "id": 6,
-    "size": 28
-}
+        "growth_time": 4,
+        "id": 6,
+        "size": 28
+    }
 
-"Oran Berry": {
-    "natural_gift_power": 60,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Oran Berry": {
+        "natural_gift_power": 60,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 10
             },
-            "potency": 10
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 10
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/4/",
+            "name": "poison"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 10
+        "name": "oran",
+        "max_harvest": 5,
+        "soil_dryness": 15,
+        "smoothness": 20,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/132/",
+            "name": "oran-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/5/",
+            "name": "super-hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 10
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 10
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/4/",
-        "name": "poison"
-    },
-    "name": "oran",
-    "max_harvest": 5,
-    "soil_dryness": 15,
-    "smoothness": 20,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/132/",
-        "name": "oran-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/5/",
-        "name": "super-hard"
-    },
-    "growth_time": 4,
-    "id": 7,
-    "size": 35
-}
+        "growth_time": 4,
+        "id": 7,
+        "size": 35
+    }
 
-"Persim Berry": {
-    "natural_gift_power": 60,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Persim Berry": {
+        "natural_gift_power": 60,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 10
             },
-            "potency": 10
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 10
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/5/",
+            "name": "ground"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 10
+        "name": "persim",
+        "max_harvest": 5,
+        "soil_dryness": 15,
+        "smoothness": 20,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/133/",
+            "name": "persim-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 10
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
+            "name": "hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 10
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/5/",
-        "name": "ground"
-    },
-    "name": "persim",
-    "max_harvest": 5,
-    "soil_dryness": 15,
-    "smoothness": 20,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/133/",
-        "name": "persim-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
-        "name": "hard"
-    },
-    "growth_time": 4,
-    "id": 8,
-    "size": 47
-}
+        "growth_time": 4,
+        "id": 8,
+        "size": 47
+    }
 
-"Lum Berry": {
-    "natural_gift_power": 60,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Lum Berry": {
+        "natural_gift_power": 60,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 10
             },
-            "potency": 10
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/3/",
+            "name": "flying"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 10
+        "name": "lum",
+        "max_harvest": 5,
+        "soil_dryness": 8,
+        "smoothness": 20,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/134/",
+            "name": "lum-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 10
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/5/",
+            "name": "super-hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 10
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/3/",
-        "name": "flying"
-    },
-    "name": "lum",
-    "max_harvest": 5,
-    "soil_dryness": 8,
-    "smoothness": 20,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/134/",
-        "name": "lum-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/5/",
-        "name": "super-hard"
-    },
-    "growth_time": 12,
-    "id": 9,
-    "size": 34
-}
+        "growth_time": 12,
+        "id": 9,
+        "size": 34
+    }
 
-"Sitrus Berry": {
-    "natural_gift_power": 60,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Sitrus Berry": {
+        "natural_gift_power": 60,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 10
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/14/",
+            "name": "psychic"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 10
+        "name": "sitrus",
+        "max_harvest": 5,
+        "soil_dryness": 7,
+        "smoothness": 20,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/135/",
+            "name": "sitrus-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 10
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/4/",
+            "name": "very-hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 10
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 10
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/14/",
-        "name": "psychic"
-    },
-    "name": "sitrus",
-    "max_harvest": 5,
-    "soil_dryness": 7,
-    "smoothness": 20,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/135/",
-        "name": "sitrus-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/4/",
-        "name": "very-hard"
-    },
-    "growth_time": 8,
-    "id": 10,
-    "size": 95
-}
+        "growth_time": 8,
+        "id": 10,
+        "size": 95
+    }
 
-"Figy Berry": {
-    "natural_gift_power": 60,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Figy Berry": {
+        "natural_gift_power": 60,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 15
             },
-            "potency": 15
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/7/",
+            "name": "bug"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "figy",
+        "max_harvest": 5,
+        "soil_dryness": 10,
+        "smoothness": 25,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/136/",
+            "name": "figy-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/2/",
+            "name": "soft"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/7/",
-        "name": "bug"
-    },
-    "name": "figy",
-    "max_harvest": 5,
-    "soil_dryness": 10,
-    "smoothness": 25,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/136/",
-        "name": "figy-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/2/",
-        "name": "soft"
-    },
-    "growth_time": 5,
-    "id": 11,
-    "size": 100
-}
+        "growth_time": 5,
+        "id": 11,
+        "size": 100
+    }
 
-"Wiki Berry": {
-    "natural_gift_power": 60,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Wiki Berry": {
+        "natural_gift_power": 60,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 15
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/6/",
+            "name": "rock"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 15
+        "name": "wiki",
+        "max_harvest": 5,
+        "soil_dryness": 10,
+        "smoothness": 25,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/137/",
+            "name": "wiki-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
+            "name": "hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/6/",
-        "name": "rock"
-    },
-    "name": "wiki",
-    "max_harvest": 5,
-    "soil_dryness": 10,
-    "smoothness": 25,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/137/",
-        "name": "wiki-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
-        "name": "hard"
-    },
-    "growth_time": 5,
-    "id": 12,
-    "size": 115
-}
+        "growth_time": 5,
+        "id": 12,
+        "size": 115
+    }
 
-"Mago Berry": {
-    "natural_gift_power": 60,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Mago Berry": {
+        "natural_gift_power": 60,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 15
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/8/",
+            "name": "ghost"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "mago",
+        "max_harvest": 5,
+        "soil_dryness": 10,
+        "smoothness": 25,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/138/",
+            "name": "mago-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 15
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
+            "name": "hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/8/",
-        "name": "ghost"
-    },
-    "name": "mago",
-    "max_harvest": 5,
-    "soil_dryness": 10,
-    "smoothness": 25,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/138/",
-        "name": "mago-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
-        "name": "hard"
-    },
-    "growth_time": 5,
-    "id": 13,
-    "size": 126
-}
+        "growth_time": 5,
+        "id": 13,
+        "size": 126
+    }
 
-"Aguav Berry": {
-    "natural_gift_power": 60,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Aguav Berry": {
+        "natural_gift_power": 60,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 15
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/16/",
+            "name": "dragon"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "aguav",
+        "max_harvest": 5,
+        "soil_dryness": 10,
+        "smoothness": 25,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/139/",
+            "name": "aguav-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/5/",
+            "name": "super-hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 15
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/16/",
-        "name": "dragon"
-    },
-    "name": "aguav",
-    "max_harvest": 5,
-    "soil_dryness": 10,
-    "smoothness": 25,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/139/",
-        "name": "aguav-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/5/",
-        "name": "super-hard"
-    },
-    "growth_time": 5,
-    "id": 14,
-    "size": 64
-}
+        "growth_time": 5,
+        "id": 14,
+        "size": 64
+    }
 
-"Iapapa Berry": {
-    "natural_gift_power": 60,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Iapapa Berry": {
+        "natural_gift_power": 60,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 15
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/17/",
+            "name": "dark"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "iapapa",
+        "max_harvest": 5,
+        "soil_dryness": 10,
+        "smoothness": 25,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/140/",
+            "name": "iapapa-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/2/",
+            "name": "soft"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 15
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/17/",
-        "name": "dark"
-    },
-    "name": "iapapa",
-    "max_harvest": 5,
-    "soil_dryness": 10,
-    "smoothness": 25,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/140/",
-        "name": "iapapa-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/2/",
-        "name": "soft"
-    },
-    "growth_time": 5,
-    "id": 15,
-    "size": 223
-}
+        "growth_time": 5,
+        "id": 15,
+        "size": 223
+    }
 
-"Razz Berry": {
-    "natural_gift_power": 60,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Razz Berry": {
+        "natural_gift_power": 60,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 10
             },
-            "potency": 10
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/9/",
+            "name": "steel"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 10
+        "name": "razz",
+        "max_harvest": 10,
+        "soil_dryness": 35,
+        "smoothness": 20,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/141/",
+            "name": "razz-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/4/",
+            "name": "very-hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/9/",
-        "name": "steel"
-    },
-    "name": "razz",
-    "max_harvest": 10,
-    "soil_dryness": 35,
-    "smoothness": 20,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/141/",
-        "name": "razz-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/4/",
-        "name": "very-hard"
-    },
-    "growth_time": 2,
-    "id": 16,
-    "size": 120
-}
+        "growth_time": 2,
+        "id": 16,
+        "size": 120
+    }
 
-"Bluk Berry": {
-    "natural_gift_power": 70,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Bluk Berry": {
+        "natural_gift_power": 70,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/10/",
+            "name": "fire"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 10
+        "name": "bluk",
+        "max_harvest": 10,
+        "soil_dryness": 35,
+        "smoothness": 20,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/142/",
+            "name": "bluk-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 10
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/2/",
+            "name": "soft"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/10/",
-        "name": "fire"
-    },
-    "name": "bluk",
-    "max_harvest": 10,
-    "soil_dryness": 35,
-    "smoothness": 20,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/142/",
-        "name": "bluk-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/2/",
-        "name": "soft"
-    },
-    "growth_time": 2,
-    "id": 17,
-    "size": 108
-}
+        "growth_time": 2,
+        "id": 17,
+        "size": 108
+    }
 
-"Nanab Berry": {
-    "natural_gift_power": 70,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Nanab Berry": {
+        "natural_gift_power": 70,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/11/",
+            "name": "water"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "nanab",
+        "max_harvest": 10,
+        "soil_dryness": 35,
+        "smoothness": 20,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/143/",
+            "name": "nanab-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 10
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/4/",
+            "name": "very-hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 10
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/11/",
-        "name": "water"
-    },
-    "name": "nanab",
-    "max_harvest": 10,
-    "soil_dryness": 35,
-    "smoothness": 20,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/143/",
-        "name": "nanab-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/4/",
-        "name": "very-hard"
-    },
-    "growth_time": 2,
-    "id": 18,
-    "size": 77
-}
+        "growth_time": 2,
+        "id": 18,
+        "size": 77
+    }
 
-"Wepear Berry": {
-    "natural_gift_power": 70,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Wepear Berry": {
+        "natural_gift_power": 70,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 10
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/13/",
+            "name": "electric"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "wepear",
+        "max_harvest": 10,
+        "soil_dryness": 35,
+        "smoothness": 20,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/144/",
+            "name": "wepear-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/5/",
+            "name": "super-hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 10
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 10
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/13/",
-        "name": "electric"
-    },
-    "name": "wepear",
-    "max_harvest": 10,
-    "soil_dryness": 35,
-    "smoothness": 20,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/144/",
-        "name": "wepear-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/5/",
-        "name": "super-hard"
-    },
-    "growth_time": 2,
-    "id": 19,
-    "size": 74
-}
+        "growth_time": 2,
+        "id": 19,
+        "size": 74
+    }
 
-"Pinap Berry": {
-    "natural_gift_power": 70,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Pinap Berry": {
+        "natural_gift_power": 70,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 10
             },
-            "potency": 10
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 10
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/12/",
+            "name": "grass"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "pinap",
+        "max_harvest": 10,
+        "soil_dryness": 35,
+        "smoothness": 20,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/145/",
+            "name": "pinap-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
+            "name": "hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 10
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/12/",
-        "name": "grass"
-    },
-    "name": "pinap",
-    "max_harvest": 10,
-    "soil_dryness": 35,
-    "smoothness": 20,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/145/",
-        "name": "pinap-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
-        "name": "hard"
-    },
-    "growth_time": 2,
-    "id": 20,
-    "size": 80
-}
+        "growth_time": 2,
+        "id": 20,
+        "size": 80
+    }
 
-"Pomeg Berry": {
-    "natural_gift_power": 70,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Pomeg Berry": {
+        "natural_gift_power": 70,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 10
             },
-            "potency": 10
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/15/",
+            "name": "ice"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "pomeg",
+        "max_harvest": 5,
+        "soil_dryness": 8,
+        "smoothness": 20,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/146/",
+            "name": "pomeg-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 10
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/4/",
+            "name": "very-hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 10
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/15/",
-        "name": "ice"
-    },
-    "name": "pomeg",
-    "max_harvest": 5,
-    "soil_dryness": 8,
-    "smoothness": 20,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/146/",
-        "name": "pomeg-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/4/",
-        "name": "very-hard"
-    },
-    "growth_time": 8,
-    "id": 21,
-    "size": 135
-}
+        "growth_time": 8,
+        "id": 21,
+        "size": 135
+    }
 
-"Kelpsy Berry": {
-    "natural_gift_power": 70,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Kelpsy Berry": {
+        "natural_gift_power": 70,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 10
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/2/",
+            "name": "fighting"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 10
+        "name": "kelpsy",
+        "max_harvest": 5,
+        "soil_dryness": 8,
+        "smoothness": 20,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/147/",
+            "name": "kelpsy-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
+            "name": "hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 10
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 10
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/2/",
-        "name": "fighting"
-    },
-    "name": "kelpsy",
-    "max_harvest": 5,
-    "soil_dryness": 8,
-    "smoothness": 20,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/147/",
-        "name": "kelpsy-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
-        "name": "hard"
-    },
-    "growth_time": 8,
-    "id": 22,
-    "size": 150
-}
+        "growth_time": 8,
+        "id": 22,
+        "size": 150
+    }
 
-"Qualot Berry": {
-    "natural_gift_power": 70,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Qualot Berry": {
+        "natural_gift_power": 70,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 10
             },
-            "potency": 10
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 10
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/4/",
+            "name": "poison"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "qualot",
+        "max_harvest": 5,
+        "soil_dryness": 8,
+        "smoothness": 20,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/148/",
+            "name": "qualot-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 10
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
+            "name": "hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 10
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/4/",
-        "name": "poison"
-    },
-    "name": "qualot",
-    "max_harvest": 5,
-    "soil_dryness": 8,
-    "smoothness": 20,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/148/",
-        "name": "qualot-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
-        "name": "hard"
-    },
-    "growth_time": 8,
-    "id": 23,
-    "size": 110
-}
+        "growth_time": 8,
+        "id": 23,
+        "size": 110
+    }
 
-"Hondew Berry": {
-    "natural_gift_power": 70,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Hondew Berry": {
+        "natural_gift_power": 70,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 10
             },
-            "potency": 10
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/5/",
+            "name": "ground"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 10
+        "name": "hondew",
+        "max_harvest": 5,
+        "soil_dryness": 8,
+        "smoothness": 20,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/149/",
+            "name": "hondew-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
+            "name": "hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 10
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/5/",
-        "name": "ground"
-    },
-    "name": "hondew",
-    "max_harvest": 5,
-    "soil_dryness": 8,
-    "smoothness": 20,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/149/",
-        "name": "hondew-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
-        "name": "hard"
-    },
-    "growth_time": 8,
-    "id": 24,
-    "size": 162
-}
+        "growth_time": 8,
+        "id": 24,
+        "size": 162
+    }
 
-"Grepa Berry": {
-    "natural_gift_power": 70,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Grepa Berry": {
+        "natural_gift_power": 70,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 10
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/3/",
+            "name": "flying"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 10
+        "name": "grepa",
+        "max_harvest": 5,
+        "soil_dryness": 8,
+        "smoothness": 20,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/150/",
+            "name": "grepa-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 10
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/2/",
+            "name": "soft"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 10
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/3/",
-        "name": "flying"
-    },
-    "name": "grepa",
-    "max_harvest": 5,
-    "soil_dryness": 8,
-    "smoothness": 20,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/150/",
-        "name": "grepa-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/2/",
-        "name": "soft"
-    },
-    "growth_time": 8,
-    "id": 25,
-    "size": 149
-}
+        "growth_time": 8,
+        "id": 25,
+        "size": 149
+    }
 
-"Tamato Berry": {
-    "natural_gift_power": 70,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Tamato Berry": {
+        "natural_gift_power": 70,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 20
             },
-            "potency": 20
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/14/",
+            "name": "psychic"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 10
+        "name": "tamato",
+        "max_harvest": 5,
+        "soil_dryness": 8,
+        "smoothness": 30,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/151/",
+            "name": "tamato-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/2/",
+            "name": "soft"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/14/",
-        "name": "psychic"
-    },
-    "name": "tamato",
-    "max_harvest": 5,
-    "soil_dryness": 8,
-    "smoothness": 30,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/151/",
-        "name": "tamato-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/2/",
-        "name": "soft"
-    },
-    "growth_time": 8,
-    "id": 26,
-    "size": 200
-}
+        "growth_time": 8,
+        "id": 26,
+        "size": 200
+    }
 
-"Cornn Berry": {
-    "natural_gift_power": 70,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Cornn Berry": {
+        "natural_gift_power": 70,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 20
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/7/",
+            "name": "bug"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 20
+        "name": "cornn",
+        "max_harvest": 10,
+        "soil_dryness": 10,
+        "smoothness": 30,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/152/",
+            "name": "cornn-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 10
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
+            "name": "hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/7/",
-        "name": "bug"
-    },
-    "name": "cornn",
-    "max_harvest": 10,
-    "soil_dryness": 10,
-    "smoothness": 30,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/152/",
-        "name": "cornn-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
-        "name": "hard"
-    },
-    "growth_time": 6,
-    "id": 27,
-    "size": 75
-}
+        "growth_time": 6,
+        "id": 27,
+        "size": 75
+    }
 
-"Magost Berry": {
-    "natural_gift_power": 70,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Magost Berry": {
+        "natural_gift_power": 70,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 20
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/6/",
+            "name": "rock"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "magost",
+        "max_harvest": 10,
+        "soil_dryness": 10,
+        "smoothness": 30,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/153/",
+            "name": "magost-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 20
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
+            "name": "hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 10
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/6/",
-        "name": "rock"
-    },
-    "name": "magost",
-    "max_harvest": 10,
-    "soil_dryness": 10,
-    "smoothness": 30,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/153/",
-        "name": "magost-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
-        "name": "hard"
-    },
-    "growth_time": 6,
-    "id": 28,
-    "size": 140
-}
+        "growth_time": 6,
+        "id": 28,
+        "size": 140
+    }
 
-"Rabuta Berry": {
-    "natural_gift_power": 70,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Rabuta Berry": {
+        "natural_gift_power": 70,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 20
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 10
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/8/",
+            "name": "ghost"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "rabuta",
+        "max_harvest": 10,
+        "soil_dryness": 10,
+        "smoothness": 30,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/154/",
+            "name": "rabuta-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/2/",
+            "name": "soft"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 20
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 10
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/8/",
-        "name": "ghost"
-    },
-    "name": "rabuta",
-    "max_harvest": 10,
-    "soil_dryness": 10,
-    "smoothness": 30,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/154/",
-        "name": "rabuta-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/2/",
-        "name": "soft"
-    },
-    "growth_time": 6,
-    "id": 29,
-    "size": 226
-}
+        "growth_time": 6,
+        "id": 29,
+        "size": 226
+    }
 
-"Nomel Berry": {
-    "natural_gift_power": 70,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Nomel Berry": {
+        "natural_gift_power": 70,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 10
             },
-            "potency": 10
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 20
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/16/",
+            "name": "dragon"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "nomel",
+        "max_harvest": 10,
+        "soil_dryness": 10,
+        "smoothness": 30,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/155/",
+            "name": "nomel-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/5/",
+            "name": "super-hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 20
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/16/",
-        "name": "dragon"
-    },
-    "name": "nomel",
-    "max_harvest": 10,
-    "soil_dryness": 10,
-    "smoothness": 30,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/155/",
-        "name": "nomel-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/5/",
-        "name": "super-hard"
-    },
-    "growth_time": 6,
-    "id": 30,
-    "size": 285
-}
+        "growth_time": 6,
+        "id": 30,
+        "size": 285
+    }
 
-"Spelon Berry": {
-    "natural_gift_power": 70,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Spelon Berry": {
+        "natural_gift_power": 70,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 30
             },
-            "potency": 30
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/17/",
+            "name": "dark"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 10
+        "name": "spelon",
+        "max_harvest": 15,
+        "soil_dryness": 8,
+        "smoothness": 35,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/156/",
+            "name": "spelon-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/2/",
+            "name": "soft"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/17/",
-        "name": "dark"
-    },
-    "name": "spelon",
-    "max_harvest": 15,
-    "soil_dryness": 8,
-    "smoothness": 35,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/156/",
-        "name": "spelon-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/2/",
-        "name": "soft"
-    },
-    "growth_time": 15,
-    "id": 31,
-    "size": 133
-}
+        "growth_time": 15,
+        "id": 31,
+        "size": 133
+    }
 
-"Pamtre Berry": {
-    "natural_gift_power": 70,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Pamtre Berry": {
+        "natural_gift_power": 70,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 30
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/9/",
+            "name": "steel"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 30
+        "name": "pamtre",
+        "max_harvest": 15,
+        "soil_dryness": 8,
+        "smoothness": 35,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/157/",
+            "name": "pamtre-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 10
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/1/",
+            "name": "very-soft"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/9/",
-        "name": "steel"
-    },
-    "name": "pamtre",
-    "max_harvest": 15,
-    "soil_dryness": 8,
-    "smoothness": 35,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/157/",
-        "name": "pamtre-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/1/",
-        "name": "very-soft"
-    },
-    "growth_time": 15,
-    "id": 32,
-    "size": 244
-}
+        "growth_time": 15,
+        "id": 32,
+        "size": 244
+    }
 
-"Watmel Berry": {
-    "natural_gift_power": 80,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Watmel Berry": {
+        "natural_gift_power": 80,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 30
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/10/",
+            "name": "fire"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "watmel",
+        "max_harvest": 15,
+        "soil_dryness": 8,
+        "smoothness": 35,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/158/",
+            "name": "watmel-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 30
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/2/",
+            "name": "soft"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 10
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/10/",
-        "name": "fire"
-    },
-    "name": "watmel",
-    "max_harvest": 15,
-    "soil_dryness": 8,
-    "smoothness": 35,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/158/",
-        "name": "watmel-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/2/",
-        "name": "soft"
-    },
-    "growth_time": 15,
-    "id": 33,
-    "size": 250
-}
+        "growth_time": 15,
+        "id": 33,
+        "size": 250
+    }
 
-"Durin Berry": {
-    "natural_gift_power": 80,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Durin Berry": {
+        "natural_gift_power": 80,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 30
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 10
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/11/",
+            "name": "water"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "durin",
+        "max_harvest": 15,
+        "soil_dryness": 8,
+        "smoothness": 35,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/159/",
+            "name": "durin-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
+            "name": "hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 30
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 10
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/11/",
-        "name": "water"
-    },
-    "name": "durin",
-    "max_harvest": 15,
-    "soil_dryness": 8,
-    "smoothness": 35,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/159/",
-        "name": "durin-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/3/",
-        "name": "hard"
-    },
-    "growth_time": 15,
-    "id": 34,
-    "size": 280
-}
+        "growth_time": 15,
+        "id": 34,
+        "size": 280
+    }
 
-"Belue Berry": {
-    "natural_gift_power": 80,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Belue Berry": {
+        "natural_gift_power": 80,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 10
             },
-            "potency": 10
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 30
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/13/",
+            "name": "electric"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "belue",
+        "max_harvest": 15,
+        "soil_dryness": 8,
+        "smoothness": 35,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/160/",
+            "name": "belue-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/1/",
+            "name": "very-soft"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 30
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/13/",
-        "name": "electric"
-    },
-    "name": "belue",
-    "max_harvest": 15,
-    "soil_dryness": 8,
-    "smoothness": 35,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/160/",
-        "name": "belue-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/1/",
-        "name": "very-soft"
-    },
-    "growth_time": 15,
-    "id": 35,
-    "size": 300
-}
+        "growth_time": 15,
+        "id": 35,
+        "size": 300
+    }
 
-"Occa Berry": {
-    "natural_gift_power": 60,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Occa Berry": {
+        "natural_gift_power": 60,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 15
             },
-            "potency": 15
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/10/",
+            "name": "fire"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "occa",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 30,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/161/",
+            "name": "occa-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 10
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/5/",
+            "name": "super-hard"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/10/",
-        "name": "fire"
-    },
-    "name": "occa",
-    "max_harvest": 5,
-    "soil_dryness": 6,
-    "smoothness": 30,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/161/",
-        "name": "occa-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/5/",
-        "name": "super-hard"
-    },
-    "growth_time": 18,
-    "id": 36,
-    "size": 90
-}
+        "growth_time": 18,
+        "id": 36,
+        "size": 90
+    }
 
-"Passho Berry": {
-    "natural_gift_power": 60,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Passho Berry": {
+        "natural_gift_power": 60,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 15
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/11/",
+            "name": "water"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 15
+        "name": "passho",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 30,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/162/",
+            "name": "passho-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/2/",
+            "name": "soft"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 10
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/11/",
-        "name": "water"
-    },
-    "name": "passho",
-    "max_harvest": 5,
-    "soil_dryness": 6,
-    "smoothness": 30,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/162/",
-        "name": "passho-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/2/",
-        "name": "soft"
-    },
-    "growth_time": 18,
-    "id": 37,
-    "size": 33
-}
+        "growth_time": 18,
+        "id": 37,
+        "size": 33
+    }
 
-"Wacan Berry": {
-    "natural_gift_power": 60,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Wacan Berry": {
+        "natural_gift_power": 60,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
             },
-            "potency": 0
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 15
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 10
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/13/",
+            "name": "electric"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "wacan",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 30,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/163/",
+            "name": "wacan-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 15
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/1/",
+            "name": "very-soft"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 10
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/13/",
-        "name": "electric"
-    },
-    "name": "wacan",
-    "max_harvest": 5,
-    "soil_dryness": 6,
-    "smoothness": 30,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/163/",
-        "name": "wacan-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/1/",
-        "name": "very-soft"
-    },
-    "growth_time": 18,
-    "id": 38,
-    "size": 250
-}
+        "growth_time": 18,
+        "id": 38,
+        "size": 250
+    }
 
-"Rindo Berry": {
-    "natural_gift_power": 60,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
+    "Rindo Berry": {
+        "natural_gift_power": 60,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 10
             },
-            "potency": 10
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 15
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 0
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/12/",
+            "name": "grass"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 0
+        "name": "rindo",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 30,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/164/",
+            "name": "rindo-berry"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/2/",
+            "name": "soft"
         },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 15
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 0
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/12/",
-        "name": "grass"
-    },
-    "name": "rindo",
-    "max_harvest": 5,
-    "soil_dryness": 6,
-    "smoothness": 30,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/164/",
-        "name": "rindo-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/2/",
-        "name": "soft"
-    },
-    "growth_time": 18,
-    "id": 39,
-    "size": 156
-}
-//40
-"Yache Berry": {
-    "natural_gift_power": 60,
-    "flavors": [{
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
-                "name": "spicy"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
-                "name": "dry"
-            },
-            "potency": 10
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
-                "name": "sweet"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
-                "name": "bitter"
-            },
-            "potency": 0
-        },
-        {
-            "flavor": {
-                "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
-                "name": "sour"
-            },
-            "potency": 15
-        }
-    ],
-    "natural_gift_type": {
-        "url": "https://pokeapi.co/api/v2/type/15/",
-        "name": "ice"
-    },
-    "name": "yache",
-    "max_harvest": 5,
-    "soil_dryness": 6,
-    "smoothness": 30,
-    "item": {
-        "url": "https://pokeapi.co/api/v2/item/165/",
-        "name": "yache-berry"
-    },
-    "firmness": {
-        "url": "https://pokeapi.co/api/v2/berry-firmness/4/",
-        "name": "very-hard"
-    },
-    "growth_time": 18,
-    "id": 40,
-    "size": 135
-}
+        "growth_time": 18,
+        "id": 39,
+        "size": 156
+    }
 
+    "Yache Berry": {
+        "natural_gift_power": 60,
+        "flavors": [{
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+                    "name": "spicy"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+                    "name": "dry"
+                },
+                "potency": 10
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+                    "name": "sweet"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+                    "name": "bitter"
+                },
+                "potency": 0
+            },
+            {
+                "flavor": {
+                    "url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+                    "name": "sour"
+                },
+                "potency": 15
+            }
+        ],
+        "natural_gift_type": {
+            "url": "https://pokeapi.co/api/v2/type/15/",
+            "name": "ice"
+        },
+        "name": "yache",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 30,
+        "item": {
+            "url": "https://pokeapi.co/api/v2/item/165/",
+            "name": "yache-berry"
+        },
+        "firmness": {
+            "url": "https://pokeapi.co/api/v2/berry-firmness/4/",
+            "name": "very-hard"
+        },
+        "growth_time": 18,
+        "id": 40,
+        "size": 135
+    }
+
+    "Chople Berry": {
+    	"natural_gift_power": 60,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 15
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 0
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/2/",
+    		"name": "fighting"
+    	},
+    	"name": "chople",
+    	"max_harvest": 5,
+    	"soil_dryness": 6,
+    	"smoothness": 30,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/166/",
+    		"name": "chople-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/2/",
+    		"name": "soft"
+    	},
+    	"growth_time": 18,
+    	"id": 41,
+    	"size": 77
+    }
+
+    "Kebia Berry": {
+    	"natural_gift_power": 60,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 15
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 10
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/4/",
+    		"name": "poison"
+    	},
+    	"name": "kebia",
+    	"max_harvest": 5,
+    	"soil_dryness": 6,
+    	"smoothness": 30,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/167/",
+    		"name": "kebia-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/3/",
+    		"name": "hard"
+    	},
+    	"growth_time": 18,
+    	"id": 42,
+    	"size": 90
+    }
+
+    "Shuca Berry": {
+    	"natural_gift_power": 60,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 15
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 0
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/5/",
+    		"name": "ground"
+    	},
+    	"name": "shuca",
+    	"max_harvest": 5,
+    	"soil_dryness": 6,
+    	"smoothness": 30,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/168/",
+    		"name": "shuca-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/2/",
+    		"name": "soft"
+    	},
+    	"growth_time": 18,
+    	"id": 43,
+    	"size": 42
+    }
+
+    "Coba Berry": {
+    	"natural_gift_power": 60,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 15
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 0
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/3/",
+    		"name": "flying"
+    	},
+    	"name": "coba",
+    	"max_harvest": 5,
+    	"soil_dryness": 6,
+    	"smoothness": 30,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/169/",
+    		"name": "coba-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/4/",
+    		"name": "very-hard"
+    	},
+    	"growth_time": 18,
+    	"id": 44,
+    	"size": 278
+    }
+
+    "Payapa Berry": {
+    	"natural_gift_power": 60,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 15
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/14/",
+    		"name": "psychic"
+    	},
+    	"name": "payapa",
+    	"max_harvest": 5,
+    	"soil_dryness": 6,
+    	"smoothness": 30,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/170/",
+    		"name": "payapa-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/2/",
+    		"name": "soft"
+    	},
+    	"growth_time": 18,
+    	"id": 45,
+    	"size": 252
+    }
+
+    "Tanga Berry": {
+    	"natural_gift_power": 60,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 20
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 10
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/7/",
+    		"name": "bug"
+    	},
+    	"name": "tanga",
+    	"max_harvest": 5,
+    	"soil_dryness": 6,
+    	"smoothness": 35,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/171/",
+    		"name": "tanga-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/1/",
+    		"name": "very-soft"
+    	},
+    	"growth_time": 18,
+    	"id": 46,
+    	"size": 42
+    }
+
+    "Charti Berry": {
+    	"natural_gift_power": 60,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 20
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 0
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/6/",
+    		"name": "rock"
+    	},
+    	"name": "charti",
+    	"max_harvest": 5,
+    	"soil_dryness": 6,
+    	"smoothness": 35,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/172/",
+    		"name": "charti-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/1/",
+    		"name": "very-soft"
+    	},
+    	"growth_time": 18,
+    	"id": 47,
+    	"size": 28
+    }
+
+    "Kasib Berry": {
+    	"natural_gift_power": 60,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 20
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 0
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/8/",
+    		"name": "ghost"
+    	},
+    	"name": "kasib",
+    	"max_harvest": 5,
+    	"soil_dryness": 6,
+    	"smoothness": 35,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/173/",
+    		"name": "kasib-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/3/",
+    		"name": "hard"
+    	},
+    	"growth_time": 18,
+    	"id": 48,
+    	"size": 144
+    }
+
+    "Haban Berry": {
+    	"natural_gift_power": 60,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 20
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 0
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/16/",
+    		"name": "dragon"
+    	},
+    	"name": "haban",
+    	"max_harvest": 5,
+    	"soil_dryness": 6,
+    	"smoothness": 35,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/174/",
+    		"name": "haban-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/2/",
+    		"name": "soft"
+    	},
+    	"growth_time": 18,
+    	"id": 49,
+    	"size": 23
+    }
+
+    "Colbur Berry": {
+    	"natural_gift_power": 60,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 20
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/17/",
+    		"name": "dark"
+    	},
+    	"name": "colbur",
+    	"max_harvest": 5,
+    	"soil_dryness": 6,
+    	"smoothness": 35,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/175/",
+    		"name": "colbur-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/5/",
+    		"name": "super-hard"
+    	},
+    	"growth_time": 18,
+    	"id": 50,
+    	"size": 39
+    }
+
+    "Babiri Berry": {
+    	"natural_gift_power": 60,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 25
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 0
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/9/",
+    		"name": "steel"
+    	},
+    	"name": "babiri",
+    	"max_harvest": 5,
+    	"soil_dryness": 6,
+    	"smoothness": 35,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/176/",
+    		"name": "babiri-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/5/",
+    		"name": "super-hard"
+    	},
+    	"growth_time": 18,
+    	"id": 51,
+    	"size": 265
+    }
+
+    "Liechi Berry": {
+    	"natural_gift_power": 80,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 30
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 30
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 0
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/12/",
+    		"name": "grass"
+    	},
+    	"name": "liechi",
+    	"max_harvest": 5,
+    	"soil_dryness": 4,
+    	"smoothness": 40,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/178/",
+    		"name": "liechi-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/4/",
+    		"name": "very-hard"
+    	},
+    	"growth_time": 24,
+    	"id": 53,
+    	"size": 111
+    }
+
+    "Ganlon Berry": {
+    	"natural_gift_power": 80,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 30
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 30
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 0
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/15/",
+    		"name": "ice"
+    	},
+    	"name": "ganlon",
+    	"max_harvest": 5,
+    	"soil_dryness": 4,
+    	"smoothness": 40,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/179/",
+    		"name": "ganlon-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/4/",
+    		"name": "very-hard"
+    	},
+    	"growth_time": 24,
+    	"id": 54,
+    	"size": 33
+    }
+
+    "Salac Berry": {
+    	"natural_gift_power": 80,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 30
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 30
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/2/",
+    		"name": "fighting"
+    	},
+    	"name": "salac",
+    	"max_harvest": 5,
+    	"soil_dryness": 4,
+    	"smoothness": 40,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/180/",
+    		"name": "salac-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/4/",
+    		"name": "very-hard"
+    	},
+    	"growth_time": 24,
+    	"id": 55,
+    	"size": 95
+    }
+
+    "Petaya Berry": {
+    	"natural_gift_power": 80,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 30
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 30
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 10
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/4/",
+    		"name": "poison"
+    	},
+    	"name": "petaya",
+    	"max_harvest": 5,
+    	"soil_dryness": 4,
+    	"smoothness": 40,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/181/",
+    		"name": "petaya-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/4/",
+    		"name": "very-hard"
+    	},
+    	"growth_time": 24,
+    	"id": 56,
+    	"size": 237
+    }
+
+    "Apicot Berry": {
+    	"natural_gift_power": 80,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 30
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 30
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/5/",
+    		"name": "ground"
+    	},
+    	"name": "apicot",
+    	"max_harvest": 5,
+    	"soil_dryness": 4,
+    	"smoothness": 40,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/182/",
+    		"name": "apicot-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/3/",
+    		"name": "hard"
+    	},
+    	"growth_time": 24,
+    	"id": 57,
+    	"size": 75
+    }
+
+    "Lansat Berry":{
+    	"natural_gift_power": 80,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 30
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 30
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 30
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/3/",
+    		"name": "flying"
+    	},
+    	"name": "lansat",
+    	"max_harvest": 5,
+    	"soil_dryness": 4,
+    	"smoothness": 50,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/183/",
+    		"name": "lansat-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/2/",
+    		"name": "soft"
+    	},
+    	"growth_time": 24,
+    	"id": 58,
+    	"size": 97
+    }
+
+    "Starf Berry": {
+    	"natural_gift_power": 80,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 30
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 30
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 30
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/14/",
+    		"name": "psychic"
+    	},
+    	"name": "starf",
+    	"max_harvest": 5,
+    	"soil_dryness": 4,
+    	"smoothness": 50,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/184/",
+    		"name": "starf-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/5/",
+    		"name": "super-hard"
+    	},
+    	"growth_time": 24,
+    	"id": 59,
+    	"size": 153
+    }
+
+    "Enigma Berry": {
+    	"natural_gift_power": 80,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 40
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 0
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/7/",
+    		"name": "bug"
+    	},
+    	"name": "enigma",
+    	"max_harvest": 5,
+    	"soil_dryness": 7,
+    	"smoothness": 60,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/185/",
+    		"name": "enigma-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/3/",
+    		"name": "hard"
+    	},
+    	"growth_time": 24,
+    	"id": 60,
+    	"size": 155
+    }
+
+    "Micle Berry": {
+    	"natural_gift_power": 80,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 40
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 0
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/6/",
+    		"name": "rock"
+    	},
+    	"name": "micle",
+    	"max_harvest": 5,
+    	"soil_dryness": 7,
+    	"smoothness": 60,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/186/",
+    		"name": "micle-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/2/",
+    		"name": "soft"
+    	},
+    	"growth_time": 24,
+    	"id": 61,
+    	"size": 41
+    }
+
+    "Custap Berry": {
+    	"natural_gift_power": 80,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 40
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 0
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/8/",
+    		"name": "ghost"
+    	},
+    	"name": "custap",
+    	"max_harvest": 5,
+    	"soil_dryness": 7,
+    	"smoothness": 60,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/187/",
+    		"name": "custap-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/5/",
+    		"name": "super-hard"
+    	},
+    	"growth_time": 24,
+    	"id": 62,
+    	"size": 267
+    }
+
+    "Jaboca Berry": {
+    	"natural_gift_power": 80,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 40
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 10
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/16/",
+    		"name": "dragon"
+    	},
+    	"name": "jaboca",
+    	"max_harvest": 5,
+    	"soil_dryness": 7,
+    	"smoothness": 60,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/188/",
+    		"name": "jaboca-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/2/",
+    		"name": "soft"
+    	},
+    	"growth_time": 24,
+    	"id": 63,
+    	"size": 33
+    }
+
+    "Rowap Berry": {
+    	"natural_gift_power": 80,
+    	"flavors": [
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/1/",
+    				"name": "spicy"
+    			},
+    			"potency": 10
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/2/",
+    				"name": "dry"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/3/",
+    				"name": "sweet"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/4/",
+    				"name": "bitter"
+    			},
+    			"potency": 0
+    		},
+    		{
+    			"flavor": {
+    				"url": "https://pokeapi.co/api/v2/berry-flavor/5/",
+    				"name": "sour"
+    			},
+    			"potency": 40
+    		}
+    	],
+    	"natural_gift_type": {
+    		"url": "https://pokeapi.co/api/v2/type/17/",
+    		"name": "dark"
+    	},
+    	"name": "rowap",
+    	"max_harvest": 5,
+    	"soil_dryness": 7,
+    	"smoothness": 60,
+    	"item": {
+    		"url": "https://pokeapi.co/api/v2/item/189/",
+    		"name": "rowap-berry"
+    	},
+    	"firmness": {
+    		"url": "https://pokeapi.co/api/v2/berry-firmness/1/",
+    		"name": "very-soft"
+    	},
+    	"growth_time": 24,
+    	"id": 64,
+    	"size": 52
+    }
 
 }
 //stored data for moves sorted by type
