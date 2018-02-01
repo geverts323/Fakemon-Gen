@@ -42,9 +42,9 @@
                         <br>
                         <input type="radio" name="drop_type" value="item_finder" onclick="showItemFind()">Item Finder Item</input>
                         <br>
-                        <input type="radio" name="drop_type" value="random_item" onclick="showRandDrop()">Random Item</input>
+                        <input type="radio" name="drop_type" value="random_item" onclick="showRandItem()">Random Item</input>
                         <br>
-                        <input type="radio" name="drop_type" value="random_berry" onclick="showBerryDrop()">Berry</input>
+                        <input type="radio" name="drop_type" value="random_berry" onclick="showRandBerry()">Random Berry</input>
                     </div>
                     <div id="monDrop" class="hide">
                         <h4>Pokemon Type:</h4>
@@ -168,6 +168,7 @@
                                 </option>
                             </select>
                         </div>
+                        <button onclick="getMonItem()">Get Item!</button>
                     </div>
                     <div id="ballFind" class="hide">
                         <h4>Item Rarity:</h4>
@@ -175,6 +176,8 @@
                         <input type="radio" name="rare_item" value="greatBall">Great</input>
                         <input type="radio" name="rare_item" value="ultraBall">Ultra</input>
                         <input type="radio" name="rare_item" value="masterBall">Master</input>
+                        <br />
+                        <button onclick="getBallItem()">Get Item!</button>
                     </div>
                     <div id="itemFind" class="hide">
                         <h4>Landscape:</h4>
@@ -191,20 +194,21 @@
                             <option value="waterway">Ocean/Lake/River</option>
                             <option value="cavern">Cave</option>
                         </select>
+                        <button onclick ="getItemFind()">Get Item!</button>
                     </div>
                     <div id="randItem" class="hide">
                         <h4>Click the Button!</h4>
-                        <button onclick="randomItem()">Random Item!</button>
+                        <button onclick="getRandomItem()">Random Item!</button>
                     </div>
                     <div id="randBerry" class="hide">
                         <h4>Click the Button!</h4>
-                        <button onclick="randomBerry()">Random Berry!</button>
+                        <button onclick="getRandomBerry()">Random Berry!</button>
                     </div>
                 </div>
             </div>
             <div class="rightSection">
                 <div class="displayBox">
-                    <h1>Come Back Later! Coming Soon!</h1>
+                    <h1 id="berryBox">Come Back Later! Coming Soon!</h1>
                 </div>
             </div>
         </div>
