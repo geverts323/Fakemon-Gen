@@ -306,8 +306,6 @@ function typeDefPrint(dualTypes, typeOne, typeTwo) {
     divStart.insertAdjacentHTML("beforeend", createTypeChart);
 }
 
-<<<<<<< HEAD
-
 //initially called function for encounter generation
 function encounterGenCall() {
     var land = $("#landscape").val();
@@ -329,60 +327,60 @@ function calcEncounterGen(land, numMon, haunt, range) {
 var itemType;
 
 function showMonDrop() {
-        document.getElementById('monDrop').style.display = 'block';
-        document.getElementById('ballFind').style.display = 'none';
-        document.getElementById('itemFind').style.display = 'none';
-        document.getElementById('randItem').style.display = 'none';
-        document.getElementById('randBerry').style.display = 'none';
-        console.log('Mon Drop');
-        itemType = "mon_drop";
-        console.log(itemType);
+    document.getElementById('monDrop').style.display = 'block';
+    document.getElementById('ballFind').style.display = 'none';
+    document.getElementById('itemFind').style.display = 'none';
+    document.getElementById('randItem').style.display = 'none';
+    document.getElementById('randBerry').style.display = 'none';
+    console.log('Mon Drop');
+    itemType = "mon_drop";
+    console.log(itemType);
 
 }
 
 function showBallDrop() {
-        document.getElementById('monDrop').style.display = 'none';
-        document.getElementById('ballFind').style.display = 'block';
-        document.getElementById('itemFind').style.display = 'none';
-        document.getElementById('randItem').style.display = 'none';
-        document.getElementById('randBerry').style.display = 'none';
-        console.log('Ball Drop');
-        itemType = "ball_find";
-        console.log(itemType);
+    document.getElementById('monDrop').style.display = 'none';
+    document.getElementById('ballFind').style.display = 'block';
+    document.getElementById('itemFind').style.display = 'none';
+    document.getElementById('randItem').style.display = 'none';
+    document.getElementById('randBerry').style.display = 'none';
+    console.log('Ball Drop');
+    itemType = "ball_find";
+    console.log(itemType);
 
 }
 
 function showItemFind() {
-        document.getElementById('monDrop').style.display = 'none';
-        document.getElementById('ballFind').style.display = 'none';
-        document.getElementById('itemFind').style.display = 'block';
-        document.getElementById('randItem').style.display = 'none';
-        document.getElementById('randBerry').style.display = 'none';
-        console.log('Item Finder Drop');
-        itemType = "item_find";
-        console.log(itemType);
+    document.getElementById('monDrop').style.display = 'none';
+    document.getElementById('ballFind').style.display = 'none';
+    document.getElementById('itemFind').style.display = 'block';
+    document.getElementById('randItem').style.display = 'none';
+    document.getElementById('randBerry').style.display = 'none';
+    console.log('Item Finder Drop');
+    itemType = "item_find";
+    console.log(itemType);
 }
 
 function showRandDrop() {
-        document.getElementById('monDrop').style.display = 'none';
-        document.getElementById('ballFind').style.display = 'none';
-        document.getElementById('itemFind').style.display = 'none';
-        document.getElementById('randItem').style.display = 'block';
-        document.getElementById('randBerry').style.display = 'none';
-        console.log('Rand Drop');
-        itemType = "random_item";
-        console.log(itemType);
+    document.getElementById('monDrop').style.display = 'none';
+    document.getElementById('ballFind').style.display = 'none';
+    document.getElementById('itemFind').style.display = 'none';
+    document.getElementById('randItem').style.display = 'block';
+    document.getElementById('randBerry').style.display = 'none';
+    console.log('Rand Drop');
+    itemType = "random_item";
+    console.log(itemType);
 }
 
 function showBerryDrop() {
-        document.getElementById('monDrop').style.display = 'none';
-        document.getElementById('ballFind').style.display = 'none';
-        document.getElementById('itemFind').style.display = 'none';
-        document.getElementById('randItem').style.display = 'none';
-        document.getElementById('randBerry').style.display = 'block';
-        console.log('Berry Drop');
-        itemType = "berry_find";
-        console.log(itemType);
+    document.getElementById('monDrop').style.display = 'none';
+    document.getElementById('ballFind').style.display = 'none';
+    document.getElementById('itemFind').style.display = 'none';
+    document.getElementById('randItem').style.display = 'none';
+    document.getElementById('randBerry').style.display = 'block';
+    console.log('Berry Drop');
+    itemType = "berry_find";
+    console.log(itemType);
 }
 
 function randomItem() {
@@ -392,11 +390,7 @@ function randomItem() {
 function randomBerry() {
     console.log('Random Berry');
 }
-// var type = {};
-// function gotTypes(data) {
-// console.log(data);
-// $(document).ready(function() {
-=======
+
 function showMonDrop() {
     document.getElementById('monDrop').style.display = 'block';
     document.getElementById('ballFind').style.display = 'none';
@@ -461,7 +455,6 @@ function getRandomNumber(num) {
 
 
 // $(document).ready(function(){
->>>>>>> Surface-Book
 //     $.ajax({
 //         url: "https://pokeapi.co/api/v2/type/1/",
 //         type: "GET",
@@ -511,46 +504,3 @@ function getRandomNumber(num) {
 //         "damage_class": data.damage_class.name,
 //
 //     };
-<<<<<<< HEAD
-// }
-
-function gotTypeInfo(data) {
-    type[data.name] = {};
-
-    for (i in data.moves) {
-        $.ajax({
-            url: data.moves.url,
-            type: "GET",
-            // contentType: "application/json",
-            success: function (data, error) {
-                gotMoveInfo(data);
-            },
-            error: function (data, error) {
-                console.log(data, error);
-            }
-        });
-    }
-        setTimeout(function(){console.log(JSON.stringify(type));}, 30000);
-}
-
-function gotMoveInfo(data) {
-    type[data.name][data.type.name] = {
-        "effect_chance": data.effect_chance,
-        "id": data.id,
-        "pp": data.pp,
-        "effect_entries": data.effect_entries.effect,
-        "accuracy": data.accuracy,
-        "power": data.power,
-        "name": data.name,
-        "meta": data.meta,
-        "contest_type": data.contest_type.name,
-        "priority": data.priority,
-        "power": data.power,
-        "target": data.target.name,
-        "damage_class": data.damage_class.name,
-
-    };
-}
-=======
-// }
->>>>>>> Surface-Book
