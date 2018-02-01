@@ -939,7 +939,6 @@ var defTypes = {
 
 //stored data for berries
 var berries = [{
-        "name": "Cheri Berry",
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 10,
@@ -959,7 +958,7 @@ var berries = [{
         "size": 20
     },
 
-    "Chesto Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 0,
@@ -979,7 +978,7 @@ var berries = [{
         "size": 80
     },
 
-    "Pecha Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 0,
@@ -999,7 +998,7 @@ var berries = [{
         "size": 40
     },
 
-    "Rawst Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 0,
@@ -1019,7 +1018,7 @@ var berries = [{
         "size": 32
     },
 
-    "Aspear Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 0,
@@ -1039,7 +1038,7 @@ var berries = [{
         "size": 50
     },
 
-    "Leppa Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 10,
@@ -1059,7 +1058,7 @@ var berries = [{
         "size": 28
     },
 
-    "Oran Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 10,
@@ -1079,7 +1078,7 @@ var berries = [{
         "size": 35
     },
 
-    "Persim Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 10,
@@ -1099,7 +1098,7 @@ var berries = [{
         "size": 47
     },
 
-    "Lum Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 10,
@@ -1119,7 +1118,7 @@ var berries = [{
         "size": 34
     },
 
-    "Sitrus Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 0,
@@ -1139,7 +1138,7 @@ var berries = [{
         "size": 95
     },
 
-    "Figy Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 15,
@@ -1159,7 +1158,7 @@ var berries = [{
         "size": 100
     },
 
-    "Wiki Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 0,
@@ -1179,7 +1178,7 @@ var berries = [{
         "size": 115
     },
 
-    "Mago Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 0,
@@ -1199,7 +1198,7 @@ var berries = [{
         "size": 126
     },
 
-    "Aguav Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 0,
@@ -1219,7 +1218,7 @@ var berries = [{
         "size": 64
     },
 
-    "Iapapa Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 0,
@@ -1239,7 +1238,7 @@ var berries = [{
         "size": 223
     },
 
-    "Razz Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 10,
@@ -1259,7 +1258,7 @@ var berries = [{
         "size": 120
     },
 
-    "Bluk Berry": {
+    {
         "natural_gift_power": 70,
         "flavors": {
             "spicy": 0,
@@ -1279,7 +1278,7 @@ var berries = [{
         "size": 108
     },
 
-    "Nanab Berry": {
+    {
         "natural_gift_power": 70,
         "flavors": {
             "spicy": 0,
@@ -1299,7 +1298,7 @@ var berries = [{
         "size": 77
     },
 
-    "Wepear Berry": {
+    {
         "natural_gift_power": 70,
         "flavors": {
             "spicy": 0,
@@ -1319,7 +1318,7 @@ var berries = [{
         "size": 74
     },
 
-    "Pinap Berry": {
+    {
         "natural_gift_power": 70,
         "flavors": {
             "spicy": 10,
@@ -1339,7 +1338,7 @@ var berries = [{
         "size": 80
     },
 
-    "Pomeg Berry": {
+    {
         "natural_gift_power": 70,
         "flavors": {
             "spicy": 10,
@@ -1359,7 +1358,7 @@ var berries = [{
         "size": 135
     },
 
-    "Kelpsy Berry": {
+    {
         "natural_gift_power": 70,
         "flavors": {
             "spicy": 0,
@@ -1379,7 +1378,7 @@ var berries = [{
         "size": 150
     },
 
-    "Qualot Berry": {
+    {
         "natural_gift_power": 70,
         "flavors": {
             "spicy": 10,
@@ -1399,7 +1398,7 @@ var berries = [{
         "size": 110
     },
 
-    "Hondew Berry": {
+    {
         "natural_gift_power": 70,
         "flavors": {
             "spicy": 10,
@@ -1419,7 +1418,7 @@ var berries = [{
         "size": 162
     },
 
-    "Grepa Berry": {
+    {
         "natural_gift_power": 70,
         "flavors": {
             "spicy": 0,
@@ -1439,7 +1438,7 @@ var berries = [{
         "size": 149
     },
 
-    "Tamato Berry": {
+    {
         "natural_gift_power": 70,
         "flavors": {
             "spicy": 20,
@@ -1459,7 +1458,7 @@ var berries = [{
         "size": 200
     },
 
-    "Cornn Berry": {
+    {
         "natural_gift_power": 70,
         "flavors": {
             "spicy": 0,
@@ -1479,7 +1478,7 @@ var berries = [{
         "size": 75
     },
 
-    "Magost Berry": {
+    {
         "natural_gift_power": 70,
         "flavors": {
             "spicy": 0,
@@ -1499,7 +1498,7 @@ var berries = [{
         "size": 140
     },
 
-    "Rabuta Berry": {
+    {
         "natural_gift_power": 70,
         "flavors": {
             "spicy": 0,
@@ -1519,7 +1518,7 @@ var berries = [{
         "size": 226
     },
 
-    "Nomel Berry": {
+    {
         "natural_gift_power": 70,
         "flavors": {
             "spicy": 10,
@@ -1539,7 +1538,7 @@ var berries = [{
         "size": 285
     },
 
-    "Spelon Berry": {
+    {
         "natural_gift_power": 70,
         "flavors": {
             "spicy": 30,
@@ -1559,7 +1558,7 @@ var berries = [{
         "size": 133
     },
 
-    "Pamtre Berry": {
+    {
         "natural_gift_power": 70,
         "flavors": {
             "spicy": 0,
@@ -1579,7 +1578,7 @@ var berries = [{
         "size": 244
     },
 
-    "Watmel Berry": {
+    {
         "natural_gift_power": 80,
         "flavors": {
             "spicy": 0,
@@ -1599,7 +1598,7 @@ var berries = [{
         "size": 250
     },
 
-    "Durin Berry": {
+    {
         "natural_gift_power": 80,
         "flavors": {
             "spicy": 0,
@@ -1619,7 +1618,7 @@ var berries = [{
         "size": 280
     },
 
-    "Belue Berry": {
+    {
         "natural_gift_power": 80,
         "flavors": {
             "spicy": 10,
@@ -1639,7 +1638,7 @@ var berries = [{
         "size": 300
     },
 
-    "Occa Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 15,
@@ -1659,7 +1658,7 @@ var berries = [{
         "size": 90
     },
 
-    "Passho Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 0,
@@ -1679,7 +1678,7 @@ var berries = [{
         "size": 33
     },
 
-    "Wacan Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 0,
@@ -1699,7 +1698,7 @@ var berries = [{
         "size": 250
     },
 
-    "Rindo Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 10,
@@ -1719,7 +1718,7 @@ var berries = [{
         "size": 156
     },
 
-    "Yache Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 0,
@@ -1739,7 +1738,7 @@ var berries = [{
         "size": 135
     },
 
-    "Chople Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 15,
@@ -1759,7 +1758,7 @@ var berries = [{
         "size": 77
     },
 
-    "Kebia Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 0,
@@ -1779,7 +1778,7 @@ var berries = [{
         "size": 90
     },
 
-    "Shuca Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 10,
@@ -1799,7 +1798,7 @@ var berries = [{
         "size": 42
     },
 
-    "Coba Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 0,
@@ -1819,7 +1818,7 @@ var berries = [{
         "size": 278
     },
 
-    "Payapa Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 0,
@@ -1839,7 +1838,7 @@ var berries = [{
         "size": 252
     },
 
-    "Tanga Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 20,
@@ -1859,7 +1858,7 @@ var berries = [{
         "size": 42
     },
 
-    "Charti Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 10,
@@ -1879,7 +1878,7 @@ var berries = [{
         "size": 28
     },
 
-    "Kasib Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 0,
@@ -1899,7 +1898,7 @@ var berries = [{
         "size": 144
     },
 
-    "Haban Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 0,
@@ -1919,7 +1918,7 @@ var berries = [{
         "size": 23
     },
 
-    "Colbur Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 0,
@@ -1939,7 +1938,7 @@ var berries = [{
         "size": 39
     },
 
-    "Babiri Berry": {
+    {
         "natural_gift_power": 60,
         "flavors": {
             "spicy": 25,
@@ -1959,7 +1958,7 @@ var berries = [{
         "size": 265
     },
 
-    "Liechi Berry": {
+    {
         "natural_gift_power": 80,
         "flavors": {
             "spicy": 30,
@@ -1979,7 +1978,7 @@ var berries = [{
         "size": 111
     },
 
-    "Ganlon Berry": {
+    {
         "natural_gift_power": 80,
         "flavors": {
             "spicy": 0,
@@ -1999,7 +1998,7 @@ var berries = [{
         "size": 33
     },
 
-    "Salac Berry": {
+    {
         "natural_gift_power": 80,
         "flavors": {
             "spicy": 0,
@@ -2019,7 +2018,7 @@ var berries = [{
         "size": 95
     },
 
-    "Petaya Berry": {
+    {
         "natural_gift_power": 80,
         "flavors": {
             "spicy": 30,
@@ -2039,7 +2038,7 @@ var berries = [{
         "size": 237
     },
 
-    "Apicot Berry": {
+    {
         "natural_gift_power": 80,
         "flavors": {
             "spicy": 10,
@@ -2059,7 +2058,7 @@ var berries = [{
         "size": 75
     },
 
-    "Lansat Berry": {
+    {
         "natural_gift_power": 80,
         "flavors": {
             "spicy": 30,
@@ -2079,7 +2078,7 @@ var berries = [{
         "size": 97
     },
 
-    "Starf Berry": {
+    {
         "natural_gift_power": 80,
         "flavors": {
             "spicy": 30,
@@ -2099,7 +2098,7 @@ var berries = [{
         "size": 153
     },
 
-    "Enigma Berry": {
+    {
         "natural_gift_power": 80,
         "flavors": {
             "spicy": 40,
@@ -2119,7 +2118,7 @@ var berries = [{
         "size": 155
     },
 
-    "Micle Berry": {
+    {
         "natural_gift_power": 80,
         "flavors": {
             "spicy": 0,
@@ -2139,7 +2138,7 @@ var berries = [{
         "size": 41
     },
 
-    "Custap Berry": {
+    {
         "natural_gift_power": 80,
         "flavors": {
             "spicy": 0,
@@ -2159,7 +2158,7 @@ var berries = [{
         "size": 267
     },
 
-    "Jaboca Berry": {
+    {
         "natural_gift_power": 80,
         "flavors": {
             "spicy": 0,
@@ -2179,7 +2178,7 @@ var berries = [{
         "size": 33
     },
 
-    "Rowap Berry": {
+    {
         "natural_gift_power": 80,
         "flavors": {
             "spicy": 10,

@@ -336,8 +336,8 @@ function showRandBerry() {
 function getRandomBerry() {
     var berryNum = Number(getRandomNumber(64));
     console.log(berryNum);
-    var berry = berries[berryNum];
-    document.getElementById("berryBox").innerHTML = berry;
+    var berry = berries[berryNum].name;
+    document.getElementById("berryBox").innerHTML = berry[0].toUpperCase() + berry.slice(1) + " Berry";
 
 }
 

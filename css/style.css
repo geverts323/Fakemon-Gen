@@ -180,7 +180,8 @@ button {
 .rightSection {
     width:50%;
     height:100%;
-    flex:1
+    flex:1;
+    margin-top: 10%;
 }
 .leftSectionDmg2 {
     width:20%;
@@ -192,4 +193,8 @@ button {
     width:80%;
     height:100%;
     flex:1;
+}
+
+.displayBox {
+    padding: 5px;
 }
