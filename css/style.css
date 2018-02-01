@@ -79,6 +79,11 @@ footer {
     flex-direction: row;
 }
 
+.returnDefDmg > * {
+    padding: 10px;
+    margin: 10px;
+}
+
 .pokeTable td {
     text-align: center;
 }
@@ -180,7 +185,8 @@ button {
 .rightSection {
     width:50%;
     height:100%;
-    flex:1
+    flex:1;
+    margin-top: 10%;
 }
 .leftSectionDmg2 {
     width:20%;
@@ -194,7 +200,12 @@ button {
     flex:1;
 }
 
+<<<<<<< HEAD
 
 .hauntInp {
     display: inline-block;
+=======
+.displayBox {
+    padding: 5px;
+>>>>>>> Surface-Book
 }

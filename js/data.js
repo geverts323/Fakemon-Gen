@@ -937,6 +937,1269 @@ var defTypes = {
     }
 }
 
+//stored data for berries
+var berries = [{
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 10,
+            "dry": 0,
+            "sweet": 0,
+            "bitter": 0,
+            "sour": 0,
+        },
+        "natural_gift_type": "fire",
+        "name": "cheri",
+        "max_harvest": 5,
+        "soil_dryness": 15,
+        "smoothness": 25,
+        "firmness": "soft",
+        "growth_time": 3,
+        "id": 1,
+        "size": 20
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 0,
+            "dry": 10,
+            "sweet": 0,
+            "bitter": 0,
+            "sour": 0,
+        },
+        "natural_gift_type": "water",
+        "name": "chesto",
+        "max_harvest": 5,
+        "soil_dryness": 15,
+        "smoothness": 25,
+        "firmness": "super-hard",
+        "growth_time": 3,
+        "id": 2,
+        "size": 80
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 0,
+            "dry": 0,
+            "sweet": 10,
+            "bitter": 0,
+            "sour": 0,
+        },
+        "natural_gift_type": "electric",
+        "name": "pecha",
+        "max_harvest": 5,
+        "soil_dryness": 15,
+        "smoothness": 25,
+        "firmness": "very-soft",
+        "growth_time": 3,
+        "id": 3,
+        "size": 40
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 0,
+            "dry": 0,
+            "sweet": 0,
+            "bitter": 10,
+            "sour": 0,
+        },
+        "natural_gift_type": "grass",
+        "name": "rawst",
+        "max_harvest": 5,
+        "soil_dryness": 15,
+        "smoothness": 25,
+        "firmness": "hard",
+        "growth_time": 3,
+        "id": 4,
+        "size": 32
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 0,
+            "dry": 0,
+            "sweet": 0,
+            "bitter": 0,
+            "sour": 10,
+        },
+        "natural_gift_type": "ice",
+        "name": "aspear",
+        "max_harvest": 5,
+        "soil_dryness": 15,
+        "smoothness": 25,
+        "firmness": "super-hard",
+        "growth_time": 3,
+        "id": 5,
+        "size": 50
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 10,
+            "dry": 0,
+            "sweet": 10,
+            "bitter": 10,
+            "sour": 10,
+        },
+        "natural_gift_type": "fighting",
+        "name": "leppa",
+        "max_harvest": 5,
+        "soil_dryness": 15,
+        "smoothness": 20,
+        "firmness": "very-hard",
+        "growth_time": 4,
+        "id": 6,
+        "size": 28
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 10,
+            "dry": 10,
+            "sweet": 0,
+            "bitter": 10,
+            "sour": 10,
+        },
+        "natural_gift_type": "poison",
+        "name": "oran",
+        "max_harvest": 5,
+        "soil_dryness": 15,
+        "smoothness": 20,
+        "firmness": "super-hard",
+        "growth_time": 4,
+        "id": 7,
+        "size": 35
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 10,
+            "dry": 10,
+            "sweet": 10,
+            "bitter": 0,
+            "sour": 10,
+        },
+        "natural_gift_type": "ground",
+        "name": "persim",
+        "max_harvest": 5,
+        "soil_dryness": 15,
+        "smoothness": 20,
+        "firmness": "hard",
+        "growth_time": 4,
+        "id": 8,
+        "size": 47
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 10,
+            "dry": 10,
+            "sweet": 10,
+            "bitter": 10,
+            "sour": 0,
+        },
+        "natural_gift_type": "flying",
+        "name": "lum",
+        "max_harvest": 5,
+        "soil_dryness": 8,
+        "smoothness": 20,
+        "firmness": "super-hard",
+        "growth_time": 12,
+        "id": 9,
+        "size": 34
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 0,
+            "dry": 10,
+            "sweet": 10,
+            "bitter": 10,
+            "sour": 10,
+        },
+        "natural_gift_type": "psychic",
+        "name": "sitrus",
+        "max_harvest": 5,
+        "soil_dryness": 7,
+        "smoothness": 20,
+        "firmness": "very-hard",
+        "growth_time": 8,
+        "id": 10,
+        "size": 95
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 15,
+            "dry": 0,
+            "sweet": 0,
+            "bitter": 0,
+            "sour": 0,
+        },
+        "natural_gift_type": "bug",
+        "name": "figy",
+        "max_harvest": 5,
+        "soil_dryness": 10,
+        "smoothness": 25,
+        "firmness": "soft",
+        "growth_time": 5,
+        "id": 11,
+        "size": 100
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 0,
+            "dry": 15,
+            "sweet": 0,
+            "bitter": 0,
+            "sour": 0,
+        },
+        "natural_gift_type": "rock",
+        "name": "wiki",
+        "max_harvest": 5,
+        "soil_dryness": 10,
+        "smoothness": 25,
+        "firmness": "hard",
+        "growth_time": 5,
+        "id": 12,
+        "size": 115
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 0,
+            "dry": 0,
+            "sweet": 15,
+            "bitter": 0,
+            "sour": 0,
+        },
+        "natural_gift_type": "ghost",
+        "name": "mago",
+        "max_harvest": 5,
+        "soil_dryness": 10,
+        "smoothness": 25,
+        "firmness": "hard",
+        "growth_time": 5,
+        "id": 13,
+        "size": 126
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 0,
+            "dry": 0,
+            "sweet": 0,
+            "bitter": 15,
+            "sour": 0,
+        },
+        "natural_gift_type": "dragon",
+        "name": "aguav",
+        "max_harvest": 5,
+        "soil_dryness": 10,
+        "smoothness": 25,
+        "firmness": "super-hard",
+        "growth_time": 5,
+        "id": 14,
+        "size": 64
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 0,
+            "dry": 0,
+            "sweet": 0,
+            "bitter": 0,
+            "sour": 15,
+        },
+        "natural_gift_type": "dark",
+        "name": "iapapa",
+        "max_harvest": 5,
+        "soil_dryness": 10,
+        "smoothness": 25,
+        "firmness": "soft",
+        "growth_time": 5,
+        "id": 15,
+        "size": 223
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 10,
+            "dry": 10,
+            "sweet": 0,
+            "bitter": 0,
+            "sour": 0,
+        },
+        "natural_gift_type": "steel",
+        "name": "razz",
+        "max_harvest": 10,
+        "soil_dryness": 35,
+        "smoothness": 20,
+        "firmness": "very-hard",
+        "growth_time": 2,
+        "id": 16,
+        "size": 120
+    },
+
+    {
+        "natural_gift_power": 70,
+        "flavors": {
+            "spicy": 0,
+            "dry": 10,
+            "sweet": 10,
+            "bitter": 0,
+            "sour": 0,
+        },
+        "natural_gift_type": "fire",
+        "name": "bluk",
+        "max_harvest": 10,
+        "soil_dryness": 35,
+        "smoothness": 20,
+        "firmness": "soft",
+        "growth_time": 2,
+        "id": 17,
+        "size": 108
+    },
+
+    {
+        "natural_gift_power": 70,
+        "flavors": {
+            "spicy": 0,
+            "dry": 0,
+            "sweet": 10,
+            "bitter": 10,
+            "sour": 0,
+        },
+        "natural_gift_type": "water",
+        "name": "nanab",
+        "max_harvest": 10,
+        "soil_dryness": 35,
+        "smoothness": 20,
+        "firmness": "very-hard",
+        "growth_time": 2,
+        "id": 18,
+        "size": 77
+    },
+
+    {
+        "natural_gift_power": 70,
+        "flavors": {
+            "spicy": 0,
+            "dry": 0,
+            "sweet": 0,
+            "bitter": 10,
+            "sour": 10,
+        },
+        "natural_gift_type": "electric",
+        "name": "wepear",
+        "max_harvest": 10,
+        "soil_dryness": 35,
+        "smoothness": 20,
+        "firmness": "super-hard",
+        "growth_time": 2,
+        "id": 19,
+        "size": 74
+    },
+
+    {
+        "natural_gift_power": 70,
+        "flavors": {
+            "spicy": 10,
+            "dry": 0,
+            "sweet": 0,
+            "bitter": 0,
+            "sour": 10,
+        },
+        "natural_gift_type": "grass",
+        "name": "pinap",
+        "max_harvest": 10,
+        "soil_dryness": 35,
+        "smoothness": 20,
+        "firmness": "hard",
+        "growth_time": 2,
+        "id": 20,
+        "size": 80
+    },
+
+    {
+        "natural_gift_power": 70,
+        "flavors": {
+            "spicy": 10,
+            "dry": 0,
+            "sweet": 10,
+            "bitter": 10,
+            "sour": 0,
+        },
+        "natural_gift_type": "ice",
+        "name": "pomeg",
+        "max_harvest": 5,
+        "soil_dryness": 8,
+        "smoothness": 20,
+        "firmness": "very-hard",
+        "growth_time": 8,
+        "id": 21,
+        "size": 135
+    },
+
+    {
+        "natural_gift_power": 70,
+        "flavors": {
+            "spicy": 0,
+            "dry": 10,
+            "sweet": 0,
+            "bitter": 10,
+            "sour": 10,
+        },
+        "natural_gift_type": "fighting",
+        "name": "kelpsy",
+        "max_harvest": 5,
+        "soil_dryness": 8,
+        "smoothness": 20,
+        "firmness": "hard",
+        "growth_time": 8,
+        "id": 22,
+        "size": 150
+    },
+
+    {
+        "natural_gift_power": 70,
+        "flavors": {
+            "spicy": 10,
+            "dry": 0,
+            "sweet": 10,
+            "bitter": 0,
+            "sour": 10,
+        },
+        "natural_gift_type": "poison",
+        "name": "qualot",
+        "max_harvest": 5,
+        "soil_dryness": 8,
+        "smoothness": 20,
+        "firmness": "hard",
+        "growth_time": 8,
+        "id": 23,
+        "size": 110
+    },
+
+    {
+        "natural_gift_power": 70,
+        "flavors": {
+            "spicy": 10,
+            "dry": 10,
+            "sweet": 0,
+            "bitter": 10,
+            "sour": 0,
+        },
+        "natural_gift_type": "ground",
+        "name": "hondew",
+        "max_harvest": 5,
+        "soil_dryness": 8,
+        "smoothness": 20,
+        "firmness": "hard",
+        "growth_time": 8,
+        "id": 24,
+        "size": 162
+    },
+
+    {
+        "natural_gift_power": 70,
+        "flavors": {
+            "spicy": 0,
+            "dry": 10,
+            "sweet": 10,
+            "bitter": 0,
+            "sour": 10,
+        },
+        "natural_gift_type": "flying",
+        "name": "grepa",
+        "max_harvest": 5,
+        "soil_dryness": 8,
+        "smoothness": 20,
+        "firmness": "soft",
+        "growth_time": 8,
+        "id": 25,
+        "size": 149
+    },
+
+    {
+        "natural_gift_power": 70,
+        "flavors": {
+            "spicy": 20,
+            "dry": 10,
+            "sweet": 0,
+            "bitter": 0,
+            "sour": 0,
+        },
+        "natural_gift_type": "psychic",
+        "name": "tamato",
+        "max_harvest": 5,
+        "soil_dryness": 8,
+        "smoothness": 30,
+        "firmness": "soft",
+        "growth_time": 8,
+        "id": 26,
+        "size": 200
+    },
+
+    {
+        "natural_gift_power": 70,
+        "flavors": {
+            "spicy": 0,
+            "dry": 20,
+            "sweet": 10,
+            "bitter": 0,
+            "sour": 0,
+        },
+        "natural_gift_type": "bug",
+        "name": "cornn",
+        "max_harvest": 10,
+        "soil_dryness": 10,
+        "smoothness": 30,
+        "firmness": "hard",
+        "growth_time": 6,
+        "id": 27,
+        "size": 75
+    },
+
+    {
+        "natural_gift_power": 70,
+        "flavors": {
+            "spicy": 0,
+            "dry": 0,
+            "sweet": 20,
+            "bitter": 10,
+            "sour": 0,
+        },
+        "natural_gift_type": "rock",
+        "name": "magost",
+        "max_harvest": 10,
+        "soil_dryness": 10,
+        "smoothness": 30,
+        "firmness": "hard",
+        "growth_time": 6,
+        "id": 28,
+        "size": 140
+    },
+
+    {
+        "natural_gift_power": 70,
+        "flavors": {
+            "spicy": 0,
+            "dry": 0,
+            "sweet": 0,
+            "bitter": 20,
+            "sour": 10,
+        },
+        "natural_gift_type": "ghost",
+        "name": "rabuta",
+        "max_harvest": 10,
+        "soil_dryness": 10,
+        "smoothness": 30,
+        "firmness": "soft",
+        "growth_time": 6,
+        "id": 29,
+        "size": 226
+    },
+
+    {
+        "natural_gift_power": 70,
+        "flavors": {
+            "spicy": 10,
+            "dry": 0,
+            "sweet": 0,
+            "bitter": 0,
+            "sour": 20,
+        },
+        "natural_gift_type": "dragon",
+        "name": "nomel",
+        "max_harvest": 10,
+        "soil_dryness": 10,
+        "smoothness": 30,
+        "firmness": "super-hard",
+        "growth_time": 6,
+        "id": 30,
+        "size": 285
+    },
+
+    {
+        "natural_gift_power": 70,
+        "flavors": {
+            "spicy": 30,
+            "dry": 10,
+            "sweet": 0,
+            "bitter": 0,
+            "sour": 0,
+        },
+        "natural_gift_type": "dark",
+        "name": "spelon",
+        "max_harvest": 15,
+        "soil_dryness": 8,
+        "smoothness": 35,
+        "firmness": "soft",
+        "growth_time": 15,
+        "id": 31,
+        "size": 133
+    },
+
+    {
+        "natural_gift_power": 70,
+        "flavors": {
+            "spicy": 0,
+            "dry": 30,
+            "sweet": 10,
+            "bitter": 0,
+            "sour": 0,
+        },
+        "natural_gift_type": "steel",
+        "name": "pamtre",
+        "max_harvest": 15,
+        "soil_dryness": 8,
+        "smoothness": 35,
+        "firmness": "very-soft",
+        "growth_time": 15,
+        "id": 32,
+        "size": 244
+    },
+
+    {
+        "natural_gift_power": 80,
+        "flavors": {
+            "spicy": 0,
+            "dry": 0,
+            "sweet": 30,
+            "bitter": 10,
+            "sour": 0,
+        },
+        "natural_gift_type": "fire",
+        "name": "watmel",
+        "max_harvest": 15,
+        "soil_dryness": 8,
+        "smoothness": 35,
+        "firmness": "soft",
+        "growth_time": 15,
+        "id": 33,
+        "size": 250
+    },
+
+    {
+        "natural_gift_power": 80,
+        "flavors": {
+            "spicy": 0,
+            "dry": 0,
+            "sweet": 0,
+            "bitter": 30,
+            "sour": 10,
+        },
+        "natural_gift_type": "water",
+        "name": "durin",
+        "max_harvest": 15,
+        "soil_dryness": 8,
+        "smoothness": 35,
+        "firmness": "hard",
+        "growth_time": 15,
+        "id": 34,
+        "size": 280
+    },
+
+    {
+        "natural_gift_power": 80,
+        "flavors": {
+            "spicy": 10,
+            "dry": 0,
+            "sweet": 0,
+            "bitter": 0,
+            "sour": 30,
+        },
+        "natural_gift_type": "electric",
+        "name": "belue",
+        "max_harvest": 15,
+        "soil_dryness": 8,
+        "smoothness": 35,
+        "firmness": "very-soft",
+        "growth_time": 15,
+        "id": 35,
+        "size": 300
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 15,
+            "dry": 0,
+            "sweet": 10,
+            "bitter": 0,
+            "sour": 0,
+        },
+        "natural_gift_type": "fire",
+        "name": "occa",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 30,
+        "firmness": "super-hard",
+        "growth_time": 18,
+        "id": 36,
+        "size": 90
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 0,
+            "dry": 15,
+            "sweet": 0,
+            "bitter": 10,
+            "sour": 0,
+        },
+        "natural_gift_type": "water",
+        "name": "passho",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 30,
+        "firmness": "soft",
+        "growth_time": 18,
+        "id": 37,
+        "size": 33
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 0,
+            "dry": 0,
+            "sweet": 15,
+            "bitter": 0,
+            "sour": 10,
+        },
+        "natural_gift_type": "electric",
+        "name": "wacan",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 30,
+        "firmness": "very-soft",
+        "growth_time": 18,
+        "id": 38,
+        "size": 250
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 10,
+            "dry": 0,
+            "sweet": 0,
+            "bitter": 15,
+            "sour": 0,
+        },
+        "natural_gift_type": "grass",
+        "name": "rindo",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 30,
+        "firmness": "soft",
+        "growth_time": 18,
+        "id": 39,
+        "size": 156
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 0,
+            "dry": 10,
+            "sweet": 0,
+            "bitter": 0,
+            "sour": 15,
+        },
+        "natural_gift_type": "ice",
+        "name": "yache",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 30,
+        "firmness": "very-hard",
+        "growth_time": 18,
+        "id": 40,
+        "size": 135
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 15,
+            "dry": 0,
+            "sweet": 0,
+            "bitter": 10,
+            "sour": 0,
+        },
+        "natural_gift_type": "fighting",
+        "name": "chople",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 30,
+        "firmness": "soft",
+        "growth_time": 18,
+        "id": 41,
+        "size": 77
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 0,
+            "dry": 15,
+            "sweet": 0,
+            "bitter": 0,
+            "sour": 10,
+        },
+        "natural_gift_type": "poison",
+        "name": "kebia",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 30,
+        "firmness": "hard",
+        "growth_time": 18,
+        "id": 42,
+        "size": 90
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 10,
+            "dry": 0,
+            "sweet": 15,
+            "bitter": 0,
+            "sour": 0,
+        },
+        "natural_gift_type": "ground",
+        "name": "shuca",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 30,
+        "firmness": "soft",
+        "growth_time": 18,
+        "id": 43,
+        "size": 42
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 0,
+            "dry": 10,
+            "sweet": 0,
+            "bitter": 15,
+            "sour": 0,
+        },
+        "natural_gift_type": "flying",
+        "name": "coba",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 30,
+        "firmness": "very-hard",
+        "growth_time": 18,
+        "id": 44,
+        "size": 278
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 0,
+            "dry": 0,
+            "sweet": 10,
+            "bitter": 0,
+            "sour": 15,
+        },
+        "natural_gift_type": "psychic",
+        "name": "payapa",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 30,
+        "firmness": "soft",
+        "growth_time": 18,
+        "id": 45,
+        "size": 252
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 20,
+            "dry": 0,
+            "sweet": 0,
+            "bitter": 0,
+            "sour": 10,
+        },
+        "natural_gift_type": "bug",
+        "name": "tanga",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 35,
+        "firmness": "very-soft",
+        "growth_time": 18,
+        "id": 46,
+        "size": 42
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 10,
+            "dry": 20,
+            "sweet": 0,
+            "bitter": 0,
+            "sour": 0,
+        },
+        "natural_gift_type": "rock",
+        "name": "charti",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 35,
+        "firmness": "very-soft",
+        "growth_time": 18,
+        "id": 47,
+        "size": 28
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 0,
+            "dry": 10,
+            "sweet": 20,
+            "bitter": 0,
+            "sour": 0,
+        },
+        "natural_gift_type": "ghost",
+        "name": "kasib",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 35,
+        "firmness": "hard",
+        "growth_time": 18,
+        "id": 48,
+        "size": 144
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 0,
+            "dry": 0,
+            "sweet": 10,
+            "bitter": 20,
+            "sour": 0,
+        },
+        "natural_gift_type": "dragon",
+        "name": "haban",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 35,
+        "firmness": "soft",
+        "growth_time": 18,
+        "id": 49,
+        "size": 23
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 0,
+            "dry": 0,
+            "sweet": 0,
+            "bitter": 10,
+            "sour": 20,
+        },
+        "natural_gift_type": "dark",
+        "name": "colbur",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 35,
+        "firmness": "super-hard",
+        "growth_time": 18,
+        "id": 50,
+        "size": 39
+    },
+
+    {
+        "natural_gift_power": 60,
+        "flavors": {
+            "spicy": 25,
+            "dry": 10,
+            "sweet": 0,
+            "bitter": 0,
+            "sour": 0,
+        },
+        "natural_gift_type": "steel",
+        "name": "babiri",
+        "max_harvest": 5,
+        "soil_dryness": 6,
+        "smoothness": 35,
+        "firmness": "super-hard",
+        "growth_time": 18,
+        "id": 51,
+        "size": 265
+    },
+
+    {
+        "natural_gift_power": 80,
+        "flavors": {
+            "spicy": 30,
+            "dry": 10,
+            "sweet": 30,
+            "bitter": 0,
+            "sour": 0,
+        },
+        "natural_gift_type": "grass",
+        "name": "liechi",
+        "max_harvest": 5,
+        "soil_dryness": 4,
+        "smoothness": 40,
+        "firmness": "very-hard",
+        "growth_time": 24,
+        "id": 53,
+        "size": 111
+    },
+
+    {
+        "natural_gift_power": 80,
+        "flavors": {
+            "spicy": 0,
+            "dry": 30,
+            "sweet": 10,
+            "bitter": 30,
+            "sour": 0,
+        },
+        "natural_gift_type": "ice",
+        "name": "ganlon",
+        "max_harvest": 5,
+        "soil_dryness": 4,
+        "smoothness": 40,
+        "firmness": "very-hard",
+        "growth_time": 24,
+        "id": 54,
+        "size": 33
+    },
+
+    {
+        "natural_gift_power": 80,
+        "flavors": {
+            "spicy": 0,
+            "dry": 0,
+            "sweet": 30,
+            "bitter": 10,
+            "sour": 30,
+        },
+        "natural_gift_type": "fighting",
+        "name": "salac",
+        "max_harvest": 5,
+        "soil_dryness": 4,
+        "smoothness": 40,
+        "firmness": "very-hard",
+        "growth_time": 24,
+        "id": 55,
+        "size": 95
+    },
+
+    {
+        "natural_gift_power": 80,
+        "flavors": {
+            "spicy": 30,
+            "dry": 0,
+            "sweet": 0,
+            "bitter": 30,
+            "sour": 10,
+        },
+        "natural_gift_type": "poison",
+        "name": "petaya",
+        "max_harvest": 5,
+        "soil_dryness": 4,
+        "smoothness": 40,
+        "firmness": "very-hard",
+        "growth_time": 24,
+        "id": 56,
+        "size": 237
+    },
+
+    {
+        "natural_gift_power": 80,
+        "flavors": {
+            "spicy": 10,
+            "dry": 30,
+            "sweet": 0,
+            "bitter": 0,
+            "sour": 30,
+        },
+        "natural_gift_type": "ground",
+        "name": "apicot",
+        "max_harvest": 5,
+        "soil_dryness": 4,
+        "smoothness": 40,
+        "firmness": "hard",
+        "growth_time": 24,
+        "id": 57,
+        "size": 75
+    },
+
+    {
+        "natural_gift_power": 80,
+        "flavors": {
+            "spicy": 30,
+            "dry": 10,
+            "sweet": 30,
+            "bitter": 10,
+            "sour": 30,
+        },
+        "natural_gift_type": "flying",
+        "name": "lansat",
+        "max_harvest": 5,
+        "soil_dryness": 4,
+        "smoothness": 50,
+        "firmness": "soft",
+        "growth_time": 24,
+        "id": 58,
+        "size": 97
+    },
+
+    {
+        "natural_gift_power": 80,
+        "flavors": {
+            "spicy": 30,
+            "dry": 10,
+            "sweet": 30,
+            "bitter": 10,
+            "sour": 30,
+        },
+        "natural_gift_type": "psychic",
+        "name": "starf",
+        "max_harvest": 5,
+        "soil_dryness": 4,
+        "smoothness": 50,
+        "firmness": "super-hard",
+        "growth_time": 24,
+        "id": 59,
+        "size": 153
+    },
+
+    {
+        "natural_gift_power": 80,
+        "flavors": {
+            "spicy": 40,
+            "dry": 10,
+            "sweet": 0,
+            "bitter": 0,
+            "sour": 0,
+        },
+        "natural_gift_type": "bug",
+        "name": "enigma",
+        "max_harvest": 5,
+        "soil_dryness": 7,
+        "smoothness": 60,
+        "firmness": "hard",
+        "growth_time": 24,
+        "id": 60,
+        "size": 155
+    },
+
+    {
+        "natural_gift_power": 80,
+        "flavors": {
+            "spicy": 0,
+            "dry": 40,
+            "sweet": 10,
+            "bitter": 0,
+            "sour": 0,
+        },
+        "natural_gift_type": "rock",
+        "name": "micle",
+        "max_harvest": 5,
+        "soil_dryness": 7,
+        "smoothness": 60,
+        "firmness": "soft",
+        "growth_time": 24,
+        "id": 61,
+        "size": 41
+    },
+
+    {
+        "natural_gift_power": 80,
+        "flavors": {
+            "spicy": 0,
+            "dry": 0,
+            "sweet": 40,
+            "bitter": 10,
+            "sour": 0,
+        },
+        "natural_gift_type": "ghost",
+        "name": "custap",
+        "max_harvest": 5,
+        "soil_dryness": 7,
+        "smoothness": 60,
+        "firmness": "super-hard",
+        "growth_time": 24,
+        "id": 62,
+        "size": 267
+    },
+
+    {
+        "natural_gift_power": 80,
+        "flavors": {
+            "spicy": 0,
+            "dry": 0,
+            "sweet": 0,
+            "bitter": 40,
+            "sour": 10,
+        },
+        "natural_gift_type": "dragon",
+        "name": "jaboca",
+        "max_harvest": 5,
+        "soil_dryness": 7,
+        "smoothness": 60,
+        "firmness": "soft",
+        "growth_time": 24,
+        "id": 63,
+        "size": 33
+    },
+
+    {
+        "natural_gift_power": 80,
+        "flavors": {
+            "spicy": 10,
+            "dry": 0,
+            "sweet": 0,
+            "bitter": 0,
+            "sour": 40,
+        },
+        "natural_gift_type": "dark",
+        "name": "rowap",
+        "max_harvest": 5,
+        "soil_dryness": 7,
+        "smoothness": 60,
+        "firmness": "very-soft",
+        "growth_time": 24,
+        "id": 64,
+        "size": 52
+    }
+
+]
+
 //stored data for moves sorted by type
 // var moves = {
 //         "fire": {

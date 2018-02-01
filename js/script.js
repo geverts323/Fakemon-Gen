@@ -222,7 +222,7 @@ function dmgCalc() {
     var diceRoll = getDiceRoll();
     var dmgDone;
     var atkDmg = ((Number(document.getElementById("atkDmg").value)) - 10) / 5;
-    console.log("atkDmg: "+ atkDmg);
+    console.log("atkDmg: " + atkDmg);
     var defDmg = ((Number(document.getElementById("defDmg").value)) - 10) / 5;
     console.log("defDmg: " + defDmg);
     var spAtkDmg = ((Number(document.getElementById("spAtkDmg").value)) - 10) / 5;
@@ -234,12 +234,10 @@ function dmgCalc() {
     if (dmgType == "phys") {
         dmgDone = Math.floor(Number((diceRoll + ((atkDmg) - (defDmg))) * stab() * moveEff()));
 
-    }
-    else if (dmgType == "spec") {
+    } else if (dmgType == "spec") {
         dmgDone = Math.floor(Number((diceRoll + ((spAtkDmg) - (spDefDmg))) * stab() * moveEff()));
 
-    }
-    else {
+    } else {
         alert("Select Damage Type");
     }
     console.log("dmgDone: " + dmgDone);
@@ -272,7 +270,7 @@ function typeDefEff() {
     console.log(defDmgOne);
     console.log(defDmgTwo);
     for (i in defTypes[defDmgOne]) {
-            dualTypes[i] = defTypes[defDmgOne][i] * defTypes[defDmgTwo][i];
+        dualTypes[i] = defTypes[defDmgOne][i] * defTypes[defDmgTwo][i];
     }
     console.log(dualTypes);
     typeDefPrint(dualTypes, defDmgOne, defDmgTwo);
@@ -280,34 +278,35 @@ function typeDefEff() {
 
 function typeDefPrint(dualTypes, typeOne, typeTwo) {
     var totalDefDmg;
-    var createTypeChart =  "<div class='typesTable'>" + "<h3>" + typeOne + "/" +typeTwo + "</h3>" +
+    var createTypeChart = "<div class='typesTable'>" + "<h3>" + typeOne + "/" + typeTwo + "</h3>" +
         "<table class='defTypeTable'>" + "<tbody>" +
-            "<tr>" + "<th>" + "Normal:" + "</th>" + "<td>" + "x" + dualTypes['Normal'] + "</td>" + "</tr>" +
-            "<tr>" + "<th>" + "Fighting:" + "</th>" + "<td>" + "x" + dualTypes['Fighting'] + "</td>" + "</tr>" +
-            "<tr>" + "<th>" + "Flying:" + "</th>" + "<td>" + "x" + dualTypes['Flying'] + "</td>" + "</tr>" +
-            "<tr>" + "<th>" + "Poison:" + "</th>" + "<td>" + "x" + dualTypes['Poison'] + "</td>" + "</tr>" +
-            "<tr>" + "<th>" + "Ground:" + "</th>" + "<td>" + "x" + dualTypes['Ground'] + "</td>" + "</tr>" +
-            "<tr>" + "<th>" + "Rock:" + "</th>" + "<td>" + "x" + dualTypes['Rock'] + "</td>" + "</tr>" +
-            "<tr>" + "<th>" + "Bug:" + "</th>" + "<td>" + "x" + dualTypes['Bug'] + "</td>" + "</tr>" +
-            "<tr>" + "<th>" + "Ghost:" + "</th>" + "<td>" + "x" + dualTypes['Ghost'] + "</td>" + "</tr>" +
-            "<tr>" + "<th>" + "Steel:" + "</th>" + "<td>" + "x" + dualTypes['Steel'] + "</td>" + "</tr>" +
-            "<tr>" + "<th>" + "Fire:" + "</th>" + "<td>" + "x" + dualTypes['Fire'] + "</td>" + "</tr>" +
-            "<tr>" + "<th>" + "Water:" + "</th>" + "<td>" + "x" + dualTypes['Water'] + "</td>" + "</tr>" +
-            "<tr>" + "<th>" + "Grass:" + "</th>" + "<td>" + "x" + dualTypes['Grass'] + "</td>" + "</tr>" +
-            "<tr>" + "<th>" + "Electric:" + "</th>" + "<td>" + "x" + dualTypes['Electric'] + "</td>" + "</tr>" +
-            "<tr>" + "<th>" + "Psychic:" + "</th>" + "<td>" + "x" + dualTypes['Psychic'] + "</td>" + "</tr>" +
-            "<tr>" + "<th>" + "Ice:" + "</th>" + "<td>" + "x" + dualTypes['Ice'] + "</td>" + "</tr>" +
-            "<tr>" + "<th>" + "Dragon:" + "</th>" + "<td>" + "x" + dualTypes['Dragon'] + "</td>" + "</tr>" +
-            "<tr>" + "<th>" + "Dark:" + "</th>" + "<td>" + "x" + dualTypes['Dark'] + "</td>" + "</tr>" +
-            "<tr>" + "<th>" + "Fairy:" + "</th>" + "<td>" + "x" + dualTypes['Fairy'] + "</td>" + "</tr>" +
-        "</tbody>" +"<tfoot>" +
-            // "<th>" + "Total: " + "</th>" + "<td>" + "NotYet" + "</td>"
-        "</tfoot>" + "</table>" +"</div>"
+        "<tr>" + "<th>" + "Normal:" + "</th>" + "<td>" + "x" + dualTypes['Normal'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Fighting:" + "</th>" + "<td>" + "x" + dualTypes['Fighting'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Flying:" + "</th>" + "<td>" + "x" + dualTypes['Flying'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Poison:" + "</th>" + "<td>" + "x" + dualTypes['Poison'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Ground:" + "</th>" + "<td>" + "x" + dualTypes['Ground'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Rock:" + "</th>" + "<td>" + "x" + dualTypes['Rock'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Bug:" + "</th>" + "<td>" + "x" + dualTypes['Bug'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Ghost:" + "</th>" + "<td>" + "x" + dualTypes['Ghost'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Steel:" + "</th>" + "<td>" + "x" + dualTypes['Steel'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Fire:" + "</th>" + "<td>" + "x" + dualTypes['Fire'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Water:" + "</th>" + "<td>" + "x" + dualTypes['Water'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Grass:" + "</th>" + "<td>" + "x" + dualTypes['Grass'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Electric:" + "</th>" + "<td>" + "x" + dualTypes['Electric'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Psychic:" + "</th>" + "<td>" + "x" + dualTypes['Psychic'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Ice:" + "</th>" + "<td>" + "x" + dualTypes['Ice'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Dragon:" + "</th>" + "<td>" + "x" + dualTypes['Dragon'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Dark:" + "</th>" + "<td>" + "x" + dualTypes['Dark'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Fairy:" + "</th>" + "<td>" + "x" + dualTypes['Fairy'] + "</td>" + "</tr>" +
+        "</tbody>" + "<tfoot>" +
+        // "<th>" + "Total: " + "</th>" + "<td>" + "NotYet" + "</td>"
+        "</tfoot>" + "</table>" + "</div>"
 
     var divStart = document.getElementById("defDmgSect");
     divStart.insertAdjacentHTML("beforeend", createTypeChart);
 }
 
+<<<<<<< HEAD
 
 //initially called function for encounter generation
 function encounterGenCall() {
@@ -397,6 +396,72 @@ function randomBerry() {
 // function gotTypes(data) {
 // console.log(data);
 // $(document).ready(function() {
+=======
+function showMonDrop() {
+    document.getElementById('monDrop').style.display = 'block';
+    document.getElementById('ballFind').style.display = 'none';
+    document.getElementById('itemFind').style.display = 'none';
+    document.getElementById('randItem').style.display = 'none';
+    document.getElementById('randBerry').style.display = 'none';
+    console.log('MonDrop');
+}
+
+function showBallDrop() {
+    document.getElementById('monDrop').style.display = 'none';
+    document.getElementById('ballFind').style.display = 'block';
+    document.getElementById('itemFind').style.display = 'none';
+    document.getElementById('randItem').style.display = 'none';
+    document.getElementById('randBerry').style.display = 'none';
+    console.log('BallFind');
+}
+
+function showItemFind() {
+    document.getElementById('monDrop').style.display = 'none';
+    document.getElementById('ballFind').style.display = 'none';
+    document.getElementById('itemFind').style.display = 'block';
+    document.getElementById('randItem').style.display = 'none';
+    document.getElementById('randBerry').style.display = 'none';
+    console.log('ItemFind');
+}
+
+function showRandItem() {
+    document.getElementById('monDrop').style.display = 'none';
+    document.getElementById('ballFind').style.display = 'none';
+    document.getElementById('itemFind').style.display = 'none';
+    document.getElementById('randItem').style.display = 'block';
+    document.getElementById('randBerry').style.display = 'none';
+    console.log('RandDrop');
+}
+
+function showRandBerry() {
+    document.getElementById('monDrop').style.display = 'none';
+    document.getElementById('ballFind').style.display = 'none';
+    document.getElementById('itemFind').style.display = 'none';
+    document.getElementById('randItem').style.display = 'none';
+    document.getElementById('randBerry').style.display = 'block';
+    console.log('RandBerry');
+}
+
+function getRandomBerry() {
+    var berryNum = Number(getRandomNumber(64));
+    console.log(berryNum);
+    var berry = berries[berryNum].name;
+    document.getElementById("berryBox").innerHTML = berry[0].toUpperCase() + berry.slice(1) + " Berry";
+
+}
+
+function getRandomNumber(num) {
+    var randNum = Math.floor(Math.random() * num);
+    console.log(randNum)
+    return randNum;
+}
+
+
+
+
+
+// $(document).ready(function(){
+>>>>>>> Surface-Book
 //     $.ajax({
 //         url: "https://pokeapi.co/api/v2/type/1/",
 //         type: "GET",
@@ -446,6 +511,7 @@ function randomBerry() {
 //         "damage_class": data.damage_class.name,
 //
 //     };
+<<<<<<< HEAD
 // }
 
 function gotTypeInfo(data) {
@@ -485,3 +551,6 @@ function gotMoveInfo(data) {
 
     };
 }
+=======
+// }
+>>>>>>> Surface-Book
