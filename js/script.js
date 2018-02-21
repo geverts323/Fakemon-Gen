@@ -294,6 +294,7 @@ function showMonDrop() {
     document.getElementById('itemFind').style.display = 'none';
     document.getElementById('randItem').style.display = 'none';
     document.getElementById('randBerry').style.display = 'none';
+    document.getElementById('itemSearch').style.display = 'none';
     console.log('MonDrop');
 }
 
@@ -303,6 +304,7 @@ function showBallDrop() {
     document.getElementById('itemFind').style.display = 'none';
     document.getElementById('randItem').style.display = 'none';
     document.getElementById('randBerry').style.display = 'none';
+    document.getElementById('itemSearch').style.display = 'none';
     console.log('BallFind');
 }
 
@@ -312,6 +314,7 @@ function showItemFind() {
     document.getElementById('itemFind').style.display = 'block';
     document.getElementById('randItem').style.display = 'none';
     document.getElementById('randBerry').style.display = 'none';
+    document.getElementById('itemSearch').style.display = 'none';
     console.log('ItemFind');
 }
 
@@ -321,6 +324,7 @@ function showRandItem() {
     document.getElementById('itemFind').style.display = 'none';
     document.getElementById('randItem').style.display = 'block';
     document.getElementById('randBerry').style.display = 'none';
+    document.getElementById('itemSearch').style.display = 'none';
     console.log('RandDrop');
 }
 
@@ -330,7 +334,18 @@ function showRandBerry() {
     document.getElementById('itemFind').style.display = 'none';
     document.getElementById('randItem').style.display = 'none';
     document.getElementById('randBerry').style.display = 'block';
+    document.getElementById('itemSearch').style.display = 'none';
     console.log('RandBerry');
+}
+
+function showItemSearch() {
+    document.getElementById('monDrop').style.display = 'none';
+    document.getElementById('ballFind').style.display = 'none';
+    document.getElementById('itemFind').style.display = 'none';
+    document.getElementById('randItem').style.display = 'none';
+    document.getElementById('randBerry').style.display = 'none';
+    document.getElementById('itemSearch').style.display = 'block';
+    console.log('ItemSearch');
 }
 
 function getRandomBerry() {
