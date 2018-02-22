@@ -347,7 +347,14 @@ function getRandomNumber(num) {
     return randNum;
 }
 
+function getEncounter() {
+    var land = document.getElementById('landscape').value;
+    var players = document.getElementById('numberPlayers').value;
+    var lvlRange = document.getElementById('levelRange').value;
+    var haunt = document.getElementById('haunted').value;
 
+    
+}
 
 
 
