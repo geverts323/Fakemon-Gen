@@ -387,7 +387,113 @@ function getEncounter() {
 
 }
 
+function showPoison() {
+    document.getElementById('poisonStatus').style.display = 'block';
+    document.getElementById('badPoisonStatus').style.display = 'none';
+    document.getElementById('paralysisStatus').style.display = 'none';
+    document.getElementById('sleepStatus').style.display = 'none';
+    document.getElementById('freezeStatus').style.display = 'none';
+    document.getElementById('burnStatus').style.display = 'none';
+    document.getElementById('infatStatus').style.display = 'none';
+    document.getElementById('confStatus').style.display = 'none';
+    document.getElementById('flinchStatus').style.display = 'none';
+}
 
+function showBadPoison() {
+    document.getElementById('poisonStatus').style.display = 'none';
+    document.getElementById('badPoisonStatus').style.display = 'block';
+    document.getElementById('paralysisStatus').style.display = 'none';
+    document.getElementById('sleepStatus').style.display = 'none';
+    document.getElementById('freezeStatus').style.display = 'none';
+    document.getElementById('burnStatus').style.display = 'none';
+    document.getElementById('infatStatus').style.display = 'none';
+    document.getElementById('confStatus').style.display = 'none';
+    document.getElementById('flinchStatus').style.display = 'none';
+}
+
+function showParalysis() {
+    document.getElementById('poisonStatus').style.display = 'none';
+    document.getElementById('badPoisonStatus').style.display = 'none';
+    document.getElementById('paralysisStatus').style.display = 'block';
+    document.getElementById('sleepStatus').style.display = 'none';
+    document.getElementById('freezeStatus').style.display = 'none';
+    document.getElementById('burnStatus').style.display = 'none';
+    document.getElementById('infatStatus').style.display = 'none';
+    document.getElementById('confStatus').style.display = 'none';
+    document.getElementById('flinchStatus').style.display = 'none';
+}
+
+function showSleep() {
+    document.getElementById('poisonStatus').style.display = 'none';
+    document.getElementById('badPoisonStatus').style.display = 'none';
+    document.getElementById('paralysisStatus').style.display = 'none';
+    document.getElementById('sleepStatus').style.display = 'block';
+    document.getElementById('freezeStatus').style.display = 'none';
+    document.getElementById('burnStatus').style.display = 'none';
+    document.getElementById('infatStatus').style.display = 'none';
+    document.getElementById('confStatus').style.display = 'none';
+    document.getElementById('flinchStatus').style.display = 'none';
+}
+
+function showFreeze() {
+    document.getElementById('poisonStatus').style.display = 'none';
+    document.getElementById('badPoisonStatus').style.display = 'none';
+    document.getElementById('paralysisStatus').style.display = 'none';
+    document.getElementById('sleepStatus').style.display = 'none';
+    document.getElementById('freezeStatus').style.display = 'block';
+    document.getElementById('burnStatus').style.display = 'none';
+    document.getElementById('infatStatus').style.display = 'none';
+    document.getElementById('confStatus').style.display = 'none';
+    document.getElementById('flinchStatus').style.display = 'none';
+}
+
+function showBurn() {
+    document.getElementById('poisonStatus').style.display = 'none';
+    document.getElementById('badPoisonStatus').style.display = 'none';
+    document.getElementById('paralysisStatus').style.display = 'none';
+    document.getElementById('sleepStatus').style.display = 'none';
+    document.getElementById('freezeStatus').style.display = 'none';
+    document.getElementById('burnStatus').style.display = 'block';
+    document.getElementById('infatStatus').style.display = 'none';
+    document.getElementById('confStatus').style.display = 'none';
+    document.getElementById('flinchStatus').style.display = 'none';
+}
+
+function showInfatuation() {
+    document.getElementById('poisonStatus').style.display = 'none';
+    document.getElementById('badPoisonStatus').style.display = 'none';
+    document.getElementById('paralysisStatus').style.display = 'none';
+    document.getElementById('sleepStatus').style.display = 'none';
+    document.getElementById('freezeStatus').style.display = 'none';
+    document.getElementById('burnStatus').style.display = 'none';
+    document.getElementById('infatStatus').style.display = 'block';
+    document.getElementById('confStatus').style.display = 'none';
+    document.getElementById('flinchStatus').style.display = 'none';
+}
+
+function showConfusion() {
+    document.getElementById('poisonStatus').style.display = 'none';
+    document.getElementById('badPoisonStatus').style.display = 'none';
+    document.getElementById('paralysisStatus').style.display = 'none';
+    document.getElementById('sleepStatus').style.display = 'none';
+    document.getElementById('freezeStatus').style.display = 'none';
+    document.getElementById('burnStatus').style.display = 'none';
+    document.getElementById('infatStatus').style.display = 'none';
+    document.getElementById('confStatus').style.display = 'block';
+    document.getElementById('flinchStatus').style.display = 'none';
+}
+
+function showFlinch() {
+    document.getElementById('poisonStatus').style.display = 'none';
+    document.getElementById('badPoisonStatus').style.display = 'none';
+    document.getElementById('paralysisStatus').style.display = 'none';
+    document.getElementById('sleepStatus').style.display = 'none';
+    document.getElementById('freezeStatus').style.display = 'none';
+    document.getElementById('burnStatus').style.display = 'none';
+    document.getElementById('infatStatus').style.display = 'none';
+    document.getElementById('confStatus').style.display = 'none';
+    document.getElementById('flinchStatus').style.display = 'block';
+}
 
 // $(document).ready(function(){
 //     $.ajax({
