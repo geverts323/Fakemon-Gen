@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pokemon D&amp;D Resources - Damage Calculator</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="topSection">
+        <h1>Hit Damage Calculator</h1>
+
+        <div class="mainTools">
+            <div class="toolItem">
+                <a href="index.html">Pokemon Generator</a>
+            </div>
+            <div class="toolItem">
+                <a href="encounter.html">Encounter Generator</a>
+            </div>
+            <div class="toolItem">
+                <a href="items.html">Item Generator</a>
+            </div>
+            <div class="toolItem">
+                <a href="dmg.html">Damage Calculator</a>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="secondaryTools">
+            <div class="hitDmgButton">
+                <a href="dmg.html">On Hit Damage Calculator</a>
+            </div>
+            <div class="dmgTypeButton">
+                <a href="dmg2.html">Dual Type Damage Calculator</a>
+            </div>
+            <div class="statCondButton">
+                <a href="status_condition.html">Status Condition Calculator</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainSection">
+        <div class="leftSection">
+            <br />
+            <input type="radio" name="dmgType" value="specDmg" onclick="showPoison()">Poison</input>
+            <br />
+            <input type="radio" name="dmgType" value="specDmg" onclick="showBadPoison()">Bad Poison</input>
+            <br />
+            <input type="radio" name="dmgType" value="specDmg" onclick="showParalysis()">Paralysis</input>
+            <br />
+            <input type="radio" name="dmgType" value="specDmg" onclick="showSleep()">Sleep</input>
+            <br />
+            <input type="radio" name="dmgType" value="specDmg" onclick="showFreeze()">Frozen</input>
+            <br />
+            <input type="radio" name="dmgType" value="specDmg" onclick="showBurn()">Burn</input>
+            <br />
+            <input type="radio" name="dmgType" value="specDmg" onclick="showInfatuation()">Infatuation</input>
+            <br />
+            <input type="radio" name="dmgType" value="specDmg" onclick="showConfusion()">Confusion</input>
+            <br />
+            <input type="radio" name="dmgType" value="specDmg" onclick="showFlinch()">Flinch</input>
+        </div>
+
+        <div class="rightSection">
+
+            <div class="hide" id="poisonStatus">
+                <p>
+                    test element1
+                </p>
+            </div>
+            <div class="hide" id="badPoisonStatus">
+                <p>
+                    test element2
+                </p>
+            </div>
+            <div class="hide" id="paralysisStatus">
+                <p>
+                    test element3
+                </p>
+            </div>
+            <div class="hide" id="sleepStatus">
+                <p>
+                    test element4
+                </p>
+            </div>
+            <div class="hide" id="freezeStatus">
+                <p>
+                    test element5
+                </p>
+            </div>
+            <div class="hide" id="burnStatus">
+                <p>
+                    test element6
+                </p>
+            </div>
+            <div class="hide" id="infatStatus">
+                <p>
+                    test element7
+                </p>
+            </div>
+            <div class="hide" id="confStatus">
+                <p>
+                    test element8
+                </p>
+            </div>
+            <div class="hide" id="flinchStatus">
+                <p>
+                    test element9
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
