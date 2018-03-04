@@ -247,9 +247,7 @@ function dmgCalc() {
     return dmgDone;
 }
 
-<<<<<<< HEAD
 
-=======
 //determines if move is critical hit or not
 function getCrit() {
     if (document.getElementById('critDmg').checked) {
@@ -261,7 +259,6 @@ function getCrit() {
 }
 
 //calculates defensive type effectiveness
->>>>>>> Surface-Book
 function typeDefEff() {
     var defDmgOne = $("#defDmg1").val();
     var defDmgTwo = $("#defDmg2").val();
@@ -306,7 +303,6 @@ function typeDefPrint(dualTypes, typeOne, typeTwo) {
     divStart.insertAdjacentHTML("beforeend", createTypeChart);
 }
 
-<<<<<<< HEAD
 //initially called function for encounter generation
 function encounterGenCall() {
     var land = $("#landscape").val();
@@ -325,10 +321,8 @@ function calcEncounterGen(land, numMon, haunt, range) {
 
 }
 
-=======
 
 //functions to show different Item Gen input fields
->>>>>>> Surface-Book
 function showMonDrop() {
     document.getElementById('monDrop').style.display = 'block';
     document.getElementById('ballFind').style.display = 'none';
@@ -658,9 +652,6 @@ function poiDmg() {
 //         "target": data.target.name,
 //         "damage_class": data.damage_class.name,
 //
-<<<<<<< HEAD
 //     };
-=======
 //     };
 // }
->>>>>>> Surface-Book
