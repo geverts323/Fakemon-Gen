@@ -556,6 +556,7 @@ var atkTypes = {
     }
 }
 
+//data for defensive type effectiveness
 var defTypes = {
     "Normal": {
         "Normal": 1,
@@ -1378,7 +1379,6 @@ var berries = [{
         "id": 21,
         "size": 135
     },
-//
     {
         "natural_gift_power": 70,
         "flavors": {
@@ -2221,6 +2221,67 @@ var berries = [{
     }
 
 ]
+
+// data for status conditions
+var statusConditions = {
+    "poison": {
+        "damage": (1/8),
+        "max_turn": null,
+        "snap_condition": null,
+        "hit_condition": null,
+        "turn_count": 0
+    },
+    "badPoison": {
+        "damage": (1/16),
+        "max_turn": null,
+        "snap_condition": null,
+        "hit_condition": null,
+        "turn_count": 0
+    },
+    "confusion": {
+        "damage": 4,
+        "max_turn": 4,
+        "snap_condition": 4,
+        "hit_condition": 1,
+        "turn_count": 0
+    },
+    "sleep": {
+        "damage": 0,
+        "max_turn": 3,
+        "snap_condition": 3,
+        "hit_condition": null,
+        "turn_count": 0
+    },
+    "paral": {
+        "damage": 0,
+        "max_turn": null,
+        "snap_condition": 0,
+        "hit_condition": "1 or 2",
+        "turn_count": 0
+    },
+    "burn": {
+        "damage": (1/16),
+        "max_turn": null,
+        "snap_condition": null,
+        "hit_condition": null,
+        "turn_count": null
+    },
+    "infat": {
+        "damage": 0,
+        "max_turn": null,
+        "snap_condition": null,
+        "hit_condition": "1 or 2",
+        "turn_count": null
+    },
+    "frozen": {
+        "damage": 0,
+        "max_turn": null,
+        "snap_condition": 5,
+        "hit_condition":"1 or 2",
+        "turn_count": 0,
+}
+}
+
 
 //stored data for moves sorted by type
 // var moves = {

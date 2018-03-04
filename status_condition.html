@@ -11,7 +11,7 @@
 
 <body>
     <div class="topSection">
-        <h1>Hit Damage Calculator</h1>
+        <h1>Status Condition Calculator</h1>
 
         <div class="mainTools">
             <div class="toolItem">
@@ -31,86 +31,155 @@
         <hr />
 
         <div class="secondaryTools">
-            <div class="hitDmgButton">
+            <div class="toll Item">
                 <a href="dmg.html">On Hit Damage Calculator</a>
             </div>
-            <div class="dmgTypeButton">
+            <div class="toolItem">
                 <a href="dmg2.html">Dual Type Damage Calculator</a>
             </div>
-            <div class="statCondButton">
+            <div class="toolItem">
                 <a href="status_condition.html">Status Condition Calculator</a>
             </div>
+            <div class="toolItem">
+                <a href="dice.html">Dice Roller</a>
+            </div>
+        </div>
         </div>
     </div>
 
     <div class="mainSection">
         <div class="leftSection">
-            <br />
-            <input type="radio" name="dmgType" value="specDmg" onclick="showPoison()">Poison</input>
-            <br />
-            <input type="radio" name="dmgType" value="specDmg" onclick="showBadPoison()">Bad Poison</input>
-            <br />
-            <input type="radio" name="dmgType" value="specDmg" onclick="showParalysis()">Paralysis</input>
-            <br />
-            <input type="radio" name="dmgType" value="specDmg" onclick="showSleep()">Sleep</input>
-            <br />
-            <input type="radio" name="dmgType" value="specDmg" onclick="showFreeze()">Frozen</input>
-            <br />
-            <input type="radio" name="dmgType" value="specDmg" onclick="showBurn()">Burn</input>
-            <br />
-            <input type="radio" name="dmgType" value="specDmg" onclick="showInfatuation()">Infatuation</input>
-            <br />
-            <input type="radio" name="dmgType" value="specDmg" onclick="showConfusion()">Confusion</input>
-            <br />
-            <input type="radio" name="dmgType" value="specDmg" onclick="showFlinch()">Flinch</input>
+            <div class="inputSection">
+                <div class="initialInput">
+                    <h3>Chance of Inflicting:</h3>
+                    <select id="statusChance">
+                        <option value="10">
+                            10%
+                        </option>
+                        <option value="20">
+                            20%
+                        </option>
+                        <option value="30">
+                            30%
+                        </option>
+                        <option value="40">
+                            40%
+                        </option>
+                        <option value="50">
+                            50%
+                        </option>
+                        <option value="60">
+                            60%
+                        </option>
+                        <option value="70">
+                            70%
+                        </option>
+                        <option value="80">
+                            80%
+                        </option>
+                        <option value="90">
+                            90%
+                        </option>
+                        <option value="100">
+                            100%
+                        </option>
+                    </select>
+                    <br />
+                    <h3>Status Condition</h3>
+                    <input type="radio" name="statusType" value="poison">Poison</input>
+                    <br>
+                    <input type="radio" name="statusType" value="badPoison">Bad Poison</input>
+                    <br>
+                    <input type="radio" name="statusType" value="paral">Paralysis</input>
+                    <br>
+                    <input type="radio" name="statusType" value="sleep">Sleep</input>
+                    <br>
+                    <input type="radio" name="statusType" value="freeze">Frozen</input>
+                    <br>
+                    <input type="radio" name="statusType" value="burn">Burn</input>
+                    <br>
+                    <input type="radio" name="statusType" value="infat">Infatuation</input>
+                    <br>
+                    <input type="radio" name="statusType" value="confusion">Confusion</input>
+                    <br>
+                    <!-- <input type="radio" name="statusType" value="flinch" onclick="showFlinch()">Flinch</input> -->
+                    <br />
+                    <button id="statusCalc"onclick="statusCalc()">Calculate!</button>
+
+                    <div class="hide" id="flinchStatus">
+                        <h3>Flinch Item:</h3>
+
+                        <select id="flinchItem">
+                            <option value="None">
+                                -- None --
+                            </option>
+                            <option value="King's Rock">
+                                King's Rock
+                            </option>
+                            <option value="Razor Fang">
+                                Razor Fang
+                            </option>
+                        </select>
+                        <br />
+                        <button onclick="flinchChance()">Calculate!</button>
+                    </div>
+                </div>
+                <div class="secondaryInput">
+                </div>
+            </div>
         </div>
 
         <div class="rightSection">
-
-            <div class="hide" id="poisonStatus">
-                <p>
-                    test element1
-                </p>
+            <div class="statusSection hide" id="poisonStatus">
+                <h4>Poisoned! Use the below to calculate poison damage!</h4>
+                <br />
+                <input id="poiMaxHP" placeholder="Max HP" />
+                <input id="poiCurrHP" placeholder="Current HP" />
+                <button onclick="poiDmg()">Next Turn</button>
+                <h5>Turn Count: </h5>
+                <h5>Current HP: </h5>
             </div>
-            <div class="hide" id="badPoisonStatus">
-                <p>
-                    test element2
-                </p>
+            <div class="statusSection hide" id="badPoisonStatus">
+                <h4>Badly Poisoned! Use the below to calculate bad poison damage!</h4>
+                <br />
+                <input id="badPoiMaxHP" placeholder="Max HP" />
+                <input id="badPoiCurrHP" placeholder="Current HP" />
+                <button onclick="badPoiTurn()">Next Turn</button>
+                <h5>Turn Count: </h5>
+                <h5>Current HP: </h5>
             </div>
-            <div class="hide" id="paralysisStatus">
-                <p>
-                    test element3
-                </p>
+            <div class="statusSection hide" id="paralysisStatus">
+                <h4>Paralysed! Use the button whenever you attack!</h4>
+                <button onclick="paralTurn()">Attack!</button>
             </div>
-            <div class="hide" id="sleepStatus">
-                <p>
-                    test element4
-                </p>
+            <div class="statusSection hide" id="sleepStatus">
+                <h4>Fell Asleep! Use the button whenever you attack!</h4>
+                <button onclick="sleepTurn()">Next Turn</button>
+                <h5>Turn Count: </h5>
             </div>
-            <div class="hide" id="freezeStatus">
-                <p>
-                    test element5
-                </p>
+            <div class="statusSection hide" id="freezeStatus">
+                <h4>Frozen! Use the button whenever you attack!</h4>
+                <button onclick="freezeTurn()">Next Turn</button>
+                <h5>Turn Count: </h5>
             </div>
-            <div class="hide" id="burnStatus">
-                <p>
-                    test element6
-                </p>
+            <div class="statusSection hide" id="burnStatus">
+                <h4>Burned! Use the below to calculate burn damage!</h4>
+                <input id="burnMaxHP" placeholder="Max HP" />
+                <input id="burnCurrHP" placeholder="Current HP" />
+                <button onclick="burnTurn()">Next Turn</button>
+                <h5>Turn Count: </h5>
+                <h5>Current HP: </h5>
             </div>
-            <div class="hide" id="infatStatus">
-                <p>
-                    test element7
-                </p>
+            <div class="statusSection hide" id="infatStatus">
+                <h4>Infatuated! Use the Button whenever you attack!</h4>
+                <button onclick="infatTurn()">Next Turn</button>
             </div>
-            <div class="hide" id="confStatus">
-                <p>
-                    test element8
-                </p>
-            </div>
-            <div class="hide" id="flinchStatus">
-                <p>
-                    test element9
-                </p>
+            <div class="statusSection hide" id="confStatus">
+                <h4>Confused! Use the below whenever you attack!</h4>
+                <input id="confCurrHP" placeholder="Current HP"/>
+                <button onclick="confusionTurn()">Next Turn</button>
+                <h5>Turn Count: </h5>
+                <h5>Current HP: </h5>
             </div>
         </div>
     </div>

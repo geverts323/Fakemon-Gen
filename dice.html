@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pokemon D&amp;D Resources - Damage Calculator</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="topSection">
+        <h1>Dice Roller</h1>
+
+        <div class="mainTools">
+            <div class="toolItem">
+                <a href="index.html">Pokemon Generator</a>
+            </div>
+            <div class="toolItem">
+                <a href="encounter.html">Encounter Generator</a>
+            </div>
+            <div class="toolItem">
+                <a href="items.html">Item Generator</a>
+            </div>
+            <div class="toolItem">
+                <a href="dmg.html">Damage Calculator</a>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="secondaryTools">
+            <div class="toll Item">
+                <a href="dmg.html">On Hit Damage Calculator</a>
+            </div>
+            <div class="toolItem">
+                <a href="dmg2.html">Dual Type Damage Calculator</a>
+            </div>
+            <div class="toolItem">
+                <a href="status_condition.html">Status Condition Calculator</a>
+            </div>
+            <div class="toolItem">
+                <a href="dice.html">Dice Roller</a>
+            </div>
+        </div>
+    </div>
+    <div class="mainSection">
+        <div class="leftSection">
+            <h4>Roll an Any-Sided Dice!</h4>
+            <input type="number" id="anySidedDice" />
+            <button onclick="anySidedDiceRoll()">Roll!</button>
+        </div>
+        <div class="rightSection">
+            <div class="displayBox hide" id="dicePrintBox">
+                <h3 id="dicePrint"></h3>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

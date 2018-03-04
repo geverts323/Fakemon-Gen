@@ -374,7 +374,7 @@ function getRandomBerry() {
 
 function getRandomNumber(num) {
     var randNum = Math.floor(Math.random() * num);
-    console.log(randNum)
+    console.log("Random Number: " + randNum);
     return randNum;
 }
 
@@ -397,6 +397,7 @@ function showPoison() {
     document.getElementById('infatStatus').style.display = 'none';
     document.getElementById('confStatus').style.display = 'none';
     document.getElementById('flinchStatus').style.display = 'none';
+    document.getElementById('statusCalc').style.display = 'block';
 }
 
 function showBadPoison() {
@@ -409,6 +410,7 @@ function showBadPoison() {
     document.getElementById('infatStatus').style.display = 'none';
     document.getElementById('confStatus').style.display = 'none';
     document.getElementById('flinchStatus').style.display = 'none';
+    document.getElementById('statusCalc').style.display = 'block';
 }
 
 function showParalysis() {
@@ -421,6 +423,7 @@ function showParalysis() {
     document.getElementById('infatStatus').style.display = 'none';
     document.getElementById('confStatus').style.display = 'none';
     document.getElementById('flinchStatus').style.display = 'none';
+    document.getElementById('statusCalc').style.display = 'block';
 }
 
 function showSleep() {
@@ -433,6 +436,7 @@ function showSleep() {
     document.getElementById('infatStatus').style.display = 'none';
     document.getElementById('confStatus').style.display = 'none';
     document.getElementById('flinchStatus').style.display = 'none';
+    document.getElementById('statusCalc').style.display = 'block';
 }
 
 function showFreeze() {
@@ -445,6 +449,7 @@ function showFreeze() {
     document.getElementById('infatStatus').style.display = 'none';
     document.getElementById('confStatus').style.display = 'none';
     document.getElementById('flinchStatus').style.display = 'none';
+    document.getElementById('statusCalc').style.display = 'block';
 }
 
 function showBurn() {
@@ -457,6 +462,7 @@ function showBurn() {
     document.getElementById('infatStatus').style.display = 'none';
     document.getElementById('confStatus').style.display = 'none';
     document.getElementById('flinchStatus').style.display = 'none';
+    document.getElementById('statusCalc').style.display = 'block';
 }
 
 function showInfatuation() {
@@ -469,6 +475,7 @@ function showInfatuation() {
     document.getElementById('infatStatus').style.display = 'block';
     document.getElementById('confStatus').style.display = 'none';
     document.getElementById('flinchStatus').style.display = 'none';
+    document.getElementById('statusCalc').style.display = 'block';
 }
 
 function showConfusion() {
@@ -481,6 +488,7 @@ function showConfusion() {
     document.getElementById('infatStatus').style.display = 'none';
     document.getElementById('confStatus').style.display = 'block';
     document.getElementById('flinchStatus').style.display = 'none';
+    document.getElementById('statusCalc').style.display = 'block';
 }
 
 function showFlinch() {
@@ -493,7 +501,88 @@ function showFlinch() {
     document.getElementById('infatStatus').style.display = 'none';
     document.getElementById('confStatus').style.display = 'none';
     document.getElementById('flinchStatus').style.display = 'block';
+    document.getElementById('statusCalc').style.display = 'none';
 }
+
+function anySidedDiceRoll() {
+    var diceSides = $('#anySidedDice').val();
+    console.log(diceSides);
+    var roll = getRandomNumber(diceSides);
+    document.getElementById('dicePrintBox').style.display = 'block';
+    document.getElementById('dicePrint').innerHTML = "Roll: " + roll;
+}
+
+//grabs selected %chance and gets random number to see if status was inflicted or not
+//need to add if statement for flinch items
+function statusCalc() {
+    var chance = parseInt(document.getElementById("statusChance").selectedIndex) + 1;
+    console.log("Percent Chance: " + chance + "0");
+    var roll = getRandomNumber(10) + 1;
+    console.log("roll: " + roll);
+
+    if (roll > (10 - chance)) {
+        console.log("Status Condition Inflicted!")
+        getStatusCondition()
+        return true;
+    }
+    else {
+        console.log("Status Condition Not Inflicted!")
+    }
+}
+
+// function grabs selected radio button status condition
+// and shows the fields for that status condition
+function getStatusCondition () {
+    var statusCondition = $("input[type='radio'][name='statusType']:checked").val();
+    console.log(statusCondition);
+
+    if (statusCondition == "poison") {
+        showPoison();
+    }
+    else if (statusCondition == "badPoison") {
+        showBadPoison();
+    }
+    else if (statusCondition == "paral") {
+        showParalysis();
+    }
+    else if (statusCondition == "sleep") {
+        showSleep();
+    }
+    else if (statusCondition == "freeze") {
+        showFreeze();
+    }
+    else if (statusCondition == "burn") {
+        showBurn();
+    }
+    else if (statusCondition == "infat") {
+        showInfatuation();
+    }
+    else if (statusCondition == "confusion") {
+        showConfusion();
+    }
+    else {
+        console.log("either something went wrong, or flinch is selected")
+    }
+
+}
+//might need this to keep count of turns, on each function if "snapped out" should reset to 0
+var turnCount = -1;
+//hopefully one function to calculate handling for status condition controls
+//may need to split these into different functions
+function poiDmg() {
+    var maxHP = document.getElementById("poiMaxHP").value;
+    var currHP = document.getElementById("poiCurrHP").value;
+    console.log("max HP: " + maxHP);
+    console.log("current HP: " + currHP);
+    turnCount += 1;
+
+    var newCurrHP = parseInt(currHP - (maxHP*(1/8)));
+    console.log("new current HP: " + newCurrHP);
+    return newCurrHP = currHP;
+}
+
+
+
 
 // $(document).ready(function(){
 //     $.ajax({
