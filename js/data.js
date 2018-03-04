@@ -556,6 +556,7 @@ var atkTypes = {
     }
 }
 
+//data for defensive type effectiveness
 var defTypes = {
     "Normal": {
         "Normal": 1,
@@ -949,6 +950,7 @@ var berries = [{
         },
         "natural_gift_type": "fire",
         "name": "cheri",
+        "effect": "A berry to be consumed by a Mon. If a Mon holds one, it can recover from paralysis on its own in battle.",
         "max_harvest": 5,
         "soil_dryness": 15,
         "smoothness": 25,
@@ -969,6 +971,7 @@ var berries = [{
         },
         "natural_gift_type": "water",
         "name": "chesto",
+        "effect": "A berry to be consumed by a Mon. If a Mon holds one, it can recover from sleep on its own in battle",
         "max_harvest": 5,
         "soil_dryness": 15,
         "smoothness": 25,
@@ -989,6 +992,7 @@ var berries = [{
         },
         "natural_gift_type": "electric",
         "name": "pecha",
+        "effect": "A berry to be consumed by a Mon. If a Mon holds one, it can recover from poison on its own in battle",
         "max_harvest": 5,
         "soil_dryness": 15,
         "smoothness": 25,
@@ -1009,6 +1013,7 @@ var berries = [{
         },
         "natural_gift_type": "grass",
         "name": "rawst",
+        "effect": "A berry to be consumed by a Mon. If a Mon holds one, it can recover from a burn on its own",
         "max_harvest": 5,
         "soil_dryness": 15,
         "smoothness": 25,
@@ -1029,6 +1034,7 @@ var berries = [{
         },
         "natural_gift_type": "ice",
         "name": "aspear",
+        "effect": "A berry to be consumed by a Mon. If a Mon holds one, it can recover from being frozen on its own in battle",
         "max_harvest": 5,
         "soil_dryness": 15,
         "smoothness": 25,
@@ -1049,6 +1055,7 @@ var berries = [{
         },
         "natural_gift_type": "fighting",
         "name": "leppa",
+        "effect": "A berry to be consumed by a Mon. If a Mon holds one, it can restore 10 PP to a depleted move during battle",
         "max_harvest": 5,
         "soil_dryness": 15,
         "smoothness": 20,
@@ -1069,6 +1076,7 @@ var berries = [{
         },
         "natural_gift_type": "poison",
         "name": "oran",
+        "effect": "A berry to be consumed by a Mon. If a Mon holds one, it can restore its own HP by 10 points during battle",
         "max_harvest": 5,
         "soil_dryness": 15,
         "smoothness": 20,
@@ -1089,6 +1097,7 @@ var berries = [{
         },
         "natural_gift_type": "ground",
         "name": "persim",
+        "effect": "A berry to be held by a Mon. If a Mon holds one, it can recover from confusion on its own in battle",
         "max_harvest": 5,
         "soil_dryness": 15,
         "smoothness": 20,
@@ -1109,6 +1118,7 @@ var berries = [{
         },
         "natural_gift_type": "flying",
         "name": "lum",
+        "effect": "A berry to be consumed by Mon. If a Mon holds one, it can recover from any condition during battle",
         "max_harvest": 5,
         "soil_dryness": 8,
         "smoothness": 20,
@@ -1129,6 +1139,7 @@ var berries = [{
         },
         "natural_gift_type": "psychic",
         "name": "sitrus",
+        "effect": "A berry to be consumed by Mon. If a Mon holds one, it can restore its own HP by a small amount during battle",
         "max_harvest": 5,
         "soil_dryness": 7,
         "smoothness": 20,
@@ -1149,6 +1160,7 @@ var berries = [{
         },
         "natural_gift_type": "bug",
         "name": "figy",
+        "effect": "If held by a Mon, it restpres the user's HP in a pinch, but it will cause confusion if the user hates the taste",
         "max_harvest": 5,
         "soil_dryness": 10,
         "smoothness": 25,
@@ -1169,6 +1181,7 @@ var berries = [{
         },
         "natural_gift_type": "rock",
         "name": "wiki",
+        "effect": "If held by a Mon, it restpres the user's HP in a pinch, but it will cause confusion if the user hates the taste",
         "max_harvest": 5,
         "soil_dryness": 10,
         "smoothness": 25,
@@ -1189,6 +1202,7 @@ var berries = [{
         },
         "natural_gift_type": "ghost",
         "name": "mago",
+        "effect": "If held by a Mon, it restores the user's HP in a pinch, but it will cause confusion if the user hates the taste",
         "max_harvest": 5,
         "soil_dryness": 10,
         "smoothness": 25,
@@ -1209,6 +1223,7 @@ var berries = [{
         },
         "natural_gift_type": "dragon",
         "name": "aguav",
+        "effect": "If held by a Mon, it restores the user's HP in a pinch, but it will cause confusion if the user hates the taste",
         "max_harvest": 5,
         "soil_dryness": 10,
         "smoothness": 25,
@@ -1229,6 +1244,7 @@ var berries = [{
         },
         "natural_gift_type": "dark",
         "name": "iapapa",
+        "effect": "If held by a Mon, it restores the user's HP in a pinch, it will cause confusion if the user hates the taste",
         "max_harvest": 5,
         "soil_dryness": 10,
         "smoothness": 25,
@@ -1249,6 +1265,7 @@ var berries = [{
         },
         "natural_gift_type": "steel",
         "name": "razz",
+        "effect": "A berry to be used in cooking. This berry is very rare and hard to obtain in certain regions",
         "max_harvest": 10,
         "soil_dryness": 35,
         "smoothness": 20,
@@ -1269,6 +1286,7 @@ var berries = [{
         },
         "natural_gift_type": "fire",
         "name": "bluk",
+        "effect": "A berry to be used in cooking. This berry is very rare and hard to obtain in certain regions",
         "max_harvest": 10,
         "soil_dryness": 35,
         "smoothness": 20,
@@ -1289,6 +1307,7 @@ var berries = [{
         },
         "natural_gift_type": "water",
         "name": "nanab",
+        "effect": "A berry to be used in cooking. This berry is very rare and hard to obtain in certain regions",
         "max_harvest": 10,
         "soil_dryness": 35,
         "smoothness": 20,
@@ -1309,6 +1328,7 @@ var berries = [{
         },
         "natural_gift_type": "electric",
         "name": "wepear",
+        "effect": "A berry to be used in cooking. This berry is very rare and hard to obtain in certain regions",
         "max_harvest": 10,
         "soil_dryness": 35,
         "smoothness": 20,
@@ -1329,6 +1349,7 @@ var berries = [{
         },
         "natural_gift_type": "grass",
         "name": "pinap",
+        "effect": "A berry to be used in cooking. This berry is very rare and hard to obtain in certain regions",
         "max_harvest": 10,
         "soil_dryness": 35,
         "smoothness": 20,
@@ -1349,6 +1370,7 @@ var berries = [{
         },
         "natural_gift_type": "ice",
         "name": "pomeg",
+        "effect": "A berry to be consumed by Mon. Using it on a Mon makes it more friendly but lowers its base HP",
         "max_harvest": 5,
         "soil_dryness": 8,
         "smoothness": 20,
@@ -1357,7 +1379,6 @@ var berries = [{
         "id": 21,
         "size": 135
     },
-
     {
         "natural_gift_power": 70,
         "flavors": {
@@ -1369,6 +1390,7 @@ var berries = [{
         },
         "natural_gift_type": "fighting",
         "name": "kelpsy",
+
         "max_harvest": 5,
         "soil_dryness": 8,
         "smoothness": 20,
@@ -2199,6 +2221,67 @@ var berries = [{
     }
 
 ]
+
+// data for status conditions
+var statusConditions = {
+    "poison": {
+        "damage": (1/8),
+        "max_turn": null,
+        "snap_condition": null,
+        "hit_condition": null,
+        "turn_count": 0
+    },
+    "badPoison": {
+        "damage": (1/16),
+        "max_turn": null,
+        "snap_condition": null,
+        "hit_condition": null,
+        "turn_count": 0
+    },
+    "confusion": {
+        "damage": 4,
+        "max_turn": 4,
+        "snap_condition": 4,
+        "hit_condition": 1,
+        "turn_count": 0
+    },
+    "sleep": {
+        "damage": 0,
+        "max_turn": 3,
+        "snap_condition": 3,
+        "hit_condition": null,
+        "turn_count": 0
+    },
+    "paral": {
+        "damage": 0,
+        "max_turn": null,
+        "snap_condition": 0,
+        "hit_condition": "1 or 2",
+        "turn_count": 0
+    },
+    "burn": {
+        "damage": (1/16),
+        "max_turn": null,
+        "snap_condition": null,
+        "hit_condition": null,
+        "turn_count": null
+    },
+    "infat": {
+        "damage": 0,
+        "max_turn": null,
+        "snap_condition": null,
+        "hit_condition": "1 or 2",
+        "turn_count": null
+    },
+    "frozen": {
+        "damage": 0,
+        "max_turn": null,
+        "snap_condition": 5,
+        "hit_condition":"1 or 2",
+        "turn_count": 0,
+}
+}
+
 
 //stored data for moves sorted by type
 // var moves = {

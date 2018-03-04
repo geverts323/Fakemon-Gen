@@ -45,6 +45,8 @@
                         <input type="radio" name="drop_type" value="random_item" onclick="showRandDrop()">Random Item</input>
                         <br>
                         <input type="radio" name="drop_type" value="random_berry" onclick="showRandBerry()">Random Berry</input>
+                        <br>
+                        <input type="radio" name="drop_type" value="item_search" onclick="showItemSearch()">Item Search</input>
                     </div>
                     <div id="monDrop" class="hide">
                         <h4>Pokemon Type:</h4>
@@ -204,6 +206,14 @@
                     <div id="randBerry" class="hide">
                         <h4>Click the Button!</h4>
                         <button onclick="getRandomBerry()">Random Berry!</button>
+                    </div>
+                    <div id="itemSearch" class="hide">
+                        <input type="text" id="itemSearchBar" onkeyup="searchItems()" placeholder="Search for items..">
+                        <ul>
+                            <li>
+                                Will this show up?
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

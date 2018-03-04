@@ -27,7 +27,7 @@ function getName() {
     return pokemonName;
 }
 
-// each function calculates the individual stats
+// each function calculates each individual stat
 function hpStat(pokemonLevel) {
     "use strict";
     var baseHP = Number(document.getElementById("baseHP").value);
@@ -156,6 +156,7 @@ function createPokemon() {
 
 }
 
+// global var to calculate based on sp or phys dmg
 var dmgType;
 
 //shows Physical stat header and input
@@ -234,8 +235,9 @@ function dmgCalc() {
     if (dmgType == "phys") {
         dmgDone = Math.floor(Number((diceRoll + ((atkDmg) - (defDmg))) * stab() * moveEff()));
 
+        dmgDone = (Math.floor(Number((diceRoll + ((atkDmg) - (defDmg))) * stab() * moveEff()) * getCrit()));
+
     } else if (dmgType == "spec") {
-        dmgDone = Math.floor(Number((diceRoll + ((spAtkDmg) - (spDefDmg))) * stab() * moveEff()));
 
     } else {
         alert("Select Damage Type");
@@ -289,6 +291,7 @@ function typeDefPrint(dualTypes, typeOne, typeTwo) {
     divStart.insertAdjacentHTML("beforeend", createTypeChart);
 }
 
+<<<<<<< HEAD
 //initially called function for encounter generation
 function encounterGenCall() {
     var land = $("#landscape").val();
@@ -307,6 +310,10 @@ function calcEncounterGen(land, numMon, haunt, range) {
 
 }
 
+=======
+
+//functions to show different Item Gen input fields
+>>>>>>> Surface-Book
 function showMonDrop() {
     document.getElementById('monDrop').style.display = 'block';
     document.getElementById('ballFind').style.display = 'none';
@@ -362,7 +369,6 @@ function getRandomBerry() {
 
 function getRandomNumber(num) {
     var randNum = Math.floor(Math.random() * num);
-    console.log(randNum)
     return randNum;
 }
 
@@ -419,4 +425,9 @@ function getRandomNumber(num) {
 //         "target": data.target.name,
 //         "damage_class": data.damage_class.name,
 //
+<<<<<<< HEAD
 //     };
+=======
+//     };
+// }
+>>>>>>> Surface-Book
