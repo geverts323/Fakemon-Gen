@@ -233,11 +233,11 @@ function dmgCalc() {
 
 
     if (dmgType == "phys") {
-        dmgDone = Math.floor(Number((diceRoll + ((atkDmg) - (defDmg))) * stab() * moveEff()));
 
         dmgDone = (Math.floor(Number((diceRoll + ((atkDmg) - (defDmg))) * stab() * moveEff()) * getCrit()));
 
     } else if (dmgType == "spec") {
+        dmgDone = (Math.floor(Number((diceRoll + ((spAtkDmg) - (spDefDmg))) * stab() * moveEff()) * getCrit()));
 
     } else {
         alert("Select Damage Type");
@@ -247,7 +247,21 @@ function dmgCalc() {
     return dmgDone;
 }
 
+<<<<<<< HEAD
 
+=======
+//determines if move is critical hit or not
+function getCrit() {
+    if (document.getElementById('critDmg').checked) {
+        return 2;
+    } else {
+        return 1;
+    };
+
+}
+
+//calculates defensive type effectiveness
+>>>>>>> Surface-Book
 function typeDefEff() {
     var defDmgOne = $("#defDmg1").val();
     var defDmgTwo = $("#defDmg2").val();
@@ -261,6 +275,7 @@ function typeDefEff() {
     typeDefPrint(dualTypes, defDmgOne, defDmgTwo);
 }
 
+//prints table with info from typeDefEff()
 function typeDefPrint(dualTypes, typeOne, typeTwo) {
     var totalDefDmg;
     var createTypeChart = "<div class='typesTable'>" + "<h3>" + typeOne + "/" + typeTwo + "</h3>" +
@@ -320,6 +335,7 @@ function showMonDrop() {
     document.getElementById('itemFind').style.display = 'none';
     document.getElementById('randItem').style.display = 'none';
     document.getElementById('randBerry').style.display = 'none';
+    document.getElementById('itemSearch').style.display = 'none';
     console.log('MonDrop');
 }
 
@@ -329,6 +345,7 @@ function showBallDrop() {
     document.getElementById('itemFind').style.display = 'none';
     document.getElementById('randItem').style.display = 'none';
     document.getElementById('randBerry').style.display = 'none';
+    document.getElementById('itemSearch').style.display = 'none';
     console.log('BallFind');
 }
 
@@ -338,6 +355,7 @@ function showItemFind() {
     document.getElementById('itemFind').style.display = 'block';
     document.getElementById('randItem').style.display = 'none';
     document.getElementById('randBerry').style.display = 'none';
+    document.getElementById('itemSearch').style.display = 'none';
     console.log('ItemFind');
 }
 
@@ -347,6 +365,7 @@ function showRandItem() {
     document.getElementById('itemFind').style.display = 'none';
     document.getElementById('randItem').style.display = 'block';
     document.getElementById('randBerry').style.display = 'none';
+    document.getElementById('itemSearch').style.display = 'none';
     console.log('RandDrop');
 }
 
@@ -356,7 +375,18 @@ function showRandBerry() {
     document.getElementById('itemFind').style.display = 'none';
     document.getElementById('randItem').style.display = 'none';
     document.getElementById('randBerry').style.display = 'block';
+    document.getElementById('itemSearch').style.display = 'none';
     console.log('RandBerry');
+}
+
+function showItemSearch() {
+    document.getElementById('monDrop').style.display = 'none';
+    document.getElementById('ballFind').style.display = 'none';
+    document.getElementById('itemFind').style.display = 'none';
+    document.getElementById('randItem').style.display = 'none';
+    document.getElementById('randBerry').style.display = 'none';
+    document.getElementById('itemSearch').style.display = 'block';
+    console.log('ItemSearch');
 }
 
 function getRandomBerry() {
@@ -369,9 +399,212 @@ function getRandomBerry() {
 
 function getRandomNumber(num) {
     var randNum = Math.floor(Math.random() * num);
+    console.log("Random Number: " + randNum);
     return randNum;
 }
 
+function getEncounter() {
+    var land = document.getElementById('landscape').value;
+    var players = document.getElementById('numberPlayers').value;
+    var lvlRange = document.getElementById('levelRange').value;
+    var haunt = document.getElementById('haunted').value;
+
+
+}
+
+function showPoison() {
+    document.getElementById('poisonStatus').style.display = 'block';
+    document.getElementById('badPoisonStatus').style.display = 'none';
+    document.getElementById('paralysisStatus').style.display = 'none';
+    document.getElementById('sleepStatus').style.display = 'none';
+    document.getElementById('freezeStatus').style.display = 'none';
+    document.getElementById('burnStatus').style.display = 'none';
+    document.getElementById('infatStatus').style.display = 'none';
+    document.getElementById('confStatus').style.display = 'none';
+    document.getElementById('flinchStatus').style.display = 'none';
+    document.getElementById('statusCalc').style.display = 'block';
+}
+
+function showBadPoison() {
+    document.getElementById('poisonStatus').style.display = 'none';
+    document.getElementById('badPoisonStatus').style.display = 'block';
+    document.getElementById('paralysisStatus').style.display = 'none';
+    document.getElementById('sleepStatus').style.display = 'none';
+    document.getElementById('freezeStatus').style.display = 'none';
+    document.getElementById('burnStatus').style.display = 'none';
+    document.getElementById('infatStatus').style.display = 'none';
+    document.getElementById('confStatus').style.display = 'none';
+    document.getElementById('flinchStatus').style.display = 'none';
+    document.getElementById('statusCalc').style.display = 'block';
+}
+
+function showParalysis() {
+    document.getElementById('poisonStatus').style.display = 'none';
+    document.getElementById('badPoisonStatus').style.display = 'none';
+    document.getElementById('paralysisStatus').style.display = 'block';
+    document.getElementById('sleepStatus').style.display = 'none';
+    document.getElementById('freezeStatus').style.display = 'none';
+    document.getElementById('burnStatus').style.display = 'none';
+    document.getElementById('infatStatus').style.display = 'none';
+    document.getElementById('confStatus').style.display = 'none';
+    document.getElementById('flinchStatus').style.display = 'none';
+    document.getElementById('statusCalc').style.display = 'block';
+}
+
+function showSleep() {
+    document.getElementById('poisonStatus').style.display = 'none';
+    document.getElementById('badPoisonStatus').style.display = 'none';
+    document.getElementById('paralysisStatus').style.display = 'none';
+    document.getElementById('sleepStatus').style.display = 'block';
+    document.getElementById('freezeStatus').style.display = 'none';
+    document.getElementById('burnStatus').style.display = 'none';
+    document.getElementById('infatStatus').style.display = 'none';
+    document.getElementById('confStatus').style.display = 'none';
+    document.getElementById('flinchStatus').style.display = 'none';
+    document.getElementById('statusCalc').style.display = 'block';
+}
+
+function showFreeze() {
+    document.getElementById('poisonStatus').style.display = 'none';
+    document.getElementById('badPoisonStatus').style.display = 'none';
+    document.getElementById('paralysisStatus').style.display = 'none';
+    document.getElementById('sleepStatus').style.display = 'none';
+    document.getElementById('freezeStatus').style.display = 'block';
+    document.getElementById('burnStatus').style.display = 'none';
+    document.getElementById('infatStatus').style.display = 'none';
+    document.getElementById('confStatus').style.display = 'none';
+    document.getElementById('flinchStatus').style.display = 'none';
+    document.getElementById('statusCalc').style.display = 'block';
+}
+
+function showBurn() {
+    document.getElementById('poisonStatus').style.display = 'none';
+    document.getElementById('badPoisonStatus').style.display = 'none';
+    document.getElementById('paralysisStatus').style.display = 'none';
+    document.getElementById('sleepStatus').style.display = 'none';
+    document.getElementById('freezeStatus').style.display = 'none';
+    document.getElementById('burnStatus').style.display = 'block';
+    document.getElementById('infatStatus').style.display = 'none';
+    document.getElementById('confStatus').style.display = 'none';
+    document.getElementById('flinchStatus').style.display = 'none';
+    document.getElementById('statusCalc').style.display = 'block';
+}
+
+function showInfatuation() {
+    document.getElementById('poisonStatus').style.display = 'none';
+    document.getElementById('badPoisonStatus').style.display = 'none';
+    document.getElementById('paralysisStatus').style.display = 'none';
+    document.getElementById('sleepStatus').style.display = 'none';
+    document.getElementById('freezeStatus').style.display = 'none';
+    document.getElementById('burnStatus').style.display = 'none';
+    document.getElementById('infatStatus').style.display = 'block';
+    document.getElementById('confStatus').style.display = 'none';
+    document.getElementById('flinchStatus').style.display = 'none';
+    document.getElementById('statusCalc').style.display = 'block';
+}
+
+function showConfusion() {
+    document.getElementById('poisonStatus').style.display = 'none';
+    document.getElementById('badPoisonStatus').style.display = 'none';
+    document.getElementById('paralysisStatus').style.display = 'none';
+    document.getElementById('sleepStatus').style.display = 'none';
+    document.getElementById('freezeStatus').style.display = 'none';
+    document.getElementById('burnStatus').style.display = 'none';
+    document.getElementById('infatStatus').style.display = 'none';
+    document.getElementById('confStatus').style.display = 'block';
+    document.getElementById('flinchStatus').style.display = 'none';
+    document.getElementById('statusCalc').style.display = 'block';
+}
+
+function showFlinch() {
+    document.getElementById('poisonStatus').style.display = 'none';
+    document.getElementById('badPoisonStatus').style.display = 'none';
+    document.getElementById('paralysisStatus').style.display = 'none';
+    document.getElementById('sleepStatus').style.display = 'none';
+    document.getElementById('freezeStatus').style.display = 'none';
+    document.getElementById('burnStatus').style.display = 'none';
+    document.getElementById('infatStatus').style.display = 'none';
+    document.getElementById('confStatus').style.display = 'none';
+    document.getElementById('flinchStatus').style.display = 'block';
+    document.getElementById('statusCalc').style.display = 'none';
+}
+
+function anySidedDiceRoll() {
+    var diceSides = $('#anySidedDice').val();
+    console.log(diceSides);
+    var roll = getRandomNumber(diceSides);
+    document.getElementById('dicePrintBox').style.display = 'block';
+    document.getElementById('dicePrint').innerHTML = "Roll: " + roll;
+}
+
+//grabs selected %chance and gets random number to see if status was inflicted or not
+//need to add if statement for flinch items
+function statusCalc() {
+    var chance = parseInt(document.getElementById("statusChance").selectedIndex) + 1;
+    console.log("Percent Chance: " + chance + "0");
+    var roll = getRandomNumber(10) + 1;
+    console.log("roll: " + roll);
+
+    if (roll > (10 - chance)) {
+        console.log("Status Condition Inflicted!")
+        getStatusCondition()
+        return true;
+    }
+    else {
+        console.log("Status Condition Not Inflicted!")
+    }
+}
+
+// function grabs selected radio button status condition
+// and shows the fields for that status condition
+function getStatusCondition () {
+    var statusCondition = $("input[type='radio'][name='statusType']:checked").val();
+    console.log(statusCondition);
+
+    if (statusCondition == "poison") {
+        showPoison();
+    }
+    else if (statusCondition == "badPoison") {
+        showBadPoison();
+    }
+    else if (statusCondition == "paral") {
+        showParalysis();
+    }
+    else if (statusCondition == "sleep") {
+        showSleep();
+    }
+    else if (statusCondition == "freeze") {
+        showFreeze();
+    }
+    else if (statusCondition == "burn") {
+        showBurn();
+    }
+    else if (statusCondition == "infat") {
+        showInfatuation();
+    }
+    else if (statusCondition == "confusion") {
+        showConfusion();
+    }
+    else {
+        console.log("either something went wrong, or flinch is selected")
+    }
+
+}
+//might need this to keep count of turns, on each function if "snapped out" should reset to 0
+var turnCount = -1;
+//hopefully one function to calculate handling for status condition controls
+//may need to split these into different functions
+function poiDmg() {
+    var maxHP = document.getElementById("poiMaxHP").value;
+    var currHP = document.getElementById("poiCurrHP").value;
+    console.log("max HP: " + maxHP);
+    console.log("current HP: " + currHP);
+    turnCount += 1;
+
+    var newCurrHP = parseInt(currHP - (maxHP*(1/8)));
+    console.log("new current HP: " + newCurrHP);
+    return newCurrHP = currHP;
+}
 
 
 
