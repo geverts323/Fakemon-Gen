@@ -2282,6 +2282,1955 @@ var statusConditions = {
 }
 }
 
+//data for moves sorted by type
+var movesByType = {
+    "fighting": {
+        "jump-kick": {
+            "name": "jump-kick",
+            "effect_chance": null,
+            "id": 26,
+            "pp": 10,
+            "accuracy": 95,
+            "power": 100,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "cool",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "karate-chop": {
+            "name": "karate-chop",
+            "effect_chance": null,
+            "id": 2,
+            "pp": 25,
+            "accuracy": 100,
+            "power": 50,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 1,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "tough",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 1,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "rolling-kick": {
+            "name": "rolling-kick",
+            "effect_chance": 30,
+            "id": 27,
+            "pp": 15,
+            "accuracy": 85,
+            "power": 60,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 30,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "cool",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "counter": {
+            "name": "counter",
+            "effect_chance": null,
+            "id": 68,
+            "pp": 20,
+            "accuracy": 100,
+            "power": null,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "tough",
+            "priority": -5,
+            "target": "specific-move",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "high-jump-kick": {
+            "name": "high-jump-kick",
+            "effect_chance": null,
+            "id": 136,
+            "pp": 10,
+            "accuracy": 90,
+            "power": 130,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "cool",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "double-kick": {
+            "name": "double-kick",
+            "effect_chance": null,
+            "id": 24,
+            "pp": 30,
+            "accuracy": 100,
+            "power": 30,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": 2,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": 2
+            },
+            "contest_type": "cool",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": 2,
+            "max_hits": 2
+        },
+        "submission": {
+            "name": "submission",
+            "effect_chance": null,
+            "id": 66,
+            "pp": 20,
+            "accuracy": 80,
+            "power": 80,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": -25,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "cool",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "reversal": {
+            "name": "reversal",
+            "effect_chance": null,
+            "id": 179,
+            "pp": 15,
+            "accuracy": 100,
+            "power": null,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "cool",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "seismic-toss": {
+            "name": "seismic-toss",
+            "effect_chance": null,
+            "id": 69,
+            "pp": 20,
+            "accuracy": 100,
+            "power": null,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "tough",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "triple-kick": {
+            "name": "triple-kick",
+            "effect_chance": null,
+            "id": 167,
+            "pp": 10,
+            "accuracy": 90,
+            "power": 10,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": 3,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": 3
+            },
+            "contest_type": "cool",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": 3,
+            "max_hits": 3
+        },
+        "cross-chop": {
+            "name": "cross-chop",
+            "effect_chance": null,
+            "id": 238,
+            "pp": 5,
+            "accuracy": 80,
+            "power": 100,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 1,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "cool",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 1,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "detect": {
+            "name": "detect",
+            "effect_chance": null,
+            "id": 197,
+            "pp": 5,
+            "accuracy": null,
+            "power": null,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/13/",
+                    "name": "unique"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "cool",
+            "priority": 4,
+            "target": "user",
+            "damage_class": "status",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "low-kick": {
+            "name": "low-kick",
+            "effect_chance": null,
+            "id": 67,
+            "pp": 20,
+            "accuracy": 100,
+            "power": null,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "tough",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "vital-throw": {
+            "name": "vital-throw",
+            "effect_chance": null,
+            "id": 233,
+            "pp": 10,
+            "accuracy": null,
+            "power": 70,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "cool",
+            "priority": -1,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "arm-thrust": {
+            "name": "arm-thrust",
+            "effect_chance": null,
+            "id": 292,
+            "pp": 20,
+            "accuracy": 100,
+            "power": 15,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": 2,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": 5
+            },
+            "contest_type": "tough",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": 2,
+            "max_hits": 5
+        },
+        "revenge": {
+            "name": "revenge",
+            "effect_chance": null,
+            "id": 279,
+            "pp": 10,
+            "accuracy": 100,
+            "power": 60,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "tough",
+            "priority": -4,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "focus-punch": {
+            "name": "focus-punch",
+            "effect_chance": null,
+            "id": 264,
+            "pp": 20,
+            "accuracy": 100,
+            "power": 150,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "tough",
+            "priority": -3,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "superpower": {
+            "name": "superpower",
+            "effect_chance": 100,
+            "id": 276,
+            "pp": 5,
+            "accuracy": 100,
+            "power": 120,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/7/",
+                    "name": "damage+raise"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 100,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "tough",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "mach-punch": {
+            "name": "mach-punch",
+            "effect_chance": null,
+            "id": 183,
+            "pp": 30,
+            "accuracy": 100,
+            "power": 40,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "cool",
+            "priority": 1,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "brick-break": {
+            "name": "brick-break",
+            "effect_chance": null,
+            "id": 280,
+            "pp": 15,
+            "accuracy": 100,
+            "power": 75,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "cool",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "bulk-up": {
+            "name": "bulk-up",
+            "effect_chance": null,
+            "id": 339,
+            "pp": 20,
+            "accuracy": null,
+            "power": null,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/2/",
+                    "name": "net-good-stats"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "beauty",
+            "priority": 0,
+            "target": "user",
+            "damage_class": "status",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "dynamic-punch": {
+            "name": "dynamic-punch",
+            "effect_chance": 100,
+            "id": 223,
+            "pp": 5,
+            "accuracy": 50,
+            "power": 100,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/4/",
+                    "name": "damage+ailment"
+                },
+                "healing": 0,
+                "max_turns": 5,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/6/",
+                    "name": "confusion"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 100,
+                "crit_rate": 0,
+                "min_turns": 2,
+                "max_hits": null
+            },
+            "contest_type": "cool",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": 2,
+            "max_turns": 5,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "rock-smash": {
+            "name": "rock-smash",
+            "effect_chance": 50,
+            "id": 249,
+            "pp": 15,
+            "accuracy": 100,
+            "power": 40,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/6/",
+                    "name": "damage+lower"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 50,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "tough",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "wake-up-slap": {
+            "name": "wake-up-slap",
+            "effect_chance": null,
+            "id": 358,
+            "pp": 10,
+            "accuracy": 100,
+            "power": 70,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "smart",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "sky-uppercut": {
+            "name": "sky-uppercut",
+            "effect_chance": null,
+            "id": 327,
+            "pp": 15,
+            "accuracy": 90,
+            "power": 85,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "cool",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "hammer-arm": {
+            "name": "hammer-arm",
+            "effect_chance": 100,
+            "id": 359,
+            "pp": 10,
+            "accuracy": 90,
+            "power": 100,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/7/",
+                    "name": "damage+raise"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 100,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "cool",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "close-combat": {
+            "name": "close-combat",
+            "effect_chance": 100,
+            "id": 370,
+            "pp": 5,
+            "accuracy": 100,
+            "power": 120,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/7/",
+                    "name": "damage+raise"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 100,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "smart",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "drain-punch": {
+            "name": "drain-punch",
+            "effect_chance": null,
+            "id": 409,
+            "pp": 10,
+            "accuracy": 100,
+            "power": 75,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/8/",
+                    "name": "damage+heal"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 50,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "beauty",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "force-palm": {
+            "name": "force-palm",
+            "effect_chance": 30,
+            "id": 395,
+            "pp": 10,
+            "accuracy": 100,
+            "power": 60,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/4/",
+                    "name": "damage+ailment"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/1/",
+                    "name": "paralysis"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 30,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "cool",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "physical",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "focus-blast": {
+            "name": "focus-blast",
+            "effect_chance": 10,
+            "id": 411,
+            "pp": 5,
+            "accuracy": 70,
+            "power": 120,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/6/",
+                    "name": "damage+lower"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 10,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "cool",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "special",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "vacuum-wave": {
+            "name": "vacuum-wave",
+            "effect_chance": null,
+            "id": 410,
+            "pp": 30,
+            "accuracy": 100,
+            "power": 40,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "smart",
+            "priority": 1,
+            "target": "selected-pokemon",
+            "damage_class": "special",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        },
+        "aura-sphere": {
+            "name": "aura-sphere",
+            "effect_chance": null,
+            "id": 396,
+            "pp": 20,
+            "accuracy": null,
+            "power": 80,
+            "meta": {
+                "category": {
+                    "url": "https://pokeapi.co/api/v2/move-category/0/",
+                    "name": "damage"
+                },
+                "healing": 0,
+                "max_turns": null,
+                "drain": 0,
+                "ailment": {
+                    "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                    "name": "none"
+                },
+                "stat_chance": 0,
+                "flinch_chance": 0,
+                "min_hits": null,
+                "ailment_chance": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_hits": null
+            },
+            "contest_type": "beauty",
+            "priority": 0,
+            "target": "selected-pokemon",
+            "damage_class": "special",
+            "healing": 0,
+            "crit_rate": 0,
+            "min_turns": null,
+            "max_turns": null,
+            "min_hits": null,
+            "max_hits": null
+        }
+    }
+
+    "flying": {
+            "fly": {
+                "name": "fly",
+                "effect_chance": null,
+                "id": 19,
+                "pp": 15,
+                "accuracy": 95,
+                "power": 90,
+                "meta": {
+                    "category": {
+                        "url": "https://pokeapi.co/api/v2/move-category/0/",
+                        "name": "damage"
+                    },
+                    "healing": 0,
+                    "max_turns": null,
+                    "drain": 0,
+                    "ailment": {
+                        "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                        "name": "none"
+                    },
+                    "stat_chance": 0,
+                    "flinch_chance": 0,
+                    "min_hits": null,
+                    "ailment_chance": 0,
+                    "crit_rate": 0,
+                    "min_turns": null,
+                    "max_hits": null
+                },
+                "contest_type": "smart",
+                "priority": 0,
+                "target": "selected-pokemon",
+                "damage_class": "physical",
+                "healing": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_turns": null,
+                "min_hits": null,
+                "max_hits": null
+            },
+            "wing-attack": {
+                "name": "wing-attack",
+                "effect_chance": null,
+                "id": 17,
+                "pp": 35,
+                "accuracy": 100,
+                "power": 60,
+                "meta": {
+                    "category": {
+                        "url": "https://pokeapi.co/api/v2/move-category/0/",
+                        "name": "damage"
+                    },
+                    "healing": 0,
+                    "max_turns": null,
+                    "drain": 0,
+                    "ailment": {
+                        "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                        "name": "none"
+                    },
+                    "stat_chance": 0,
+                    "flinch_chance": 0,
+                    "min_hits": null,
+                    "ailment_chance": 0,
+                    "crit_rate": 0,
+                    "min_turns": null,
+                    "max_hits": null
+                },
+                "contest_type": "cool",
+                "priority": 0,
+                "target": "selected-pokemon",
+                "damage_class": "physical",
+                "healing": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_turns": null,
+                "min_hits": null,
+                "max_hits": null
+            },
+            "gust": {
+                "name": "gust",
+                "effect_chance": null,
+                "id": 16,
+                "pp": 35,
+                "accuracy": 100,
+                "power": 40,
+                "meta": {
+                    "category": {
+                        "url": "https://pokeapi.co/api/v2/move-category/0/",
+                        "name": "damage"
+                    },
+                    "healing": 0,
+                    "max_turns": null,
+                    "drain": 0,
+                    "ailment": {
+                        "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                        "name": "none"
+                    },
+                    "stat_chance": 0,
+                    "flinch_chance": 0,
+                    "min_hits": null,
+                    "ailment_chance": 0,
+                    "crit_rate": 0,
+                    "min_turns": null,
+                    "max_hits": null
+                },
+                "contest_type": "smart",
+                "priority": 0,
+                "target": "selected-pokemon",
+                "damage_class": "special",
+                "healing": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_turns": null,
+                "min_hits": null,
+                "max_hits": null
+            },
+            "sky-attack": {
+                "name": "sky-attack",
+                "effect_chance": 30,
+                "id": 143,
+                "pp": 5,
+                "accuracy": 90,
+                "power": 140,
+                "meta": {
+                    "category": {
+                        "url": "https://pokeapi.co/api/v2/move-category/0/",
+                        "name": "damage"
+                    },
+                    "healing": 0,
+                    "max_turns": null,
+                    "drain": 0,
+                    "ailment": {
+                        "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                        "name": "none"
+                    },
+                    "stat_chance": 0,
+                    "flinch_chance": 30,
+                    "min_hits": null,
+                    "ailment_chance": 0,
+                    "crit_rate": 1,
+                    "min_turns": null,
+                    "max_hits": null
+                },
+                "contest_type": "cool",
+                "priority": 0,
+                "target": "selected-pokemon",
+                "damage_class": "physical",
+                "healing": 0,
+                "crit_rate": 1,
+                "min_turns": null,
+                "max_turns": null,
+                "min_hits": null,
+                "max_hits": null
+            },
+            "drill-peck": {
+                "name": "drill-peck",
+                "effect_chance": null,
+                "id": 65,
+                "pp": 20,
+                "accuracy": 100,
+                "power": 80,
+                "meta": {
+                    "category": {
+                        "url": "https://pokeapi.co/api/v2/move-category/0/",
+                        "name": "damage"
+                    },
+                    "healing": 0,
+                    "max_turns": null,
+                    "drain": 0,
+                    "ailment": {
+                        "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                        "name": "none"
+                    },
+                    "stat_chance": 0,
+                    "flinch_chance": 0,
+                    "min_hits": null,
+                    "ailment_chance": 0,
+                    "crit_rate": 0,
+                    "min_turns": null,
+                    "max_hits": null
+                },
+                "contest_type": "cool",
+                "priority": 0,
+                "target": "selected-pokemon",
+                "damage_class": "physical",
+                "healing": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_turns": null,
+                "min_hits": null,
+                "max_hits": null
+            },
+            "peck": {
+                "name": "peck",
+                "effect_chance": null,
+                "id": 64,
+                "pp": 35,
+                "accuracy": 100,
+                "power": 35,
+                "meta": {
+                    "category": {
+                        "url": "https://pokeapi.co/api/v2/move-category/0/",
+                        "name": "damage"
+                    },
+                    "healing": 0,
+                    "max_turns": null,
+                    "drain": 0,
+                    "ailment": {
+                        "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                        "name": "none"
+                    },
+                    "stat_chance": 0,
+                    "flinch_chance": 0,
+                    "min_hits": null,
+                    "ailment_chance": 0,
+                    "crit_rate": 0,
+                    "min_turns": null,
+                    "max_hits": null
+                },
+                "contest_type": "cool",
+                "priority": 0,
+                "target": "selected-pokemon",
+                "damage_class": "physical",
+                "healing": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_turns": null,
+                "min_hits": null,
+                "max_hits": null
+            },
+            "mirror-move": {
+                "name": "mirror-move",
+                "effect_chance": null,
+                "id": 119,
+                "pp": 20,
+                "accuracy": null,
+                "power": null,
+                "meta": {
+                    "category": {
+                        "url": "https://pokeapi.co/api/v2/move-category/13/",
+                        "name": "unique"
+                    },
+                    "healing": 0,
+                    "max_turns": null,
+                    "drain": 0,
+                    "ailment": {
+                        "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                        "name": "none"
+                    },
+                    "stat_chance": 0,
+                    "flinch_chance": 0,
+                    "min_hits": null,
+                    "ailment_chance": 0,
+                    "crit_rate": 0,
+                    "min_turns": null,
+                    "max_hits": null
+                },
+                "contest_type": "smart",
+                "priority": 0,
+                "target": "selected-pokemon",
+                "damage_class": "status",
+                "healing": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_turns": null,
+                "min_hits": null,
+                "max_hits": null
+            },
+            "aerial-ace": {
+                "name": "aerial-ace",
+                "effect_chance": null,
+                "id": 332,
+                "pp": 20,
+                "accuracy": null,
+                "power": 60,
+                "meta": {
+                    "category": {
+                        "url": "https://pokeapi.co/api/v2/move-category/0/",
+                        "name": "damage"
+                    },
+                    "healing": 0,
+                    "max_turns": null,
+                    "drain": 0,
+                    "ailment": {
+                        "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                        "name": "none"
+                    },
+                    "stat_chance": 0,
+                    "flinch_chance": 0,
+                    "min_hits": null,
+                    "ailment_chance": 0,
+                    "crit_rate": 0,
+                    "min_turns": null,
+                    "max_hits": null
+                },
+                "contest_type": "cool",
+                "priority": 0,
+                "target": "selected-pokemon",
+                "damage_class": "physical",
+                "healing": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_turns": null,
+                "min_hits": null,
+                "max_hits": null
+            },
+            "feather-dance": {
+                "name": "feather-dance",
+                "effect_chance": null,
+                "id": 297,
+                "pp": 15,
+                "accuracy": 100,
+                "power": null,
+                "meta": {
+                    "category": {
+                        "url": "https://pokeapi.co/api/v2/move-category/2/",
+                        "name": "net-good-stats"
+                    },
+                    "healing": 0,
+                    "max_turns": null,
+                    "drain": 0,
+                    "ailment": {
+                        "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                        "name": "none"
+                    },
+                    "stat_chance": 0,
+                    "flinch_chance": 0,
+                    "min_hits": null,
+                    "ailment_chance": 0,
+                    "crit_rate": 0,
+                    "min_turns": null,
+                    "max_hits": null
+                },
+                "contest_type": "beauty",
+                "priority": 0,
+                "target": "selected-pokemon",
+                "damage_class": "status",
+                "healing": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_turns": null,
+                "min_hits": null,
+                "max_hits": null
+            },
+            "pluck": {
+                "name": "pluck",
+                "effect_chance": null,
+                "id": 365,
+                "pp": 20,
+                "accuracy": 100,
+                "power": 60,
+                "meta": {
+                    "category": {
+                        "url": "https://pokeapi.co/api/v2/move-category/0/",
+                        "name": "damage"
+                    },
+                    "healing": 0,
+                    "max_turns": null,
+                    "drain": 0,
+                    "ailment": {
+                        "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                        "name": "none"
+                    },
+                    "stat_chance": 0,
+                    "flinch_chance": 0,
+                    "min_hits": null,
+                    "ailment_chance": 0,
+                    "crit_rate": 0,
+                    "min_turns": null,
+                    "max_hits": null
+                },
+                "contest_type": "cute",
+                "priority": 0,
+                "target": "selected-pokemon",
+                "damage_class": "physical",
+                "healing": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_turns": null,
+                "min_hits": null,
+                "max_hits": null
+            },
+            "aeroblast": {
+                "name": "aeroblast",
+                "effect_chance": null,
+                "id": 177,
+                "pp": 5,
+                "accuracy": 95,
+                "power": 100,
+                "meta": {
+                    "category": {
+                        "url": "https://pokeapi.co/api/v2/move-category/0/",
+                        "name": "damage"
+                    },
+                    "healing": 0,
+                    "max_turns": null,
+                    "drain": 0,
+                    "ailment": {
+                        "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                        "name": "none"
+                    },
+                    "stat_chance": 0,
+                    "flinch_chance": 0,
+                    "min_hits": null,
+                    "ailment_chance": 0,
+                    "crit_rate": 1,
+                    "min_turns": null,
+                    "max_hits": null
+                },
+                "contest_type": "cool",
+                "priority": 0,
+                "target": "selected-pokemon",
+                "damage_class": "special",
+                "healing": 0,
+                "crit_rate": 1,
+                "min_turns": null,
+                "max_turns": null,
+                "min_hits": null,
+                "max_hits": null
+            },
+            "air-cutter": {
+                "name": "air-cutter",
+                "effect_chance": null,
+                "id": 314,
+                "pp": 25,
+                "accuracy": 95,
+                "power": 60,
+                "meta": {
+                    "category": {
+                        "url": "https://pokeapi.co/api/v2/move-category/0/",
+                        "name": "damage"
+                    },
+                    "healing": 0,
+                    "max_turns": null,
+                    "drain": 0,
+                    "ailment": {
+                        "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                        "name": "none"
+                    },
+                    "stat_chance": 0,
+                    "flinch_chance": 0,
+                    "min_hits": null,
+                    "ailment_chance": 0,
+                    "crit_rate": 1,
+                    "min_turns": null,
+                    "max_hits": null
+                },
+                "contest_type": "cool",
+                "priority": 0,
+                "target": "all-opponents",
+                "damage_class": "special",
+                "healing": 0,
+                "crit_rate": 1,
+                "min_turns": null,
+                "max_turns": null,
+                "min_hits": null,
+                "max_hits": null
+            },
+            "tailwind": {
+                "name": "tailwind",
+                "effect_chance": null,
+                "id": 366,
+                "pp": 15,
+                "accuracy": null,
+                "power": null,
+                "meta": {
+                    "category": {
+                        "url": "https://pokeapi.co/api/v2/move-category/11/",
+                        "name": "field-effect"
+                    },
+                    "healing": 0,
+                    "max_turns": null,
+                    "drain": 0,
+                    "ailment": {
+                        "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                        "name": "none"
+                    },
+                    "stat_chance": 0,
+                    "flinch_chance": 0,
+                    "min_hits": null,
+                    "ailment_chance": 0,
+                    "crit_rate": 0,
+                    "min_turns": null,
+                    "max_hits": null
+                },
+                "contest_type": "smart",
+                "priority": 0,
+                "target": "users-field",
+                "damage_class": "status",
+                "healing": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_turns": null,
+                "min_hits": null,
+                "max_hits": null
+            },
+            "bounce": {
+                "name": "bounce",
+                "effect_chance": 30,
+                "id": 340,
+                "pp": 5,
+                "accuracy": 85,
+                "power": 85,
+                "meta": {
+                    "category": {
+                        "url": "https://pokeapi.co/api/v2/move-category/4/",
+                        "name": "damage+ailment"
+                    },
+                    "healing": 0,
+                    "max_turns": null,
+                    "drain": 0,
+                    "ailment": {
+                        "url": "https://pokeapi.co/api/v2/move-ailment/1/",
+                        "name": "paralysis"
+                    },
+                    "stat_chance": 0,
+                    "flinch_chance": 0,
+                    "min_hits": null,
+                    "ailment_chance": 30,
+                    "crit_rate": 0,
+                    "min_turns": null,
+                    "max_hits": null
+                },
+                "contest_type": "cute",
+                "priority": 0,
+                "target": "selected-pokemon",
+                "damage_class": "physical",
+                "healing": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_turns": null,
+                "min_hits": null,
+                "max_hits": null
+            },
+            "chatter": {
+                "name": "chatter",
+                "effect_chance": 100,
+                "id": 448,
+                "pp": 20,
+                "accuracy": 100,
+                "power": 65,
+                "meta": {
+                    "category": {
+                        "url": "https://pokeapi.co/api/v2/move-category/4/",
+                        "name": "damage+ailment"
+                    },
+                    "healing": 0,
+                    "max_turns": 5,
+                    "drain": 0,
+                    "ailment": {
+                        "url": "https://pokeapi.co/api/v2/move-ailment/6/",
+                        "name": "confusion"
+                    },
+                    "stat_chance": 0,
+                    "flinch_chance": 0,
+                    "min_hits": null,
+                    "ailment_chance": 100,
+                    "crit_rate": 0,
+                    "min_turns": 2,
+                    "max_hits": null
+                },
+                "contest_type": "smart",
+                "priority": 0,
+                "target": "selected-pokemon",
+                "damage_class": "special",
+                "healing": 0,
+                "crit_rate": 0,
+                "min_turns": 2,
+                "max_turns": 5,
+                "min_hits": null,
+                "max_hits": null
+            },
+            "air-slash": {
+                "name": "air-slash",
+                "effect_chance": 30,
+                "id": 403,
+                "pp": 15,
+                "accuracy": 95,
+                "power": 75,
+                "meta": {
+                    "category": {
+                        "url": "https://pokeapi.co/api/v2/move-category/0/",
+                        "name": "damage"
+                    },
+                    "healing": 0,
+                    "max_turns": null,
+                    "drain": 0,
+                    "ailment": {
+                        "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                        "name": "none"
+                    },
+                    "stat_chance": 0,
+                    "flinch_chance": 30,
+                    "min_hits": null,
+                    "ailment_chance": 0,
+                    "crit_rate": 0,
+                    "min_turns": null,
+                    "max_hits": null
+                },
+                "contest_type": "cool",
+                "priority": 0,
+                "target": "selected-pokemon",
+                "damage_class": "special",
+                "healing": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_turns": null,
+                "min_hits": null,
+                "max_hits": null
+            },
+            "brave-bird": {
+                "name": "brave-bird",
+                "effect_chance": null,
+                "id": 413,
+                "pp": 15,
+                "accuracy": 100,
+                "power": 120,
+                "meta": {
+                    "category": {
+                        "url": "https://pokeapi.co/api/v2/move-category/0/",
+                        "name": "damage"
+                    },
+                    "healing": 0,
+                    "max_turns": null,
+                    "drain": -33,
+                    "ailment": {
+                        "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                        "name": "none"
+                    },
+                    "stat_chance": 0,
+                    "flinch_chance": 0,
+                    "min_hits": null,
+                    "ailment_chance": 0,
+                    "crit_rate": 0,
+                    "min_turns": null,
+                    "max_hits": null
+                },
+                "contest_type": "cute",
+                "priority": 0,
+                "target": "selected-pokemon",
+                "damage_class": "physical",
+                "healing": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_turns": null,
+                "min_hits": null,
+                "max_hits": null
+            },
+            "defog": {
+                "name": "defog",
+                "effect_chance": null,
+                "id": 432,
+                "pp": 15,
+                "accuracy": null,
+                "power": null,
+                "meta": {
+                    "category": {
+                        "url": "https://pokeapi.co/api/v2/move-category/13/",
+                        "name": "unique"
+                    },
+                    "healing": 0,
+                    "max_turns": null,
+                    "drain": 0,
+                    "ailment": {
+                        "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                        "name": "none"
+                    },
+                    "stat_chance": 0,
+                    "flinch_chance": 0,
+                    "min_hits": null,
+                    "ailment_chance": 0,
+                    "crit_rate": 0,
+                    "min_turns": null,
+                    "max_hits": null
+                },
+                "contest_type": "beauty",
+                "priority": 0,
+                "target": "selected-pokemon",
+                "damage_class": "status",
+                "healing": 0,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_turns": null,
+                "min_hits": null,
+                "max_hits": null
+            },
+            "roost": {
+                "name": "roost",
+                "effect_chance": null,
+                "id": 355,
+                "pp": 10,
+                "accuracy": null,
+                "power": null,
+                "meta": {
+                    "category": {
+                        "url": "https://pokeapi.co/api/v2/move-category/3/",
+                        "name": "heal"
+                    },
+                    "healing": 50,
+                    "max_turns": null,
+                    "drain": 0,
+                    "ailment": {
+                        "url": "https://pokeapi.co/api/v2/move-ailment/0/",
+                        "name": "none"
+                    },
+                    "stat_chance": 0,
+                    "flinch_chance": 0,
+                    "min_hits": null,
+                    "ailment_chance": 0,
+                    "crit_rate": 0,
+                    "min_turns": null,
+                    "max_hits": null
+                },
+                "contest_type": "cool",
+                "priority": 0,
+                "target": "user",
+                "damage_class": "status",
+                "healing": 50,
+                "crit_rate": 0,
+                "min_turns": null,
+                "max_turns": null,
+                "min_hits": null,
+                "max_hits": null
+            }
+        }
+
+
+}
+
 
 //stored data for moves sorted by type
 // var moves = {
