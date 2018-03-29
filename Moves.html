@@ -39,10 +39,6 @@
         <div class="leftSection">
             <h3>Name &amp; Level</h3>
             <div class="inputSection">
-                <div class="nameLvlInp">
-                    <input id="pokemonName" placeholder="Name of Pokemon">
-                    <input id="pokemonLevel" placeholder="Level of Pokemon">
-                </div>
                 <h3>Type(s):</h3>
                 <div id="typeInp">
                     <select class="typeOneInp" id="pokeTypeOne">
@@ -166,7 +162,7 @@
                 </div>
             </div>
         </div>
-        <div class="rightSection">
+        <div class="rightSection" id="moveSearchSection">
             <h1>Come Back Later! Coming Soon!</h1>
         </div>
     </div>
@@ -177,5 +173,8 @@
     <script type="text/javascript" src="js/data.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script>
+    $(document).ready(movePopulate());
+    </script>
 </body>
 </html>

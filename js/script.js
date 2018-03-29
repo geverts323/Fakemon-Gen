@@ -585,7 +585,7 @@ function getStatusCondition () {
 
 }
 //might need this to keep count of turns, on each function if "snapped out" should reset to 0
-var turnCount = -1;
+var turnCount;
 //hopefully one function to calculate handling for status condition controls
 //may need to split these into different functions
 function poiDmg() {
@@ -600,58 +600,56 @@ function poiDmg() {
     return newCurrHP = currHP;
 }
 
+// initial populate when moves.html loads -- NEED TO SET UP document.ready function in <script> in moves.html
+function movePopulate() {
+    //selects box where elements will go
+    var box = document.getElementById('moveSearchSection');
+    //loops through movesByType var and go into each type
+    for (i in movesByType) {
+        //loops through each type and grabs each move
+        for (k in i) {
+            //creates div to hold each move
+            var moveDiv = document.createElement('div');
+            moveDiv.className = 'innerMoveBox'
+            console.log("created div!")
+            //creates name element
+            var nameElement = document.createElement('h4');
+            nameElement.innerHTML = i[k].name;
+            //creates accuracy element
+            var accElement = document.createElement('p');
+            accElement.innerHTML = i[k].accuracy;
+            //creates move power element
+            var powElement = document.createElement('p');
+            powElement.innerHTML = function() {
+                //if move power is null (status move) will set element contents to --
+                if (i[k].power == null) {
+                    return '--';
+                }
+                else {
+                    return i[k].power;
+                }
+            }
+            //creates damage type element -- will display small image representing damage type
+            var dmgElement = document.createElement('img');
+            dmgElement.innerHTML = function() {
+                if (i[k].damage_class == "physical") {
+                    dmgElement.src = "media/physDmgIcon.jpg";
+                }
+                else if (i[k].damage_class == "special") {
+                    dmgElement.src = "media/SpecAtkIcon.jpg";
+                }
+                else if (i[k].damage_class == "status") {
+                    dmgElement.src = "media/statusAtkIcon.jpg";
+                }
+                else {
+                    dmgElement.src = "media/oops.jpg";
+                }
+            }
+            var moveTypeElement = document.createElement('p');
+            moveTypeElement.innerHTML = i;
 
-
-
-// $(document).ready(function(){
-//     $.ajax({
-//         url: "https://pokeapi.co/api/v2/type/1/",
-//         type: "GET",
-//         // contentType: "application/json",
-//         success: function (data, error) {
-//             gotTypeInfo(data);
-//         },
-//         error: function (data, error) {
-//             console.log(data, error);
-//         }
-//     });
-// });
-
-// function gotTypeInfo(data) {
-//     type[data.name] = {};
-//
-//     for (i in data.moves) {
-//         $.ajax({
-//             url: data.moves.url,
-//             type: "GET",
-//             // contentType: "application/json",
-//             success: function (data, error) {
-//                 gotMoveInfo(data);
-//             },
-//             error: function (data, error) {
-//                 console.log(data, error);
-//             }
-//         });
-//     }
-//         setTimeout(function(){console.log(JSON.stringify(type));}, 30000);
-// }
-//
-// function gotMoveInfo(data) {
-//     type[data.name][data.type.name] = {
-//         "effect_chance": data.effect_chance,
-//         "id": data.id,
-//         "pp": data.pp,
-//         "effect_entries": data.effect_entries.effect,
-//         "accuracy": data.accuracy,
-//         "power": data.power,
-//         "name": data.name,
-//         "meta": data.meta,
-//         "contest_type": data.contest_type.name,
-//         "priority": data.priority,
-//         "power": data.power,
-//         "target": data.target.name,
-//         "damage_class": data.damage_class.name,
-//
-//     };
-//     };
-// }
+            box.append(moveDiv);
+            moveDiv.append(nameElement + powElement + accElement + moveTypeElement + dmgElement);
+        }
+    }
+}
