@@ -614,7 +614,7 @@ function movePopulate() {
             console.log("created div!")
             //creates name element
             var nameElement = document.createElement('h4');
-            nameElement.innerHTML = movesByType[i][k].name;
+            nameElement.innerHTML = movesByType[i][k].name.replace(/-/g, " ");
             //creates accuracy element
             var accElement = document.createElement('p');
             if (movesByType[i][k].accuracy == null) {
