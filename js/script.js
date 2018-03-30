@@ -392,7 +392,7 @@ function getRandomBerry() {
 }
 
 function getRandomNumber(num) {
-    var randNum = Math.floor(Math.random() * num);
+    var randNum = Math.floor(Math.random() * num) + 1;
     console.log("Random Number: " + randNum);
     return randNum;
 }
@@ -617,7 +617,12 @@ function movePopulate() {
             nameElement.innerHTML = movesByType[i][k].name;
             //creates accuracy element
             var accElement = document.createElement('p');
-            accElement.innerHTML = movesByType[i][k].accuracy;
+            if (movesByType[i][k].accuracy == null) {
+                accElement.innerHTML = '--';
+            }
+            else {
+                accElement.innerHTML = movesByType[i][k].accuracy;
+            }
             //creates move power element
             var powElement = document.createElement('p');
 
@@ -629,7 +634,6 @@ function movePopulate() {
             }
         //creates damage type element -- will display small image representing damage type
             var dmgElement = document.createElement('img');
-            dmgElement.innerHTML = function() {
                 if (movesByType[i][k].damage_class == "physical") {
                     dmgElement.src = "media/physDmgIcon.jpg";
                 }
@@ -642,7 +646,7 @@ function movePopulate() {
                 else {
                     dmgElement.src = "media/oops.jpg";
                 }
-            }
+
             var moveTypeElement = document.createElement('p');
             moveTypeElement.innerHTML = i;
 
@@ -653,6 +657,25 @@ function movePopulate() {
             moveDiv.append(moveTypeElement);
             moveDiv.append(dmgElement);
 
+        }
+    }
+}
+
+function searchMoves() {
+    var input = document.getElementById('moveSearchBar');
+    var filter = input.value.toLowerCase()
+    var allMoveBox = document.getElementById('moveSearchSection')
+    var eachMoveBox = allMoveBox.getElementsByTagName('div');
+
+    for (i = 0; i < eachMoveBox.length; i++) {
+
+        a = eachMoveBox[i].getElementsByTagName("h4")[0];
+
+        if (a.innerHTML.toLowerCase().indexOf(filter) > -1) {
+            eachMoveBox[i].style.display = "";
+        }
+        else {
+            eachMoveBox[i].style.display = "none";
         }
     }
 }

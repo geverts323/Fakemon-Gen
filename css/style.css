@@ -217,3 +217,72 @@ button {
     border-radius: 5px;
     background-color: aliceblue;
 }
+
+#moveSearchSection {
+    flex: 1;
+    width: 95%;
+    background-color: #d7e3f7;
+    border: 5px ridge grey;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.innerMoveBox {
+    border: 2px solid black;
+    display: inline-block;
+    flex-flow: column;
+    background-color: #e3e8ef;
+    margin: 5px;
+    width: 97%;
+}
+
+.innerMoveBox:hover {
+    background-color: #c0c8d3;
+}
+
+.innerMoveBox > * {
+    display: inline-block;
+    flex-flow: row;
+}
+
+.innerMoveBox > h4 {
+    width: 45%;
+    text-align: center;
+}
+
+.innerMoveBox > p {
+    width: 10%;
+    text-align: center;
+    margin-left: 1%
+}
+
+.innerMoveBox > img {
+    width: 5%;
+    object-position: right;
+    object-fit: contain;
+    padding-top: 1%;
+    margin-left: 5%
+}
+
+#moveNameTitle {
+    width: 45%;
+    text-align: center;
+}
+
+.moveSearchTitles > *{
+ width: 10%;
+ text-align: center;
+ display: inline-block;
+}
+
+.moveSearchInputSection {
+    width: 50%;
+    display: inline-block;
+    flex:1;
+}
+
+.moveSearchInputSection > * {
+    width: 10%;
+    display: inline-block;
+}
