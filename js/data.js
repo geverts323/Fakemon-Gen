@@ -2283,9 +2283,7 @@ var statusConditions = {
 }
 
 //data for moves sorted by type
-var movesByType =
-    {
-        {
+var movesByType = {
     "normal": {
         "slam": {
             "name": "slam",
@@ -9733,9 +9731,8 @@ var movesByType =
             "min_hits": null,
             "max_hits": null
         }
-    }
-},
-{
+    },
+
     "fighting": {
         "double-kick": {
             "name": "double-kick",
@@ -11597,9 +11594,8 @@ var movesByType =
             "min_hits": null,
             "max_hits": null
         }
-    }
-},
-{
+    },
+
     "flying": {
         "air-cutter": {
             "name": "air-cutter",
@@ -12735,9 +12731,8 @@ var movesByType =
             "min_hits": null,
             "max_hits": null
         }
-    }
-},
-{
+    },
+
     "poison": {
         "acid-armor": {
             "name": "acid-armor",
@@ -13901,9 +13896,8 @@ var movesByType =
             "min_hits": null,
             "max_hits": null
         }
-    }
-},
-{
+    },
+
     "ground": {
         "sand-attack": {
             "name": "sand-attack",
@@ -15029,9 +15023,8 @@ var movesByType =
             "min_hits": null,
             "max_hits": null
         }
-    }
-},
-{
+    },
+
     "rock": {
         "sandstorm": {
             "name": "sandstorm",
@@ -15827,9 +15820,8 @@ var movesByType =
             "min_hits": null,
             "max_hits": null
         }
-    }
-},
-{
+    },
+
     "bug": {
         "twineedle": {
             "name": "twineedle",
@@ -17072,9 +17064,8 @@ var movesByType =
             "min_hits": null,
             "max_hits": null
         }
-    }
-},
-{
+    },
+
     "ghost": {
         "night-shade": {
             "name": "night-shade",
@@ -18157,9 +18148,8 @@ var movesByType =
             "min_hits": null,
             "max_hits": null
         }
-    }
-},
-{
+    },
+
     "steel": {
         "meteor-mash": {
             "name": "meteor-mash",
@@ -19192,9 +19182,8 @@ var movesByType =
             "min_hits": null,
             "max_hits": null
         }
-    }
-},
-{
+    },
+
     "fire": {
         "sunny-day": {
             "name": "sunny-day",
@@ -20643,9 +20632,8 @@ var movesByType =
             "min_hits": null,
             "max_hits": null
         }
-    }
-},
-{
+    },
+
     "water": {
         "water-gun": {
             "name": "water-gun",
@@ -22076,6 +22064,4 @@ var movesByType =
             "max_hits": null
         }
     }
-}
-
 }

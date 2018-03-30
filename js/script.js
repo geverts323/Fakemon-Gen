@@ -607,38 +607,36 @@ function movePopulate() {
     //loops through movesByType var and go into each type
     for (i in movesByType) {
         //loops through each type and grabs each move
-        for (k in i) {
+        for (k in movesByType[i]) {
             //creates div to hold each move
             var moveDiv = document.createElement('div');
             moveDiv.className = 'innerMoveBox'
             console.log("created div!")
             //creates name element
             var nameElement = document.createElement('h4');
-            nameElement.innerHTML = i[k].name;
+            nameElement.innerHTML = movesByType[i][k].name;
             //creates accuracy element
             var accElement = document.createElement('p');
-            accElement.innerHTML = i[k].accuracy;
+            accElement.innerHTML = movesByType[i][k].accuracy;
             //creates move power element
             var powElement = document.createElement('p');
-            powElement.innerHTML = function() {
-                //if move power is null (status move) will set element contents to --
-                if (i[k].power == null) {
-                    return '--';
-                }
-                else {
-                    return i[k].power;
-                }
+
+            if (movesByType[i][k].power == null) {
+                powElement.innerHTML = '--';
             }
-            //creates damage type element -- will display small image representing damage type
+            else {
+                powElement.innerHTML = movesByType[i][k].power;
+            }
+        //creates damage type element -- will display small image representing damage type
             var dmgElement = document.createElement('img');
             dmgElement.innerHTML = function() {
-                if (i[k].damage_class == "physical") {
+                if (movesByType[i][k].damage_class == "physical") {
                     dmgElement.src = "media/physDmgIcon.jpg";
                 }
-                else if (i[k].damage_class == "special") {
+                else if (movesByType[i][k].damage_class == "special") {
                     dmgElement.src = "media/SpecAtkIcon.jpg";
                 }
-                else if (i[k].damage_class == "status") {
+                else if (movesByType[i][k].damage_class == "status") {
                     dmgElement.src = "media/statusAtkIcon.jpg";
                 }
                 else {
@@ -649,7 +647,12 @@ function movePopulate() {
             moveTypeElement.innerHTML = i;
 
             box.append(moveDiv);
-            moveDiv.append(nameElement + powElement + accElement + moveTypeElement + dmgElement);
+            moveDiv.append(nameElement);
+            moveDiv.append(powElement);
+            moveDiv.append(accElement);
+            moveDiv.append(moveTypeElement);
+            moveDiv.append(dmgElement);
+
         }
     }
 }
