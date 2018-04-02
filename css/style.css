@@ -241,13 +241,14 @@ button {
     background-color: #c0c8d3;
 }
 
-.innerMoveBox > * {
+.innerMoveBox  * {
     display: inline-block;
     flex-flow: row;
+    font-size: 95%
 }
 
 .innerMoveBox > h4 {
-    width: 45%;
+    width: 35%;
     text-align: center;
     text-transform: capitalize;
 }
@@ -268,23 +269,48 @@ button {
 }
 
 #moveNameTitle {
-    width: 45%;
+    width: 35%;
     text-align: center;
 }
 
-.moveSearchTitles > * {
- width: 10%;
+.moveSearchTitles  * {
+ width: 10.5%;
  text-align: center;
  display: inline-block;
+ flex: 1;
+ font-size: 95%;
 }
 
 .moveSearchInputSection {
-    width: 50%;
     display: inline-block;
-    flex:1;
+    width: 60%;
+    height:50%
 }
 
-.moveSearchInputSection > * {
-    width: 10%;
-    display: inline-block;
+
+.moveTypeCheckSection {
+    display:flex;
+    flex-flow: row wrap;
+
+}
+
+.moveTypeCheckSection input {
+    margin: 5px;
+}
+
+.wholeMoveInputSection {
+    display:inline-block;
+    height:15%;
+    width: 50%;
+    background-color: #d7e3f7;
+    border: 5px ridge grey;
+    border-radius: 10px;
+}
+
+.wholeMoveInputSection * {
+    padding: 5px;
+}
+
+.moveSearchInputSection input {
+    margin-bottom: 8px;
 }

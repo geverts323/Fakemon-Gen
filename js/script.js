@@ -1,3 +1,4 @@
+
 // returns error if lvl>100 and returns level as variable
 function getLevel() {
     "use strict";
@@ -647,6 +648,8 @@ function movePopulate() {
                     dmgElement.src = "media/oops.jpg";
                 }
 
+            var ppElement = document.createElement('p');
+            ppElement.innerHTML = movesByType[i][k].pp;
             var moveTypeElement = document.createElement('p');
             moveTypeElement.innerHTML = i;
 
@@ -654,6 +657,7 @@ function movePopulate() {
             moveDiv.append(nameElement);
             moveDiv.append(powElement);
             moveDiv.append(accElement);
+            moveDiv.append(ppElement);
             moveDiv.append(moveTypeElement);
             moveDiv.append(dmgElement);
 
@@ -678,4 +682,9 @@ function searchMoves() {
             eachMoveBox[i].style.display = "none";
         }
     }
+}
+
+function typeFilterMoves() {
+    // should be called each time a checkbox/button is clicked, will probably work better with checkbox so it can check
+    // which ones are selected each time the function is called
 }
