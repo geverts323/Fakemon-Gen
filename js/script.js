@@ -687,4 +687,6 @@ function searchMoves() {
 function typeFilterMoves() {
     // should be called each time a checkbox/button is clicked, will probably work better with checkbox so it can check
     // which ones are selected each time the function is called
+
+    //idk rn
 }
