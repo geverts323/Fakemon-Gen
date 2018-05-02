@@ -273,6 +273,8 @@ function typeDefEff() {
     typeDefPrint(dualTypes, defDmgOne, defDmgTwo);
 }
 
+//NEED TO ADD CHECK FOR IF ONLY ONE TYPE SELECTED (SO YOU CAN SEE SINGLE TYPE EFFECTIVENESS TOO)
+
 //prints table with info from typeDefEff()
 function typeDefPrint(dualTypes, typeOne, typeTwo) {
     var totalDefDmg;
@@ -321,7 +323,6 @@ function encounterGenCall() {
 function calcEncounterGen(land, numMon, haunt, range) {
 
 }
-
 
 //functions to show different Item Gen input fields
 function showMonDrop() {
@@ -611,8 +612,9 @@ function movePopulate() {
         for (k in movesByType[i]) {
             //creates div to hold each move
             var moveDiv = document.createElement('div');
-            moveDiv.className = 'innerMoveBox'
-            console.log("created div!")
+            moveDiv.className = ('innerMoveBox ' + i + 'MoveBox')
+            moveDiv.id = ('moveNumber' + movesByType[i][k].move_number);
+            console.log("created div!");
             //creates name element
             var nameElement = document.createElement('h4');
             nameElement.innerHTML = movesByType[i][k].name.replace(/-/g, " ");
@@ -661,6 +663,29 @@ function movePopulate() {
             moveDiv.append(moveTypeElement);
             moveDiv.append(dmgElement);
 
+            //this div will default to hidden but will show when the move is clicked on
+            var detailDiv = document.createElement('div');
+            detailDiv.className = ('moveDetailDiv');
+            detailDiv.id = 'moveNumber' + movesByType[i][k].move_number + 'Child';
+            //detailDiv.style.display = 'none';
+            var moveNumber = document.createElement('h4');
+            moveNumber.innerHTML = '&#35;' + movesByType[i][k].move_number;
+            var moveEffect = document.createElement('p');
+            moveEffect.className = ('moveEffectDetail')
+            var moveEffectEntry = movesByType[i][k].effect_entries.replace('$effect_chance', movesByType[i][k].effect_chance);
+            moveEffect.innerHTML = moveEffectEntry;
+            var moveTargets = document.createElement('p');
+            moveTargets.className = ('moveTargetsDetail');
+            moveTargets.innerHTML = 'Target: ' + movesByType[i][k].target.replace(/-/g, " ");
+
+
+            moveDiv.append(detailDiv);
+            detailDiv.append(moveNumber);
+            detailDiv.append(moveEffect);
+            detailDiv.append(moveTargets);
+            moveDiv.addEventListener('click',displayMoveDetail);
+            //moveDiv.onclick = displayMoveDetail;
+            detailDiv.style.display = 'none';
         }
     }
 }
@@ -684,9 +709,155 @@ function searchMoves() {
     }
 }
 
-function typeFilterMoves() {
-    // should be called each time a checkbox/button is clicked, will probably work better with checkbox so it can check
-    // which ones are selected each time the function is called
+function displayMoveDetail() {
+    //in movePopulate need to create className on each move as well as a specific id
+    //onClick will call this and it will (style.display = none;) all details of other moves and (style.display = inline-block;) the move clicked
+    //get the element by id by either:
+    //using the args to create the id in function
+    //OR
+    //get id of element that called function
+    console.log('onClick Event Happened!');
+    var clickDiv = $(this).attr('id');
+    console.log('should be element id: ' + clickDiv);
+    var hiddenDiv = clickDiv + 'Child';
+    console.log('should be hidden Element id: ' + hiddenDiv);
+    //document.getElementById(hiddenDiv).style.display = '';
+    $('.moveDetailDiv').hide();
+
+    $('#' + hiddenDiv).show();
+    //console.log(document.getElementsByClassName('moveDetailDiv'));//.style.display = 'none';
+}
+
+
+// function typeFilterMoves() {
+//     // should be called each time a checkbox/button is clicked, will probably work better with checkbox so it can check
+//     // which ones are selected each time the function is called
+//     var Normal = document.getElementById("Normal");
+//     var Fighting = document.getElementById("Fighting");
+//     var Flying = document.getElementById("Flying");
+//     var Poison = document.getElementById("Poison");
+//     var Ground = document.getElementById("Ground");
+//     var Rock = document.getElementById("Rock");
+//     var Bug = document.getElementById("Bug");
+//     var Ghost = document.getElementById("Ghost");
+//     var Steel = document.getElementById("Steel");
+//     var Fire = document.getElementById("Fire");
+//     var Water = document.getElementById("Water");
+//     var Grass = document.getElementById("Grass");
+//     var Electric = document.getElementById("Electric");
+//     var Psychic = document.getElementById("Psychic");
+//     var Ice = document.getElementById("Ice");
+//     var Dragon = document.getElementById("Dragon");
+//     var Dark = document.getElementById("Dark");
+//     var Fairy = document.getElementById("Fairy");
+//
+//         if (Normal.checked == true) {
+//             console.log("checked: " + "Normal");
+//             document.getElementsByClassName('normalMoveBox').style.display = 'block';
+//     }   else {
+//             document.getElementsByClassName('normalMoveBox').style.display = 'none';
+//     }
+//         if (Fighting.checked == true) {
+//             console.log("checked: " + "Fighting");
+//             document.getElementsByClassName('fightingMoveBox').style.display = 'block';
+//     }   else {
+//             document.getElementsByClassName('fightingMoveBox').style.display = 'none';
+//     }
+//         if (Flying.checked == true) {
+//             console.log("checked: " + "Flying");
+//             document.getElementsByClassName('flyingMoveBox').style.display = 'block';
+//     }   else {
+//             document.getElementsByClassName('flyingMoveBox').style.display = 'none';
+//     }
+//         if (Poison.checked == true) {
+//             console.log("checked: " + "Poison");
+//             document.getElementsByClassName('poisonMoveBox').style.display = 'block';
+//     }   else {
+//             document.getElementsByClassName('poisonMoveBox').style.display = 'none';
+//     }
+//         if (Ground.checked == true) {
+//             console.log("checked: " + "Ground");
+//             document.getElementsByClassName('groundMoveBox').style.display = 'block';
+//     }   else {
+//             document.getElementsByClassName('groundMoveBox').style.display = 'none';
+//     }
+//         if (Rock.checked == true) {
+//             console.log("checked: " + "Rock");
+//             document.getElementsByClassName('rockMoveBox').style.display = 'block';
+//     }   else {
+//             document.getElementsByClassName('rockMoveBox').style.display = 'none';
+//     }
+//         if (Bug.checked == true) {
+//             console.log("checked: " + "Bug");
+//             document.getElementsByClassName('bugMoveBox').style.display = 'block';
+//     }   else {
+//             document.getElementsByClassName('bugMoveBox').style.display = 'none';
+//     }
+//         if (Ghost.checked == true) {
+//             console.log("checked: " + "Ghost");
+//             document.getElementsByClassName('ghostMoveBox').style.display = 'block';
+//     }   else {
+//             document.getElementsByClassName('ghostMoveBox').style.display = 'none';
+//     }
+//         if (Steel.checked == true) {
+//             console.log("checked: " + "Steel");
+//             document.getElementsByClassName('steelMoveBox').style.display = 'block';
+//     }   else {
+//             document.getElementsByClassName('steelMoveBox').style.display = 'none';
+//     }
+//         if (Fire.checked == true) {
+//             console.log("checked: " + "Fire");
+//             document.getElementsByClassName('fireMoveBox').style.display = 'block';
+//     }   else {
+//             document.getElementsByClassName('fireMoveBox').style.display = 'none';
+//     }
+//         if (Water.checked == true) {
+//             console.log("checked: " + "Water");
+//             document.getElementsByClassName('waterMoveBox').style.display = 'block';
+//     }   else {
+//             document.getElementsByClassName('waterMoveBox').style.display = 'none';
+//     }
+//         if (Grass.checked == true) {
+//             console.log("checked: " + "Grass");
+//             document.getElementsByClassName('grassMoveBox').style.display = 'block';
+//     }   else {
+//             document.getElementsByClassName('grassMoveBox').style.display = 'none';
+//     }
+//         if (Electric.checked == true) {
+//             console.log("checked: " + "Electric");
+//             document.getElementsByClassName('electricMoveBox').style.display = 'block';
+//     }   else {
+//             document.getElementsByClassName('electricMoveBox').style.display = 'none';
+//     }
+//         if (Psychic.checked == true) {
+//             console.log("checked: " + "Psychic");
+//             document.getElementsByClassName('psychicMoveBox').style.display = 'block';
+//     }   else {
+//             document.getElementsByClassName('psychicMoveBox').style.display = 'none';
+//     }
+//         if (Ice.checked == true) {
+//             console.log("checked: " + "Ice");
+//             document.getElementsByClassName('iceMoveBox').style.display = 'block';
+//     }   else {
+//             document.getElementsByClassName('iceMoveBox').style.display = 'none';
+//     }
+//         if (Dragon.checked == true) {
+//             console.log("checked: " + "Dragon");
+//             document.getElementsByClassName('dragonMoveBox').style.display = 'block';
+//     }   else {
+//             document.getElementsByClassName('dragonMoveBox').style.display = 'none';
+//     }
+//         if (Dark.checked == true) {
+//             console.log("checked: " + "Dark");
+//             document.getElementsByClassName('darkMoveBox').style.display = 'block';
+//     }   else {
+//             document.getElementsByClassName('darkMoveBox').style.display = 'none';
+//     }
+//         if (Fairy.checked == true) {
+//             console.log("checked: " + "Fairy");
+//             document.getElementsByClassName('fairyMoveBox').style.display = 'block';
+//     }   else {
+//             document.getElementsByClassName('fairyMoveBox').style.display = 'none';
+//     }
 
     //idk rn
-}

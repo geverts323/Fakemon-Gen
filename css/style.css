@@ -314,3 +314,23 @@ button {
 .moveSearchInputSection input {
     margin-bottom: 8px;
 }
+
+.moveDetailDiv {
+    width: 100%;
+    flex-flow: row;
+    margin: 3px;
+}
+
+.moveDetailDiv h4 {
+    display:inline-block;
+    width: 10%;
+}
+.moveDetailDiv p {
+    display:inline-block;
+}
+.moveEffectDetail {
+    width: 60%;
+}
+.moveTargetsDetail {
+    text-transform: capitalize;
+}
