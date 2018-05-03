@@ -608,18 +608,20 @@ function movePopulate() {
     var box = document.getElementById('moveSearchSection');
     //loops through movesByType var and go into each type
     for (i in movesByType) {
-        //loops through each type and grabs each move
+        //loops through each type and grabs each move - most of the page all happens in this function
+        //creates all the elements in each individual move, sets classes and ids as necessary and creates SOME events on this page
         for (k in movesByType[i]) {
             //creates div to hold each move
             var moveDiv = document.createElement('div');
             moveDiv.className = ('innerMoveBox ' + i + 'MoveBox')
             moveDiv.id = ('moveNumber' + movesByType[i][k].move_number);
-            console.log("created div!");
             //creates name element
             var nameElement = document.createElement('h4');
             nameElement.innerHTML = movesByType[i][k].name.replace(/-/g, " ");
             //creates accuracy element
             var accElement = document.createElement('p');
+
+            //handling accuracy for status condition moves - if null show "--" in place
             if (movesByType[i][k].accuracy == null) {
                 accElement.innerHTML = '--';
             }
@@ -635,26 +637,31 @@ function movePopulate() {
             else {
                 powElement.innerHTML = movesByType[i][k].power;
             }
-        //creates damage type element -- will display small image representing damage type
+            //creates damage type element -- will display small image representing damage type
             var dmgElement = document.createElement('img');
-                if (movesByType[i][k].damage_class == "physical") {
-                    dmgElement.src = "media/physDmgIcon.jpg";
-                }
-                else if (movesByType[i][k].damage_class == "special") {
-                    dmgElement.src = "media/SpecAtkIcon.jpg";
-                }
-                else if (movesByType[i][k].damage_class == "status") {
-                    dmgElement.src = "media/statusAtkIcon.jpg";
-                }
-                else {
-                    dmgElement.src = "media/oops.jpg";
-                }
 
+            //decides which img to show
+            if (movesByType[i][k].damage_class == "physical") {
+                dmgElement.src = "media/physDmgIcon.jpg";
+            }
+            else if (movesByType[i][k].damage_class == "special") {
+                dmgElement.src = "media/SpecAtkIcon.jpg";
+            }
+            else if (movesByType[i][k].damage_class == "status") {
+                dmgElement.src = "media/statusAtkIcon.jpg";
+            }
+            else {
+                dmgElement.src = "media/oops.jpg";
+            }
+
+            //creates pp element and fills in with move pp
             var ppElement = document.createElement('p');
             ppElement.innerHTML = movesByType[i][k].pp;
+            //creates move type element and fills in
             var moveTypeElement = document.createElement('p');
             moveTypeElement.innerHTML = i;
 
+            //appending first elements for each move box and the box
             box.append(moveDiv);
             moveDiv.append(nameElement);
             moveDiv.append(powElement);
@@ -668,22 +675,78 @@ function movePopulate() {
             detailDiv.className = ('moveDetailDiv');
             detailDiv.id = 'moveNumber' + movesByType[i][k].move_number + 'Child';
             //detailDiv.style.display = 'none';
+
+            //hidden detail div guts all created down here
+
+            //creates move number element
             var moveNumber = document.createElement('h4');
             moveNumber.innerHTML = '&#35;' + movesByType[i][k].move_number;
+
+            //creates move effect text element
             var moveEffect = document.createElement('p');
             moveEffect.className = ('moveEffectDetail')
+
+            //if a move has effect_chance filler spot (as some do in data.js) this gets the effect_chance value and replaces it
             var moveEffectEntry = movesByType[i][k].effect_entries.replace('$effect_chance', movesByType[i][k].effect_chance);
             moveEffect.innerHTML = moveEffectEntry;
+
+            //creates move target element
             var moveTargets = document.createElement('p');
             moveTargets.className = ('moveTargetsDetail');
             moveTargets.innerHTML = 'Target: ' + movesByType[i][k].target.replace(/-/g, " ");
 
+            //down here is all the typeEffectiveness details
+            //these will also be hidden but expand with onClick event displayMoveDetail()
+            var typeEffectDetail = document.createElement('div');
+            typeEffectDetail.className = ('typeEffectDiv');
+
+            // creating empty arrays to append the types to their appropriate list
+            var superEffective = [];
+            var notVeryEffective = [];
+            var dealsNormalDamage = [];
+            var ineffective = [];
+
+            //for loop going through value for i (should be a type eg. "Normal") in atkTypes in data.js
+            for (j in atkTypes[i]) {
+                if (atkTypes[i][j] == 2) {
+                    superEffective.append(atkTypes[i][j]);
+                    console.log('superEffective: ' + atkTypes[i][j]);
+                }
+                else if (atkTypes[i][j] == 0.5) {
+                    notVeryEffective.append(atkTypes[i][j]);
+                    console.log('notVeryEffective: ' + atkTypes[i][j]);
+                }
+                else if (atkTypes[i][j] == 1) {
+                    dealsNormalDamage.append(atkTypes[i][j]);
+                    console.log('normalDamage: ' + atkTypes[i][j]);
+                }
+                else if (atkTypes[i][j] == 0) {
+                    ineffective.append(atkTypes[i][j]);
+                    console.log('ineffective' + atkTypes[i][j]);
+                }
+                else {
+                    console.log("shouldn't have gotten here: " + atkTypes[i][j]);
+                }
+            }
+
+            //trying to use these to create ul elements with makeUL function - NOTE: not sure where the disconnect is, its creating and appending the lists to the detailDiv - obvs
+            var superEffectiveList = document.createElement('ul');                  //but not seeing any li being created, not sure if because for j loop isnt
+            // superEffectiveList.append(superEffective);                           //pulling in the right thing, not appending properly OR my makeUL() function isnt working right
+            var notVeryEffectiveList = document.createElement('ul');
+            // notVeryEffectiveList.append(notVeryEffective);
+            var dealsNormalDamageList = document.createElement('ul');
+            // dealsNormalDamageList.append(dealsNormalDamage);
+            var ineffectiveList = document.createElement('ul');
+            // ineffectiveList.append(ineffective);
+
+            typeEffectDetail.append(makeUL(superEffective, superEffectiveList),  makeUL(notVeryEffective, notVeryEffectiveList), makeUL(dealsNormalDamage, dealsNormalDamageList), makeUL(ineffective, ineffectiveList));
+
+            //typeEffectDetail.append(superEffectiveList, notVeryEffectiveList, dealsNormalDamageList, ineffectiveList);
 
             moveDiv.append(detailDiv);
-            detailDiv.append(moveNumber);
-            detailDiv.append(moveEffect);
-            detailDiv.append(moveTargets);
+            detailDiv.append(moveNumber, moveEffect, moveTargets, typeEffectDetail);
             moveDiv.addEventListener('click',displayMoveDetail);
+            console.log(typeEffectDetail)
             //moveDiv.onclick = displayMoveDetail;
             detailDiv.style.display = 'none';
         }
@@ -707,6 +770,23 @@ function searchMoves() {
             eachMoveBox[i].style.display = "none";
         }
     }
+}
+
+//universal function to input array and return into ul
+//args will include the array and the list to return it to
+function makeUL(array, list) {
+    for(var i = 0; i < array.length; i++) {
+        //creates list element
+        var item = document.createElement('li');
+        item.append(array[i]);
+
+        list.append(item);
+
+    }
+
+    // Finally, return the constructed list:
+    console.log(list);
+    return list;
 }
 
 function displayMoveDetail() {
