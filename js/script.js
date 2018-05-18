@@ -799,8 +799,8 @@ function movePopulate() {
 
 function searchMoves() {
     var input = document.getElementById('moveSearchBar');
-    var filter = input.value.toLowerCase()
-    var allMoveBox = document.getElementById('moveSearchSection')
+    var filter = input.value.toLowerCase();
+    var allMoveBox = document.getElementById('moveSearchSection');
     var eachMoveBox = allMoveBox.getElementsByTagName('div');
 
     for (i = 0; i < eachMoveBox.length; i++) {
@@ -815,6 +815,7 @@ function searchMoves() {
         }
     }
 }
+
 
 //universal function to input array and return into ul
 //args will include the array and the list to return it to
