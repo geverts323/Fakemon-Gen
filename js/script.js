@@ -618,6 +618,7 @@ function movePopulate() {
             //creates name element
             var nameElement = document.createElement('h4');
             nameElement.innerHTML = movesByType[i][k].name.replace(/-/g, " ");
+            nameElement.className = "moveSearchClass";
             //creates accuracy element
             var accElement = document.createElement('p');
 
@@ -679,7 +680,7 @@ function movePopulate() {
             //hidden detail div guts all created down here
 
             //creates move number element
-            var moveNumber = document.createElement('h4');
+            var moveNumber = document.createElement('h5');
             moveNumber.innerHTML = '&#35;' + movesByType[i][k].move_number;
 
             //creates move effect text element
@@ -800,12 +801,13 @@ function movePopulate() {
 function searchMoves() {
     var input = document.getElementById('moveSearchBar');
     var filter = input.value.toLowerCase();
-    var allMoveBox = document.getElementById('moveSearchSection');
-    var eachMoveBox = allMoveBox.getElementsByTagName('div');
+    console.log(filter);
+    var eachMoveBox = document.getElementsByClassName('innerMoveBox');
 
     for (i = 0; i < eachMoveBox.length; i++) {
 
         a = eachMoveBox[i].getElementsByTagName("h4")[0];
+        console.log("a: " + a);
 
         if (a.innerHTML.toLowerCase().indexOf(filter) > -1) {
             eachMoveBox[i].style.display = "";

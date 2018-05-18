@@ -355,3 +355,6 @@ button {
     width: 17%;
     padding: 2px;
 }
+.moveDetailDiv h5 {
+    margin-right: 5%;
+}
