@@ -688,7 +688,7 @@ function movePopulate() {
 
             //if a move has effect_chance filler spot (as some do in data.js) this gets the effect_chance value and replaces it
             var moveEffectEntry = movesByType[i][k].effect_entries.replace('$effect_chance', movesByType[i][k].effect_chance);
-            moveEffect.innerHTML = moveEffectEntry;
+            moveEffect.innerHTML = "Description: " + moveEffectEntry;
 
             //creates move target element
             var moveTargets = document.createElement('p');
@@ -706,40 +706,84 @@ function movePopulate() {
             var dealsNormalDamage = [];
             var ineffective = [];
 
+            console.log("i: " + i);
+
             //for loop going through value for i (should be a type eg. "Normal") in atkTypes in data.js
+
             for (j in atkTypes[i]) {
+                console.log("j: " + j);
                 if (atkTypes[i][j] == 2) {
-                    superEffective.append(atkTypes[i][j]);
-                    console.log('superEffective: ' + atkTypes[i][j]);
+                    superEffective.push(j);
+                    console.log('superEffective: ' + j);
                 }
                 else if (atkTypes[i][j] == 0.5) {
-                    notVeryEffective.append(atkTypes[i][j]);
-                    console.log('notVeryEffective: ' + atkTypes[i][j]);
+                    notVeryEffective.push(j);
+                    console.log('notVeryEffective: ' + j);
                 }
                 else if (atkTypes[i][j] == 1) {
-                    dealsNormalDamage.append(atkTypes[i][j]);
-                    console.log('normalDamage: ' + atkTypes[i][j]);
+                    dealsNormalDamage.push(j);
+                    console.log('normalDamage: ' + j);
                 }
                 else if (atkTypes[i][j] == 0) {
-                    ineffective.append(atkTypes[i][j]);
-                    console.log('ineffective' + atkTypes[i][j]);
+                    ineffective.push(j);
+                    console.log('ineffective' + j);
                 }
                 else {
-                    console.log("shouldn't have gotten here: " + atkTypes[i][j]);
+                    console.log("shouldn't have gotten here: " + i);
                 }
             }
+            console.log(superEffective);
+            //getting through the above, seeing the logs but not 100% sure they are actually being appended
 
-            //trying to use these to create ul elements with makeUL function - NOTE: not sure where the disconnect is, its creating and appending the lists to the detailDiv - obvs
-            var superEffectiveList = document.createElement('ul');                  //but not seeing any li being created, not sure if because for j loop isnt
-            // superEffectiveList.append(superEffective);                           //pulling in the right thing, not appending properly OR my makeUL() function isnt working right
-            var notVeryEffectiveList = document.createElement('ul');
+
+            //trying to use these to create ul elements with makeImgList function - NOTE: not sure where the disconnect is, its creating and appending the lists to the detailDiv - obvs
+            var x2div = document.createElement('div');
+            x2div.className = 'x2div moveEffectivenessDiv';
+            var superEffectiveList = document.createElement('div');                  //but not seeing any li being created, not sure if because for j loop isnt
+            // superEffectiveList.append(superEffective);                           //pulling in the right thing, not appending properly OR my makeImgList() function isnt working right
+            var xHalfdiv = document.createElement('div');
+            xHalfdiv.className = 'xHalfdiv moveEffectivenessDiv';
+            var notVeryEffectiveList = document.createElement('div');
             // notVeryEffectiveList.append(notVeryEffective);
-            var dealsNormalDamageList = document.createElement('ul');
+            var x1div = document.createElement('div');
+            x1div.className = 'x1div moveEffectivenessDiv';
+            var dealsNormalDamageList = document.createElement('div');
             // dealsNormalDamageList.append(dealsNormalDamage);
-            var ineffectiveList = document.createElement('ul');
+            var x0div = document.createElement('div');
+            x0div.className = 'x0div moveEffectivenessDiv';
+            var ineffectiveList = document.createElement('div');
             // ineffectiveList.append(ineffective);
 
-            typeEffectDetail.append(makeUL(superEffective, superEffectiveList),  makeUL(notVeryEffective, notVeryEffectiveList), makeUL(dealsNormalDamage, dealsNormalDamageList), makeUL(ineffective, ineffectiveList));
+            var superListContent = makeImgList(superEffective, superEffectiveList);
+            var superEffectiveTitle = document.createElement('h3');
+            superEffectiveTitle.innerHTML = "x2 Damage:";
+
+            var notVeryListContent = makeImgList(notVeryEffective, notVeryEffectiveList);
+            var notVeryEffectiveTitle = document.createElement('h3');
+            notVeryEffectiveTitle.innerHTML = "x0.5 Damage:";
+
+            var dealsNormalListContent = makeImgList(dealsNormalDamage, dealsNormalDamageList);
+            var dealsNormalTitle = document.createElement('h3');
+            dealsNormalTitle.innerHTML = "x1 Damage:";
+
+            var ineffectiveListContent = makeImgList(ineffective, ineffectiveList);
+            var ineffectiveTitle = document.createElement('h3');
+            ineffectiveTitle.innerHTML = "x0 Damage:";
+
+            var typeEffectiveDiv = document.createElement('div');
+            typeEffectiveDiv.className = ("typeEffectiveDiv");
+
+            x2div.append(superEffectiveTitle, superListContent);
+
+            xHalfdiv.append(notVeryEffectiveTitle, notVeryListContent);
+
+            x1div.append(dealsNormalTitle, dealsNormalListContent);
+
+            x0div.append(ineffectiveTitle, ineffectiveListContent);
+
+            typeEffectiveDiv.append(x2div, x1div, xHalfdiv, x0div);
+
+            typeEffectDetail.append(typeEffectiveDiv);
 
             //typeEffectDetail.append(superEffectiveList, notVeryEffectiveList, dealsNormalDamageList, ineffectiveList);
 
@@ -774,13 +818,18 @@ function searchMoves() {
 
 //universal function to input array and return into ul
 //args will include the array and the list to return it to
-function makeUL(array, list) {
+function makeImgList(array, list) {
+    console.log("array: " + array);
     for(var i = 0; i < array.length; i++) {
         //creates list element
-        var item = document.createElement('li');
-        item.append(array[i]);
-
-        list.append(item);
+        if (array[i] == 'null') {
+            console.log("doesn't matter");
+        }
+        else {
+            var img = document.createElement('img');
+            img.src = "media/types_imgs/" + array[i] + "_type.png";
+            list.append(img);
+        }
 
     }
 
