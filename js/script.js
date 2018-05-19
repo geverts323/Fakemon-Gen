@@ -261,8 +261,9 @@ function getCrit() {
 
 //calculates defensive type effectiveness
 function typeDefEff() {
-    var defDmgOne = $("#defDmg1").val();
-    var defDmgTwo = $("#defDmg2").val();
+    var defDmgOne = $("#defDmg1").val().toLowerCase();
+    console.log('defDmg1: ' + defDmgOne)
+    var defDmgTwo = $("#defDmg2").val().toLowerCase();
     var dualTypes = {};
     console.log(defDmgOne);
     console.log(defDmgTwo);
@@ -280,24 +281,24 @@ function typeDefPrint(dualTypes, typeOne, typeTwo) {
     var totalDefDmg;
     var createTypeChart = "<div class='typesTable'>" + "<h3>" + typeOne + "/" + typeTwo + "</h3>" +
         "<table class='defTypeTable'>" + "<tbody>" +
-        "<tr>" + "<th>" + "Normal:" + "</th>" + "<td>" + "x" + dualTypes['Normal'] + "</td>" + "</tr>" +
-        "<tr>" + "<th>" + "Fighting:" + "</th>" + "<td>" + "x" + dualTypes['Fighting'] + "</td>" + "</tr>" +
-        "<tr>" + "<th>" + "Flying:" + "</th>" + "<td>" + "x" + dualTypes['Flying'] + "</td>" + "</tr>" +
-        "<tr>" + "<th>" + "Poison:" + "</th>" + "<td>" + "x" + dualTypes['Poison'] + "</td>" + "</tr>" +
-        "<tr>" + "<th>" + "Ground:" + "</th>" + "<td>" + "x" + dualTypes['Ground'] + "</td>" + "</tr>" +
-        "<tr>" + "<th>" + "Rock:" + "</th>" + "<td>" + "x" + dualTypes['Rock'] + "</td>" + "</tr>" +
-        "<tr>" + "<th>" + "Bug:" + "</th>" + "<td>" + "x" + dualTypes['Bug'] + "</td>" + "</tr>" +
-        "<tr>" + "<th>" + "Ghost:" + "</th>" + "<td>" + "x" + dualTypes['Ghost'] + "</td>" + "</tr>" +
-        "<tr>" + "<th>" + "Steel:" + "</th>" + "<td>" + "x" + dualTypes['Steel'] + "</td>" + "</tr>" +
-        "<tr>" + "<th>" + "Fire:" + "</th>" + "<td>" + "x" + dualTypes['Fire'] + "</td>" + "</tr>" +
-        "<tr>" + "<th>" + "Water:" + "</th>" + "<td>" + "x" + dualTypes['Water'] + "</td>" + "</tr>" +
-        "<tr>" + "<th>" + "Grass:" + "</th>" + "<td>" + "x" + dualTypes['Grass'] + "</td>" + "</tr>" +
-        "<tr>" + "<th>" + "Electric:" + "</th>" + "<td>" + "x" + dualTypes['Electric'] + "</td>" + "</tr>" +
-        "<tr>" + "<th>" + "Psychic:" + "</th>" + "<td>" + "x" + dualTypes['Psychic'] + "</td>" + "</tr>" +
-        "<tr>" + "<th>" + "Ice:" + "</th>" + "<td>" + "x" + dualTypes['Ice'] + "</td>" + "</tr>" +
-        "<tr>" + "<th>" + "Dragon:" + "</th>" + "<td>" + "x" + dualTypes['Dragon'] + "</td>" + "</tr>" +
-        "<tr>" + "<th>" + "Dark:" + "</th>" + "<td>" + "x" + dualTypes['Dark'] + "</td>" + "</tr>" +
-        "<tr>" + "<th>" + "Fairy:" + "</th>" + "<td>" + "x" + dualTypes['Fairy'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Normal:" + "</th>" + "<td>" + "x" + dualTypes['normal'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Fighting:" + "</th>" + "<td>" + "x" + dualTypes['fighting'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Flying:" + "</th>" + "<td>" + "x" + dualTypes['flying'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Poison:" + "</th>" + "<td>" + "x" + dualTypes['poison'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Ground:" + "</th>" + "<td>" + "x" + dualTypes['ground'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Rock:" + "</th>" + "<td>" + "x" + dualTypes['rock'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Bug:" + "</th>" + "<td>" + "x" + dualTypes['bug'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Ghost:" + "</th>" + "<td>" + "x" + dualTypes['ghost'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Steel:" + "</th>" + "<td>" + "x" + dualTypes['steel'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Fire:" + "</th>" + "<td>" + "x" + dualTypes['fire'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Water:" + "</th>" + "<td>" + "x" + dualTypes['water'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Grass:" + "</th>" + "<td>" + "x" + dualTypes['grass'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Electric:" + "</th>" + "<td>" + "x" + dualTypes['electric'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Psychic:" + "</th>" + "<td>" + "x" + dualTypes['psychic'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Ice:" + "</th>" + "<td>" + "x" + dualTypes['ice'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Dragon:" + "</th>" + "<td>" + "x" + dualTypes['dragon'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Dark:" + "</th>" + "<td>" + "x" + dualTypes['dark'] + "</td>" + "</tr>" +
+        "<tr>" + "<th>" + "Fairy:" + "</th>" + "<td>" + "x" + dualTypes['fairy'] + "</td>" + "</tr>" +
         "</tbody>" + "<tfoot>" +
         // "<th>" + "Total: " + "</th>" + "<td>" + "NotYet" + "</td>"
         "</tfoot>" + "</table>" + "</div>"
