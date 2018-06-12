@@ -214,13 +214,8 @@ function typeDefEff() {
 //prints table with info from typeDefEff()
 function typeDefPrint(dualTypes, typeOne, typeTwo) {
     var totalDefDmg;
-<<<<<<< HEAD
-    typeOne = typeOne.charAt(0).toUpperCase() + typeOne.slice(1);
-    typeTwo = typeTwo.charAt(0).toUpperCase() + typeTwo.slice(1);
-    var createTypeChart = "<div class='typesTable'>" + "<h3>" + typeOne + "/" + typeTwo + "</h3>" +
-=======
+
     var createTypeChart = "<div class='typesTable'>" + "<h3>" + typeOne[0].toUpperCase() + typeOne.slice(1) + "/" + typeTwo[0].toUpperCase() + typeTwo.slice(1) + "</h3>" +
->>>>>>> Work-in-progress
         "<table class='defTypeTable'>" + "<tbody>" +
         "<tr>" + "<th>" + "Normal:" + "</th>" + "<td>" + "x" + dualTypes['normal'] + "</td>" + "</tr>" +
         "<tr>" + "<th>" + "Fighting:" + "</th>" + "<td>" + "x" + dualTypes['fighting'] + "</td>" + "</tr>" +
