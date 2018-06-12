@@ -1,53 +1,117 @@
-function statCalc(lvl, stat) {
-    var nature = $("#pokemonNature").val();
-    var statNat = Number(natures[nature][stat + "Nat"]);
-    var statBase = $("#base" + stat).val();
-    var statIV = $("#" + stat + "IV").val();
-    var statEV = $("#" + stat + "EV").val();
 
+// returns error if lvl>100 and returns level as variable
+function getLevel() {
+    "use strict";
+    var pokemonLevel = document.getElementById("pokemonLevel").value;
 
-    var statFinal = Math.floor((((((2 * statBase) + Number(statIV) + ((statEV)/4)) * lvl)/100) + 5) * statNat);
-
-    return statFinal;
+    if (isNaN(pokemonLevel) || pokemonLevel == "" || pokemonLevel > 100) {
+        alert("Enter a better Level");
+        return {
+            "success": false,
+            "level": 0
+        };
+    } else {
+        pokemonLevel = parseInt(pokemonLevel);
+        return {
+            "level": pokemonLevel,
+            "success": true
+        };
+    }
 }
 
-
-function hpStat(lvl) {
-    var baseHP = $("#basehp").val();
-    var hpIV = $("#hpIV").val();
-    var hpEV = $("#hpEV").val();
-
-    console.log(baseHP, hpIV, hpEV);
-
-    var hpFinal = Math.floor(((((2 * baseHP) + Number(hpIV) + (hpEV/4)) * lvl)/100) + Number(lvl) + 10);
-    return hpFinal;
-}
-
+// returns name as variable for printing in table
 function getName() {
+    "use strict";
     var pokemonName = document.getElementById("pokemonName").value;
     pokemonName = pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1);
     console.log(pokemonName);
     return pokemonName;
 }
 
+// each function calculates each individual stat
+function hpStat(pokemonLevel) {
+    "use strict";
+    var baseHP = Number(document.getElementById("baseHP").value);
+    var hpIV = Number(document.getElementById("hpIV").value);
 
-function checkMon() {
-    var pokemonLevel = $("#pokemonLevel").val();
-
-    if (isNaN(pokemonLevel) || pokemonLevel == "" || pokemonLevel > 100 || pokemonLevel <= 0) {
-        alert("Enter a better Level");
-        return {
-            "success": false,
-            "level": null
-        };
-    } else {
-        createMon(parseInt(pokemonLevel));
-        };
+    var hp = Math.floor((((hpIV + baseHP) * 2) * (pokemonLevel / 100)) + 10 + pokemonLevel);
+    return hp;
 }
 
-function createMon(level) {
+function atkStat(pokemonLevel, atkNat) {
+    "use strict";
+    var baseAtk = Number(document.getElementById("baseAtk").value);
+    var atkIV = Number(document.getElementById("atkIV").value);
 
-    var nat = $("#pokemonNature").val();
+    var atk = Math.floor(((((baseAtk + atkIV) * 2) * (pokemonLevel / 100)) + 5) * atkNat);
+    return atk;
+}
+
+function defStat(pokemonLevel, defNat) {
+    "use strict";
+    var baseDef = Number(document.getElementById("baseDef").value);
+    var defIV = Number(document.getElementById("defIV").value);
+
+    var def = Math.floor(((((baseDef * 2) + defIV) * (pokemonLevel / 100)) + 5) * defNat);
+    return def;
+}
+
+function spDefStat(pokemonLevel, spDefNat) {
+    "use strict";
+    var baseSpDef = Number(document.getElementById("baseSpDef").value);
+    var spDefIV = Number(document.getElementById("spDefIV").value);
+
+    var spDef = Math.floor(((((baseSpDef * 2) + spDefIV) * (pokemonLevel / 100)) + 5) * spDefNat);
+    return spDef;
+}
+
+function spAtkStat(pokemonLevel, spAtkNat) {
+    "use strict";
+    var baseSpAtk = Number(document.getElementById("baseSpAtk").value);
+    var spAtkIV = Number(document.getElementById("spAtkIV").value);
+
+    var spAtk = Math.floor(((((baseSpAtk * 2) + spAtkIV) * (pokemonLevel / 100)) + 5) * spAtkNat);
+    return spAtk;
+}
+
+function speedStat(pokemonLevel, speedNat) {
+    "use strict";
+    var baseSpeed = Number(document.getElementById("baseSpeed").value);
+    var speedIV = Number(document.getElementById("speedIV").value);
+
+    var speed = Math.floor(((((baseSpeed * 2) + speedIV) * (pokemonLevel / 100)) + 5) * speedNat);
+    return speed;
+}
+
+// global variables to use in ^above stat functions and createPokemon
+var atkNat;
+var defNat;
+var spDefNat;
+var spAtkNat;
+var speedNat;
+
+//set mon's nat modifiers
+function getNature() {
+    var nat = document.getElementById("pokemonNature").value;
+    atkNat = natures[nat]["atkNat"];
+    defNat = natures[nat]["defNat"];
+    spDefNat = natures[nat]["spDefNat"];
+    spAtkNat = natures[nat]["spAtkNat"];
+    speedNat = natures[nat]["speedNat"];
+    console.log(atkNat);
+    console.log(defNat);
+    console.log(spDefNat);
+    console.log(spAtkNat);
+    console.log(speedNat);
+}
+
+//gather's final data and prints on webpage
+//this is the called function in index.html >> line 145(ish) <button>
+function createPokemon() {
+    var result = getLevel();
+    var level = result.level;
+    var nat = document.getElementById("pokemonNature").value;
+    getNature();
 
     var createNewPoke = "<div class= 'pokeTable'>" +
         "<h3 class='newHead'>" + getName() + "</h3>" +
@@ -65,23 +129,23 @@ function createMon(level) {
         "</tr>" +
         "<tr>" +
         "<td><b>Atk<b></td>" +
-        "<td>" + statCalc(level, "atk") + "</td>" +
+        "<td>" + atkStat(level, atkNat) + "</td>" +
         "</tr>" +
         "<tr>" +
         "<td><b>Def<b></td>" +
-        "<td>" + statCalc(level, "def") + "</td>" +
+        "<td>" + defStat(level, defNat) + "</td>" +
         "</tr>" +
         "<tr>" +
         "<td><b>Sp.Atk<b></td>" +
-        "<td>" + statCalc(level, "spatk") + "</td>" +
+        "<td>" + spAtkStat(level, spAtkNat) + "</td>" +
         "</tr>" +
         "<tr>" +
         "<td><b>Sp.Def<b></td>" +
-        "<td>" + statCalc(level, "spdef") + "</td>" +
+        "<td>" + spDefStat(level, spDefNat) + "</td>" +
         "</tr>" +
         "<tr>" +
         "<td><b>Speed<b></td>" +
-        "<td>" + statCalc(level, "speed") + "</td>" +
+        "<td>" + speedStat(level, speedNat) + "</td>" +
         "</tr>" +
         "</tbody>" +
         "</table>" +
@@ -90,8 +154,8 @@ function createMon(level) {
     var divStart = document.getElementById("pokeGen");
     divStart.insertAdjacentHTML("beforeend", createNewPoke);
 
-}
 
+}
 
 // global var to calculate based on sp or phys dmg
 var dmgType;
@@ -131,9 +195,9 @@ function getDiceRoll() {
 
 //determines if STAB bonus is applied
 function stab() {
-    var _moveType = $("#moveType").val();
-    var atkType1 = $("#atkTypeOne").val();
-    var atkType2 = $("#atkTypeTwo").val();
+    var _moveType = document.getElementById("moveType").value;
+    var atkType1 = document.getElementById("atkTypeOne").value;
+    var atkType2 = document.getElementById("atkTypeTwo").value;
     var stabDmg;
     if (atkType1 == _moveType || atkType2 == _moveType) {
         stabDmg = 1.5;
@@ -147,9 +211,9 @@ function stab() {
 //determines how effective the move is on defending mon
 function moveEff() {
     var effDmg;
-    var moveTyping = atkTypes[$("#moveType").val()];
-    var defType1 = moveTyping[$("#defTypeOne").val()];
-    var defType2 = moveTyping[$("#defTypeTwo").val()];
+    var moveTyping = atkTypes[document.getElementById("moveType").value];
+    var defType1 = moveTyping[document.getElementById("defTypeOne").value];
+    var defType2 = moveTyping[document.getElementById("defTypeTwo").value];
     effDmg = Number(defType1 * defType2);
     console.log("effDmg: " + effDmg);
     return effDmg;
@@ -211,16 +275,13 @@ function typeDefEff() {
 }
 
 //NEED TO ADD CHECK FOR IF ONLY ONE TYPE SELECTED (SO YOU CAN SEE SINGLE TYPE EFFECTIVENESS TOO)
+
 //prints table with info from typeDefEff()
 function typeDefPrint(dualTypes, typeOne, typeTwo) {
     var totalDefDmg;
-<<<<<<< HEAD
     typeOne = typeOne.charAt(0).toUpperCase() + typeOne.slice(1);
     typeTwo = typeTwo.charAt(0).toUpperCase() + typeTwo.slice(1);
     var createTypeChart = "<div class='typesTable'>" + "<h3>" + typeOne + "/" + typeTwo + "</h3>" +
-=======
-    var createTypeChart = "<div class='typesTable'>" + "<h3>" + typeOne[0].toUpperCase() + typeOne.slice(1) + "/" + typeTwo[0].toUpperCase() + typeTwo.slice(1) + "</h3>" +
->>>>>>> Work-in-progress
         "<table class='defTypeTable'>" + "<tbody>" +
         "<tr>" + "<th>" + "Normal:" + "</th>" + "<td>" + "x" + dualTypes['normal'] + "</td>" + "</tr>" +
         "<tr>" + "<th>" + "Fighting:" + "</th>" + "<td>" + "x" + dualTypes['fighting'] + "</td>" + "</tr>" +

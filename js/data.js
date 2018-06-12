@@ -5,170 +5,170 @@ var natures = {
     "Adamant": {
         "atkNat": 1.1,
         "defNat": 1,
-        "spDefNat": 1,
-        "spAtkNat": 0.9,
+        "spdefNat": 1,
+        "spatkNat": 0.9,
         "speedNat": 1
     },
     "Bashful": {
         "atkNat": 1,
         "defNat": 1,
-        "spDefNat": 1,
-        "spAtkNat": 1,
+        "spdefNat": 1,
+        "spatkNat": 1,
         "speedNat": 1
 
     },
     "Bold": {
         "atkNat": 0.9,
         "defNat": 1.1,
-        "spDefNat": 1,
-        "spAtkNat": 1,
+        "spdefNat": 1,
+        "spatkNat": 1,
         "speedNat": 1
     },
     "Brave": {
         "atkNat": 1.1,
         "defNat": 1,
-        "spDefNat": 1,
-        "spAtkNat": 1,
+        "spdefNat": 1,
+        "spatkNat": 1,
         "speedNat": 0.9
     },
     "Calm": {
         "atkNat": 0.9,
         "defNat": 1,
-        "spDefNat": 1.1,
-        "spAtkNat": 1,
+        "spdefNat": 1.1,
+        "spatkNat": 1,
         "speedNat": 1
     },
     "Careful": {
         "atkNat": 1,
         "defNat": 1,
-        "spDefNat": 1.1,
-        "spAtkNat": 0.9,
+        "spdefNat": 1.1,
+        "spatkNat": 0.9,
         "speedNat": 1
     },
     "Docile": {
         "atkNat": 1,
         "defNat": 1,
-        "spDefNat": 1,
-        "spAtkNat": 1,
+        "spdefNat": 1,
+        "spatkNat": 1,
         "speedNat": 1
     },
     "Gentle": {
         "atkNat": 1,
         "defNat": 0.9,
-        "spDefNat": 1.1,
-        "spAtkNat": 1,
+        "spdefNat": 1.1,
+        "spatkNat": 1,
         "speedNat": 1
     },
     "Hardy": {
         "atkNat": 1,
         "defNat": 1,
-        "spDefNat": 1,
-        "spAtkNat": 1,
+        "spdefNat": 1,
+        "spatkNat": 1,
         "speedNat": 1
     },
     "Hasty": {
         "atkNat": 1,
         "defNat": 0.9,
-        "spDefNat": 1,
-        "spAtkNat": 1,
+        "spdefNat": 1,
+        "spatkNat": 1,
         "speedNat": 1.1
     },
     "Impish": {
         "atkNat": 1,
         "defNat": 1.1,
-        "spDefNat": 1,
-        "spAtkNat": 0.9,
+        "spdefNat": 1,
+        "spatkNat": 0.9,
         "speedNat": 1
     },
     "Lax": {
         "atkNat": 1,
         "defNat": 1.1,
-        "spDefNat": 0.9,
-        "spAtkNat": 1,
+        "spdefNat": 0.9,
+        "spatkNat": 1,
         "speedNat": 1
     },
     "Lonely": {
         "atkNat": 1.1,
         "defNat": 0.9,
-        "spDefNat": 1,
-        "spAtkNat": 1,
+        "spdefNat": 1,
+        "spatkNat": 1,
         "speedNat": 1
     },
     "Mild": {
         "atkNat": 1,
         "defNat": 0.9,
-        "spDefNat": 1,
-        "spAtkNat": 1.1,
+        "spdefNat": 1,
+        "spatkNat": 1.1,
         "speedNat": 1
     },
     "Modest": {
         "atkNat": 0.9,
         "defNat": 1,
-        "spDefNat": 1,
-        "spAtkNat": 1.1,
+        "spdefNat": 1,
+        "spatkNat": 1.1,
         "speedNat": 1
     },
     "Naive": {
         "atkNat": 1,
         "defNat": 1,
-        "spDefNat": 0.9,
-        "spAtkNat": 1,
+        "spdefNat": 0.9,
+        "spatkNat": 1,
         "speedNat": 1.1
     },
     "Naughty": {
         "atkNat": 1.1,
         "defNat": 1,
-        "spDefNat": 0.9,
-        "spAtkNat": 1,
+        "spdefNat": 0.9,
+        "spatkNat": 1,
         "speedNat": 1
     },
     "Quiet": {
         "atkNat": 1,
         "defNat": 1,
-        "spDefNat": 1,
-        "spAtkNat": 1.1,
+        "spdefNat": 1,
+        "spatkNat": 1.1,
         "speedNat": 0.9
     },
     "Quirky": {
         "atkNat": 1,
         "defNat": 1,
-        "spDefNat": 1,
-        "spAtkNat": 1,
+        "spdefNat": 1,
+        "spatkNat": 1,
         "speedNat": 1
     },
     "Rash": {
         "atkNat": 1,
         "defNat": 1,
-        "spDefNat": 0.9,
-        "spAtkNat": 1.1,
+        "spdefNat": 0.9,
+        "spatkNat": 1.1,
         "speedNat": 1
     },
     "Relaxed": {
         "atkNat": 1,
         "defNat": 1.1,
-        "spDefNat": 1,
-        "spAtkNat": 1,
+        "spdefNat": 1,
+        "spatkNat": 1,
         "speedNat": 0.9
     },
     "Sassy": {
         "atkNat": 1,
         "defNat": 1,
-        "spDefNat": 1.1,
-        "spAtkNat": 1,
+        "spdefNat": 1.1,
+        "spatkNat": 1,
         "speedNat": 0.9
     },
     "Serious": {
         "atkNat": 1,
         "defNat": 1,
-        "spDefNat": 1,
-        "spAtkNat": 1,
+        "spdefNat": 1,
+        "spatkNat": 1,
         "speedNat": 1
     },
     "Timid": {
         "atkNat": 0.9,
         "defNat": 1,
-        "spDefNat": 1,
-        "spAtkNat": 1,
+        "spdefNat": 1,
+        "spatkNat": 1,
         "speedNat": 1.1
     }
 }
