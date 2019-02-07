@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Tabletop M&oacuten</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="constant_section">
+            <div class="title_section">
+                <h1>Tabletop M&oacuten</h1>
+            </div>
+            <div class="menu_section" onmouseover="display_menu_section()" onclick="hide_menu_section()">
+                <div class="menu_bar_btn">
+                    <div class="lil_bar"></div>
+                    <div class="lil_bar"></div>
+                    <div class="lil_bar"></div>
+                </div>
+                <div class="side_nav_section nav_section">
+                    <div class="gm_nav_area nav_area" onmouseover="display_gm_tools()" onclick="hide_gm_tools()">
+                        <div class="nav_area_btn" >
+                            <h2 class="nav_btn_text">Game Master Tools</h3>
+                        </div>
+                        <div class="gm_tool_btns inner_nav_btns">
+                            <div class="mon_gen_btn goto_page_btn" onclick="display_mon_gen_section()">
+                                <h3 class="nav_btn_txt">
+                                    M&oacuten Generator
+                                </h3>
+                            </div>
+                            <div class="encounter_gen_btn goto_page_btn" onclick="display_encounter_gen_section()">
+                                <h3 class="nav_btn_txt">
+                                    Encounter Generator
+                                </h3>
+                            </div>
+                            <div class="item_gen_btn goto_page_btn" onclick="display_item_gen_section()">
+                                <h3 class="nav_btn_txt">
+                                    Item Generator
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player_nav_area nav_area"  onmouseover="display_player_tools()" onclick="hide_player_tools()">
+                        <div class="nav_area_btn">
+                            <h2 class="nav_btn_text">Player Tools</h3>
+                        </div>
+                        <div class="player_tool_btns inner_nav_btns">
+                            <div class="battle_dmg_btn goto_page_btn" onclick="display_battle_dmg_section()">
+                                <h3 class="nav_btn_txt">
+                                    Battle Damage Calculator
+                                </h3>
+                            </div>
+                            <div class="type_dmg_btn goto_page_btn" onclick="display_type_dmg_section()">
+                                <h3 class="nav_btn_txt">
+                                    Type Damage Calculator
+                                </h3>
+                            </div>
+                            <div class="dice_roll_btn goto_page_btn" onclick="display_dice_roll_section()">
+                                <h3 class="nav_btn_txt">
+                                    Dice Roller
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info_nav_area nav_area"  onmouseover="display_info_tools()" onclick="hide_info_tools()">
+                        <div class="nav_area_btn">
+                            <h2 class="nav_btn_text">Game Info</h3>
+                        </div>
+                        <div class="game_info_btns inner_nav_btns">
+                            <div class="mon_data_btn goto_page_btn" onclick="display_mon_db_section()">
+                                <h3 class="nav_btn_text">
+                                    M&oacuten Database
+                                </h3>
+                            </div>
+                            <div class="move_data_btn goto_page_btn" onclick="display_move_db_section()">
+                                <h3 class="nav_btn_text">
+                                    Move Database
+                                </h3>
+                            </div>
+                            <div class="item_data_btn goto_page_btn" onclick="display_item_db_section()">
+                                <h3 class="nav_btn_text">
+                                    Item Database
+                                </h3>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pages">
+            <div class="mon_gen_section dynamic_section">
+                <div class="fullSection">
+                    <h3>Name &amp; Level</h3>
+                    <div class="inputSection">
+                        <div class="nameLvlInp">
+                            <input id="pokemonName" placeholder="Name of Pokemon">
+                            <input id="pokemonLevel" placeholder="Level of Pokemon">
+                        </div>
+                        <h3>Base Stats</h3>
+                
+                        <div class="statInp">
+                            <input id="basehp" placeholder="Base HP">
+                            <input id="baseatk" placeholder="Base Attack">
+                            <input id="basedef" placeholder="Base Defense">
+                            <input id="basespatk" placeholder="Base Sp. Attack">
+                            <input id="basespdef" placeholder="Base Sp. Defense">
+                            <input id="basespeed" placeholder="Base Speed">
+                        </div>
+                        <h4>IVs</h4>
+                        <div class="statInp">
+                            <input class="ivInp" id="hpIV" type="number" min="0" max="31" placeHolder="HP" />
+                            <input class="ivInp" id="atkIV" type="number" min="0" max="31" placeHolder="Atk" />
+                            <input class="ivInp" id="defIV" type="number" min="0" max="31" placeholder="Def" />
+                            <input class="ivInp" id="spatkIV" type="number" min="0" max="31" placeholder="SpAtk">
+                            <input class="ivInp" id="spdefIV" type="number" min="0" max="31" placeholder="SpDef" />
+                            <input class="ivInp" id="speedIV" type="number" min="0" max="31" placeholder="Speed" />
+                        </div>
+                        <h4>EVs</h4>
+                        <div class="statInp">
+                            <input class="ivInp" id="hpEV" type="number" min="0" max="255" placeHolder="HP" />
+                            <input class="ivInp" id="atkEV" type="number" min="0" max="255" placeHolder="Atk" />
+                            <input class="ivInp" id="defEV" type="number" min="0" max="255" placeholder="Def" />
+                            <input class="ivInp" id="spatkEV" type="number" min="0" max="255" placeholder="SpAtk">
+                            <input class="ivInp" id="spdefEV" type="number" min="0" max="255" placeholder="SpDef" />
+                            <input class="ivInp" id="speedEV" type="number" min="0" max="255" placeholder="Speed" />
+                        </div>
+                        <h4>Nature:</h4>
+                        <select class="natInp" id="pokemonNature">
+                            <option value="Adamant">
+                                Adamant
+                            </option>
+                            <option value="Bashful">
+                                Bashful (Neutral)
+                            </option>
+                            <option value="Bold">
+                                Bold
+                            </option>
+                            <option value="Brave">
+                                Brave
+                            </option>
+                            <optionvalue="Calm">
+                                Calm
+                                </option>
+                                <option value="Careful">
+                                    Careful
+                                </option>
+                                <option value="Docile">
+                                    Docile (Neutral)
+                                </option>
+                                <option value="Gentle">
+                                    Gentle
+                                </option>
+                                <option value="Hardy">
+                                    Hardy (Neutral)
+                                </option>
+                                <option value="Hasty">
+                                    Hasty
+                                </option>
+                                <option value="Impish">
+                                    Impish
+                                </option>
+                                <option value="Jolly">
+                                    Jolly
+                                </option>
+                                <option value="Lax">
+                                    Lax
+                                </option>
+                                <option value="Lonely">
+                                    Lonely
+                                </option>
+                                <option value="Mild">
+                                    Mild
+                                </option>
+                                <option value="Modest">
+                                    Modest
+                                </option>
+                                <option value="Naive">
+                                    Naive
+                                </option>
+                                <option value"Naughty">
+                                    Naughty
+                                </option>
+                                <option value="Quiet">
+                                    Quiet
+                                </option>
+                                <option value="Quirky">
+                                    Quirky (Neutral)
+                                </option>
+                                <option value="Rash">
+                                    Rash
+                                </option>
+                                <option value="Relaxed">
+                                    Relaxed
+                                </option>
+                                <option value="Sassy">
+                                    Sassy
+                                </option>
+                                <option value="Serious">
+                                    Serious (Neutral)
+                                </option>
+                                <option value="Timid">
+                                    Timid
+                                </option>
+                        </select>
+                        <br>
+                        <button class="button" onclick="checkLevel()">Create Fakemon!</button>
+                    </div>
+                    <hr>
+                    <div id="pokeGen">
+                        <!--Table data from JS will be produced here-->
+                    </div>
+                </div>
+            </div>
+            <div class="encounter_gen_section dynamic_section">
+
+            </div>
+            <div class="item_gen_section dynamic_section">
+
+            </div>
+            <div class="battle_dmg_section dynamic_section">
+
+            </div>
+            <div class="type_dmg_section dynamic_section">
+            </div>
+            <div class="dice_roll_section dynamic_section">
+
+            </div>
+            <div class="mon_db_section dynamic_section">
+
+            </div>
+            <div class="move_db_section dynamic_section">
+                    <div class="move_input_section">
+                        <div class="moveSearchInputSection">
+                            <h3>Search:</h3>
+                            <input type="search" id="moveSearchBar" onkeyup="searchMoves()" />
+                        </div>
+                        <div class="moveTypeCheckSection" id="typeFilterMoveSection">
+                            <!-- Might Switch all these checkboxes into buttons with onClick event
+                                    calling a filter function with the input of the value for each button -->
+                            <!-- <input name="moveTypeCheck" onclick="typeFilterMoves()" type="checkbox" id="Normal" value="Normal">Normal</input>
+                                <input name="moveTypeCheck" onclick="typeFilterMoves()" type="checkbox" id="Fighting" value="Fighting">Fighting</input>
+                                <input name="moveTypeCheck" onclick="typeFilterMoves()" type="checkbox" id="Flying" value="Flying">Flying</input>
+                                <input name="moveTypeCheck" onclick="typeFilterMoves()" type="checkbox" id="Poison" value="Poison">Poison</input>
+                                <input name="moveTypeCheck" onclick="typeFilterMoves()" type="checkbox" id="Ground" value="Ground">Ground</input>
+                                <input name="moveTypeCheck" onclick="typeFilterMoves()" type="checkbox" id="Rock" value="Rock">Rock</input>
+                                <input name="moveTypeCheck" onclick="typeFilterMoves()" type="checkbox" id="Bug" value="Bug">Bug</input>
+                                <input name="moveTypeCheck" onclick="typeFilterMoves()" type="checkbox" id="Ghost" value="Ghost">Ghost</input>
+                                <input name="moveTypeCheck" onclick="typeFilterMoves()" type="checkbox" id="Steel" value="Steel">Steel</input>
+                                <input name="moveTypeCheck" onclick="typeFilterMoves()" type="checkbox" id="Fire" value="Fire">Fire</input>
+                                <input name="moveTypeCheck" onclick="typeFilterMoves()" type="checkbox" id="Water" value="Water">Water</input>
+                                <input name="moveTypeCheck" onclick="typeFilterMoves()" type="checkbox" id="Grass" value="Grass">Grass</input>
+                                <input name="moveTypeCheck" onclick="typeFilterMoves()" type="checkbox" id="Electric" value="Electric">Electric</input>
+                                <input name="moveTypeCheck" onclick="typeFilterMoves()" type="checkbox" id="Psychic" value="Psychic">Psychic</input>
+                                <input name="moveTypeCheck" onclick="typeFilterMoves()" type="checkbox" id="Ice" value="Ice">Ice</input>
+                                <input name="moveTypeCheck" onclick="typeFilterMoves()" type="checkbox" id="Dragon" value="Dragon">Dragon</input>
+                                <input name="moveTypeCheck" onclick="typeFilterMoves()" type="checkbox" id="Dark" value="Dark">Dark</input>
+                                <input name="moveTypeCheck" onclick="typeFilterMoves()" type="checkbox" id="Fairy" value="Fairy">Fairy</input> -->
+                        </div>
+                    </div>
+                    
+                    <div class="move_display_section">
+                        <div id="full_move_display_div">
+                            <div class="move_search_titles">
+                                <h3 class="move_db_title">Name:</h3>
+                                <h3 class="move_db_title">Power:</h3>
+                                <h3 class="move_db_title">Accuracy:</h3>
+                                <h3 class="move_db_title">PP:</h3>
+                                <h3 class="move_db_title">Move Type:</h3>
+                                <h3 class="move_db_title">Attack Type:</h3>
+                            </div>
+                            <div id="dynamic_move_div">
+                                <!--Moves will populate here-->
+                            </div>
+                    
+                        </div>
+                    </div>
+            </div>
+            <div class="item_db_section dynamic_section">
+
+            </div>
+        </div>        
+        <script type="text/javascript" src="js/navigation.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/data/data.js"></script>
+        <script type="textjavascript" src="js/data/mon_data.js"></script>
+        <script type="text/javascript" src="js/reusables.js"></script>
+        <script type="text/javascript" src="js/populate.js"></script>
+        <script async type="text/javascript">$(document).ready(function () { move_populate(); });</script>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+body {
+    font-family: monospace;
+    background-color:#212121;
+    color: #dbd9d9;
+}
+.lil_bar {
+    width: 35px;
+    height: 5px;
+    background-color: #dbd9d9;
+    margin: 6px 0;
+    border-radius: 20px;
+}
+.title_section {
+    margin-left: 41%;
+}
+.side_nav_section {
+    display: none;
+}
+.menu_bar_btn {
+    width: 36px;
+    height: 33px;
+}
+
+.inner_nav_btns {
+    display: none;
+}
+.menu_section {
+    width: 230px;
+}
+
+.encounter_gen_section {
+    background-color: red;
+    height: 5px;
+}
+.item_gen_section {
+    background-color: blue;
+    height: 5px;
+}
+.battle_dmg_section {
+    background-color: purple;
+    height: 5px;
+}
+.type_dmg_section {
+    background-color: cornflowerblue;
+    height: 5px;
+}
+.dice_roll_section {
+    background-color: black;
+    height: 5px;
+}
+.mon_db_section {
+    background-color: grey;
+    height: 5px;
+}
+.move_db_section {
+    background-color: brown;
+    height: 5px;
+}
+.item_db_section {
+    background-color: yellow;
+    height: 5px;
+}
+.dynamic_section {
+    display: none;
+}
+.move_search_titles {
+    display: inline-flex;
+    width: 95%;
+}
+.move_db_title {
+    padding: 10px;
+    margin:3px;
+}
+.dmg_type_img {
+    height: 2%;
+}
+.inner_move_box {
+    display: inline-flex;
+    flex-flow: row;
+    width: 95%;
+    flex: 1;
+}
+.inner_move_box > * {
+}
+.inner_move_box > img {
+    height: 20%;
+    width: 5%;
+}
+
+
+
+/* temporary backgrounds for visibility*/
+.menu_section {
+    background-color: aqua;
+}
+.menu_bar_btn {
+    background-color: aquamarine
+}
+.side_nav_section {
+    background-color: blue
+}
+.gm_nav_area {
+    background-color: blueviolet;
+}
+.player_nav_area {
+    background-color: brown;
+}
+.info_nav_area {
+    background-color: chocolate;
+}
