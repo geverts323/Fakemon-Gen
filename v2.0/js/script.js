@@ -96,8 +96,8 @@ function checkIVs() {
         alert("IV's need to be a number between 0 and 31");
     }
 
-    checkEVs();ß
-}
+    checkEVs();
+ }
 function createMon(level) {
 
     var nat = $("#pokemonNature").val();
