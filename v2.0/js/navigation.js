@@ -122,3 +122,34 @@ function display_item_db_section() {
     $(".move_db_section").hide();
     $(".item_db_section").show();
 }
+function display_move_detail(number) {
+    var click_id = number + "_move_box";
+    var click_div_detail = click_id + '_detail';
+
+    if ($('#' + click_div_detail).css('display') == 'none') {
+        $('.move_detail_div').hide();
+        $('#' + click_div_detail).show();
+    }
+    else {
+        $('.move_detail_div').hide();
+    }
+}
+function search_moves() {
+    var input = document.getElementById('move_search_bar');
+    var filter = input.value.toLowerCase();
+    console.log(filter);
+    var eachMoveBox = document.getElementsByClassName('inner_move_box');
+
+    for (i = 0; i < eachMoveBox.length; i++) {
+
+        a = eachMoveBox[i].getElementsByTagName("h4")[0];
+        console.log("a: " + a);
+
+        if (a.innerHTML.toLowerCase().indexOf(filter) > -1) {
+            eachMoveBox[i].style.display = "";
+        }
+        else {
+            eachMoveBox[i].style.display = "none";
+        }
+    }
+}

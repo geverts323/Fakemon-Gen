@@ -40,9 +40,9 @@ function checkLevel() {
     }
     else if (check_number_in_range(1, 100, pokemonLevel) == "oops") {
         alert("How did you do that?");
+    }
     else {
         console.log("huh. don't know how i got here");
-    }
     }
 }
 
